@@ -43,6 +43,8 @@ module.exports = {
         allow: ['debug', 'info', 'warn', 'error', 'table'],
       },
     ],
+    'no-empty-static-block': 'off',
+    'no-new-native-nonconstructor': 'off',
     'prettier/prettier': [
       'error',
       {

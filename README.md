@@ -7,6 +7,8 @@
   * Extends unicorn, adds import sorting, 2 space formatting, as well as rules specific to TypeScript and React.
 * [eslint-functional/eslint-plugin-functional](https://github.com/eslint-functional/eslint-plugin-functional)
   * Borrows rules to enforce immutable object & array mutations.
+* [eslint-plugin-tailwindcss](plugin:tailwindcss/recommended)
+  * Keep tailwind classnames organized and remove redundancies.
 * Includes Prettier built in (do NOT use this with a separate Prettier config.)
 * Object key sorting.
 * Explicit return types.

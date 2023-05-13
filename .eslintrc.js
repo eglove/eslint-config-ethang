@@ -13,6 +13,7 @@ module.exports = {
     'plugin:typescript-sort-keys/recommended',
     'plugin:functional/external-vanilla-recommended',
     'plugin:functional/external-typescript-recommended',
+    'plugin:tailwindcss/recommended',
     'plugin:jsx-a11y/strict',
     'prettier',
   ],

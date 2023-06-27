@@ -54,8 +54,8 @@ dependencies:
     specifier: ^1.1.2
     version: 1.1.2
   eslint-plugin-tailwindcss:
-    specifier: ^3.12.1
-    version: 3.12.1(tailwindcss@3.3.2)
+    specifier: ^3.13.0
+    version: 3.13.0(tailwindcss@3.3.2)
   eslint-plugin-typescript-sort-keys:
     specifier: ^2.3.0
     version: 2.3.0(@typescript-eslint/parser@5.60.0)(eslint@8.43.0)(typescript@5.1.3)
@@ -245,13 +245,13 @@ packages:
   /@types/postcss-modules-local-by-default@4.0.0:
     resolution: {integrity: sha512-0VLab/pcLTLcfbxi6THSIMVYcw9hEUBGvjwwaGpW77mMgRXfGF+a76t7BxTGyLh1y68tBvrffp8UWnqvm76+yg==}
     dependencies:
-      postcss: 8.4.21
+      postcss: 8.4.24
     dev: false
 
   /@types/postcss-modules-scope@3.0.1:
     resolution: {integrity: sha512-LNkp3c4ML9EQj2dgslp4i80Jxj72YK3HjYzrTn6ftUVylW1zaKFGqrMlNIyqBmPWmIhZ/Y5r0Y4T49Hk1IuDUg==}
     dependencies:
-      postcss: 8.4.21
+      postcss: 8.4.24
     dev: false
 
   /@types/semver@7.5.0:
@@ -1226,8 +1226,8 @@ packages:
       requireindex: 1.2.0
     dev: false
 
-  /eslint-plugin-tailwindcss@3.12.1(tailwindcss@3.3.2):
-    resolution: {integrity: sha512-LyIRV0rx6prTpJZsSCXSNJ34Yry3Nj9OJwvzh1xTsiG6+UCnAPW1Bx41s7vZzUDKMlwFgpUN9Me+NK12T4DHYg==}
+  /eslint-plugin-tailwindcss@3.13.0(tailwindcss@3.3.2):
+    resolution: {integrity: sha512-Fcep4KDRLWaK3KmkQbdyKHG0P4GdXFmXdDaweTIPcgOP60OOuWFbh1++dufRT28Q4zpKTKaHwTsXPJ4O/EjU2Q==}
     engines: {node: '>=12.13.0'}
     peerDependencies:
       tailwindcss: ^3.3.2

@@ -8,7 +8,6 @@ module.exports = {
     'plugin:unicorn/all',
     'xo',
     'xo-space',
-    'xo-typescript/space',
     'xo-react/space',
     'plugin:typescript-sort-keys/recommended',
     'plugin:functional/external-vanilla-recommended',

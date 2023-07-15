@@ -27,6 +27,7 @@ module.exports = {
     'prettier',
   ],
   rules: {
+    'camelcase': 'off',
     '@typescript-eslint/ban-types': [
       'error',
       {

@@ -35,6 +35,7 @@ module.exports = {
         },
       },
     ],
+    '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     '@typescript-eslint/explicit-function-return-type': 'error',
     '@typescript-eslint/naming-convention': 'off',
     '@typescript-eslint/no-import-type-side-effects': 'error',

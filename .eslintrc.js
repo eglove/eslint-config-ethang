@@ -81,6 +81,7 @@ module.exports = {
     'simple-import-sort/imports': 'error',
     'sort-keys-fix/sort-keys-fix': 'error',
     'unicorn/no-keyword-prefix': 'off',
+    'unicorn/no-null': 'off',
     'unused-imports/no-unused-imports': 'error',
     'unused-imports/no-unused-vars': [
       'error',

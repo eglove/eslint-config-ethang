@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ethang",
-  "version": "6.7.1",
+  "version": "6.7.2",
   "repository": "https://github.com/eglove/eslint-config-ethang",
   "main": "index.js",
   "scripts": {

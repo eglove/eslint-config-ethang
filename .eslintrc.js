@@ -40,6 +40,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'error',
     '@typescript-eslint/naming-convention': 'off',
     '@typescript-eslint/no-import-type-side-effects': 'error',
+    '@typescript-eslint/strict-boolean-expressions': 'error',
     'arrow-body-style': ['error', 'always'],
     'capitalized-comments': 'off',
     'functional/immutable-data': 'error',

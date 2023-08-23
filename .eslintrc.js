@@ -3,6 +3,7 @@ require('@rushstack/eslint-patch/modern-module-resolution');
 
 // eslint-disable-next-line functional/immutable-data
 module.exports = {
+  ignorePatterns: ["*.config.ts", "*.config.js", "*.d.ts"],
   extends: [
     'plugin:@typescript-eslint/strict',
     'plugin:unicorn/all',

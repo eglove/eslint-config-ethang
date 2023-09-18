@@ -51,7 +51,7 @@ module.exports = {
     "functional/immutable-data": [
       "error",
       {
-        ignoreClasses: "fieldsOnly",
+        ignoreClasses: true,
       },
     ],
     "max-params": "error",

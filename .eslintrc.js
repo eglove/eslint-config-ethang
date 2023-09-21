@@ -86,6 +86,7 @@ module.exports = {
       },
     ],
     "react/no-array-index-key": "error",
+    "react/no-multi-comp": "error",
     "react/no-unknown-property": "warn",
     "react/react-in-jsx-scope": "off",
     "react/require-default-props": "error",

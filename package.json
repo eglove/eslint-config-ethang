@@ -1,7 +1,9 @@
 {
   "name": "eslint-config-ethang",
   "version": "11.1.6",
-  "repository": "https://github.com/eglove/eslint-config-ethang",
+  "repository": {
+    "url": "git+https://github.com/eglove/eslint-config-ethang.git"
+  },
   "main": "index.js",
   "scripts": {
     "lint": "eslint --fix",

@@ -46,6 +46,7 @@ module.exports = {
       },
       rules: {
         "unicorn/filename-case": "off",
+        "import/namespace": "off",
         "import/no-unresolved": "warn",
         "prettier/prettier": "off",
         "react/no-unknown-property": "off",

@@ -44,6 +44,11 @@ module.exports = {
         parser: "@typescript-eslint/parser",
         extraFileExtensions: [".astro"],
       },
+      rules: {
+        "unicorn/filename-case": "off",
+        "import/no-unresolved": "warn",
+        "prettier/prettier": "off",
+      },
     },
   ],
   rules: {

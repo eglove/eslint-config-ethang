@@ -31,10 +31,9 @@ const peerDependencies = [
   "typescript"
 ];
 
-const peerDependenciesObject = peeerDeps.map(dependency => {
-  return {
-    [dependency]: packageObject.dependencies[dependency]
-  }
+const peerDependenciesObject = {}
+peerDependencies.forEach(dependency => {
+  peerDependenciesObject[dependency] = packageObject.dependencies[dependency];
 })
 
 packageObject.peerDependencies = peerDependenciesObject

@@ -28,7 +28,6 @@ const peerDependencies = {
   "eslint-plugin-unicorn": packageObject.dependencies["eslint-plugin-unicorn"],
   "eslint-plugin-unused-imports": packageObject.dependencies["eslint-plugin-unused-imports"],
   prettier: packageObject.dependencies.prettier,
-  "prettier-plugin-astro": packageObject.dependencies["prettier-plugin-astro"],
   typescript: packageObject.dependencies.typescript,
 }
 

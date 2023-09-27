@@ -17,6 +17,7 @@ module.exports = {
     "plugin:jsx-a11y/strict",
     "plugin:import/recommended",
     "plugin:import/typescript",
+    "plugin:astro/recommended",
     "prettier",
   ],
   parserOptions: {
@@ -28,6 +29,17 @@ module.exports = {
     "sort-keys-fix",
     "unused-imports",
     "prettier",
+  ],
+  overrides: [
+    {
+      files: ["*.astro"],
+      parser: "astro-eslint-parser",
+      plugins: ["prettier-plugin-astro"],
+      parserOptions: {
+        parser: "@typescript-eslint/parser",
+        extraFileExtensions: [".astro"],
+      },
+    },
   ],
   rules: {
     camelcase: "off",

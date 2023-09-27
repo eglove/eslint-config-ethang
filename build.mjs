@@ -14,6 +14,7 @@ const peerDependencies = {
   "eslint-config-xo-react": packageObject.dependencies["eslint-config-xo-react"],
   "eslint-config-xo-space": packageObject.dependencies["eslint-config-xo-space"],
   "eslint-config-xo-typescript": packageObject.dependencies["eslint-config-xo-typescript"],
+  "eslint-plugin-astro": packageObject.dependencies["eslint-plugin-astro"],
   "eslint-plugin-functional": packageObject.dependencies["eslint-plugin-functional"],
   "eslint-plugin-import": packageObject.dependencies["eslint-plugin-import"],
   "eslint-plugin-jsx-a11y": packageObject.dependencies["eslint-plugin-jsx-a11y"],
@@ -27,6 +28,7 @@ const peerDependencies = {
   "eslint-plugin-unicorn": packageObject.dependencies["eslint-plugin-unicorn"],
   "eslint-plugin-unused-imports": packageObject.dependencies["eslint-plugin-unused-imports"],
   prettier: packageObject.dependencies.prettier,
+  "prettier-plugin-astro": packageObject.dependencies["prettier-plugin-astro"],
   typescript: packageObject.dependencies.typescript,
 }
 

@@ -48,6 +48,8 @@ module.exports = {
         "unicorn/filename-case": "off",
         "import/no-unresolved": "warn",
         "prettier/prettier": "off",
+        "react/no-unknown-property": "off",
+        "react/jsx-key": "off",
       },
     },
   ],

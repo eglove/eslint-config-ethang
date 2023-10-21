@@ -6,9 +6,9 @@ const packageJson = fs.readFileSync('package.json', { encoding: 'utf8' })
 const packageObject = JSON.parse(packageJson)
 
 const peerDependencies = [
-  "eslint",
   "@typescript-eslint/eslint-plugin",
   "@typescript-eslint/parser",
+  "eslint",
   "eslint-config-prettier",
   "eslint-config-xo",
   "eslint-config-xo-react",

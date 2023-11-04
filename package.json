@@ -40,7 +40,6 @@
     "eslint-plugin-unicorn": "^49.0.0",
     "eslint-plugin-unused-imports": "^3.0.0",
     "prettier": "^3.0.3",
-    "prettier-plugin-astro": "^0.12.1",
     "typescript": "^5.2.2"
   },
   "dependencies": {

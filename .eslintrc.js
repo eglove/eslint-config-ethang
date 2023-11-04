@@ -35,7 +35,6 @@ module.exports = {
     "sort-keys-fix",
     "unused-imports",
     "prettier",
-    "prettier-plugin-astro",
   ],
   overrides: [
     {

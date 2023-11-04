@@ -28,7 +28,6 @@ const peerDependencies = [
   "eslint-plugin-unicorn",
   "eslint-plugin-unused-imports",
   "prettier",
-  "prettier-plugin-astro",
   "typescript"
 ];
 

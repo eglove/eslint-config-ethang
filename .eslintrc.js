@@ -48,6 +48,7 @@ module.exports = {
         "import/namespace": "off",
         "import/no-unresolved": "warn",
         "no-template-curly-in-string": "warn",
+        "prettier/prettier": "off",
         "react/no-unknown-property": "off",
         "react/no-unescaped-entities": "off",
         "react/jsx-key": "off",

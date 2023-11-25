@@ -69,7 +69,6 @@ module.exports = {
     ],
     "@typescript-eslint/consistent-type-definitions": ["error", "type"],
     "@typescript-eslint/consistent-type-imports": "error",
-    "@typescript-eslint/explicit-function-return-type": "error",
     "@typescript-eslint/explicit-member-accessibility": "error",
     "@typescript-eslint/naming-convention": "off",
     "@typescript-eslint/no-import-type-side-effects": "error",

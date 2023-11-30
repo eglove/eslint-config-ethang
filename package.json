@@ -26,7 +26,7 @@
     "eslint-config-xo-react": "^0.27.0",
     "eslint-config-xo-space": "^0.34.0",
     "eslint-config-xo-typescript": "^1.0.1",
-    "eslint-plugin-astro": "^0.29.1",
+    "eslint-plugin-astro": "^0.30.0",
     "eslint-plugin-functional": "^6.0.0",
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",

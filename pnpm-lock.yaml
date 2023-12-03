@@ -80,8 +80,8 @@ dependencies:
 
 devDependencies:
   '@ethang/project-builder':
-    specifier: ^1.0.11
-    version: 1.0.11(@ethang/util@2.0.18)(chalk@5.3.0)(inquirer@9.2.12)(rimraf@5.0.5)(simple-git@3.21.0)(tsup@8.0.1)
+    specifier: ^1.0.21
+    version: 1.0.21(@ethang/util@2.0.21)(chalk@5.3.0)(inquirer@9.2.12)(rimraf@5.0.5)(simple-git@3.21.0)(tsup@8.0.1)(typescript@5.3.2)
 
 packages:
 
@@ -363,8 +363,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: false
 
-  /@ethang/project-builder@1.0.11(@ethang/util@2.0.18)(chalk@5.3.0)(inquirer@9.2.12)(rimraf@5.0.5)(simple-git@3.21.0)(tsup@8.0.1):
-    resolution: {integrity: sha512-5oytHEWdblQ1/VHWoysX+0QrnhCUiwKlNfaYbtxs19ZAXKc7v4QZwdEJqdz2oWOU+elE3sIu8vsWZhI6OdIIKQ==}
+  /@ethang/project-builder@1.0.21(@ethang/util@2.0.21)(chalk@5.3.0)(inquirer@9.2.12)(rimraf@5.0.5)(simple-git@3.21.0)(tsup@8.0.1)(typescript@5.3.2):
+    resolution: {integrity: sha512-IfFrdnlVdJVmMiJ8v9vYenECaA8DoRXHcSw9O4DLNtRc5KbYCzRjXTpfA6lKPjsV6xLBte5Z+0FCkXTexcjbOA==}
     peerDependencies:
       '@ethang/util': ^2.0.18
       chalk: ^5.3.0
@@ -372,17 +372,19 @@ packages:
       rimraf: ^5.0.5
       simple-git: ^3.21.0
       tsup: ^8.0.1
+      typescript: ^5.3.2
     dependencies:
-      '@ethang/util': 2.0.18
+      '@ethang/util': 2.0.21
       chalk: 5.3.0
       inquirer: 9.2.12
       rimraf: 5.0.5
       simple-git: 3.21.0
       tsup: 8.0.1(postcss@8.4.32)(typescript@5.3.2)
+      typescript: 5.3.2
     dev: true
 
-  /@ethang/util@2.0.18:
-    resolution: {integrity: sha512-tUbFgyRbFOSj16H+JhGinquddPhi3IxbMIe4A++F6KRBfQc9N0fCsXMLlfXH5RsvCLa7w0DeeaFtwHpEPa/FXg==}
+  /@ethang/util@2.0.21:
+    resolution: {integrity: sha512-PT5wX5/iINErLqKMLLIBvV17gckaTXoMpSPBy97jmDl3PNbPk+yn594gnsKH5Xv+GLr/ZcDlMFU33yKUMSX4Kg==}
     dev: true
 
   /@humanwhocodes/config-array@0.11.13:

@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@rushstack/eslint-patch':
+    specifier: ^1.6.0
+    version: 1.6.0
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.13.1
     version: 6.13.1(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2)
@@ -590,6 +593,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@rushstack/eslint-patch@1.6.0:
+    resolution: {integrity: sha512-2/U3GXA6YiPYQDLGwtGlnNgKYBSwCFIHf8Y9LUY5VATHdtbLlU0Y1R3QoBnT0aB4qv/BEiVVsj7LJXoQCgJ2vA==}
+    dev: false
 
   /@types/json-schema@7.0.15:
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}

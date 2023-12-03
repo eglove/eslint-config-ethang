@@ -5,9 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-  '@rushstack/eslint-patch':
-    specifier: ^1.6.0
-    version: 1.6.0
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.13.1
     version: 6.13.1(@typescript-eslint/parser@6.13.1)(eslint@8.55.0)(typescript@5.3.2)
@@ -80,8 +77,8 @@ dependencies:
 
 devDependencies:
   '@ethang/project-builder':
-    specifier: ^1.0.4
-    version: 1.0.4(@ethang/util@2.0.18)(chalk@5.3.0)(inquirer@9.2.12)(rimraf@5.0.5)(simple-git@3.21.0)(tsup@8.0.1)
+    specifier: ^1.0.5
+    version: 1.0.5(@ethang/util@2.0.18)(chalk@5.3.0)(inquirer@9.2.12)(rimraf@5.0.5)(simple-git@3.21.0)(tsup@8.0.1)
 
 packages:
 
@@ -363,8 +360,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: false
 
-  /@ethang/project-builder@1.0.4(@ethang/util@2.0.18)(chalk@5.3.0)(inquirer@9.2.12)(rimraf@5.0.5)(simple-git@3.21.0)(tsup@8.0.1):
-    resolution: {integrity: sha512-9kUMSyEI0rASPkiQ4ImH1cdql+qeenTVyDweNsKdOJQv7xcHXHDpEtAy4UsiyHEgQwDifAEKCq4pNLTchOpU0w==}
+  /@ethang/project-builder@1.0.5(@ethang/util@2.0.18)(chalk@5.3.0)(inquirer@9.2.12)(rimraf@5.0.5)(simple-git@3.21.0)(tsup@8.0.1):
+    resolution: {integrity: sha512-rFeXlpACsgzkYGeOfQ7P7DXfCtkYWZqIUOS2UrZksXH7OI1sCTNzRcoeNSURCIZDDrMy6nHqEtdygWIQZ3WR2Q==}
     peerDependencies:
       '@ethang/util': ^2.0.18
       chalk: ^5.3.0
@@ -593,10 +590,6 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
-
-  /@rushstack/eslint-patch@1.6.0:
-    resolution: {integrity: sha512-2/U3GXA6YiPYQDLGwtGlnNgKYBSwCFIHf8Y9LUY5VATHdtbLlU0Y1R3QoBnT0aB4qv/BEiVVsj7LJXoQCgJ2vA==}
-    dev: false
 
   /@types/json-schema@7.0.15:
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}

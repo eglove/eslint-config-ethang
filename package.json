@@ -68,6 +68,6 @@
     "typescript": "^5.3.0"
   },
   "devDependencies": {
-    "@ethang/project-builder": "^1.0.4"
+    "@ethang/project-builder": "^1.0.5"
   }
 }

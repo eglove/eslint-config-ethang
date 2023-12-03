@@ -1,3 +1,8 @@
-import {versionBump} from '@ethang/project-builder/version-bump.js';
+import {projectBuilder} from '@ethang/project-builder/project-builder.js';
 
-await versionBump(['UPDATE', 'PRUNE'], ['DEDUPE', 'LINT'])
+await projectBuilder('eslint-config-ethang', 'master', {
+  isIgnoringBuild: true,
+  preVersionBumpScripts: ['UPDATE', 'PRUNE'],
+  postVersionBumpScripts: ['DEDUPE', 'LINT'],
+  ignorePeerDependencies: ['@rushstack/eslint-patch'],
+})

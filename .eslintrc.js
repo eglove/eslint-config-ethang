@@ -78,12 +78,6 @@ module.exports = {
     "@typescript-eslint/strict-boolean-expressions": "error",
     "arrow-body-style": ["error", "always"],
     "capitalized-comments": "off",
-    "functional/immutable-data": [
-      "error",
-      {
-        ignoreClasses: true,
-      },
-    ],
     "max-params": "error",
     "new-cap": "off",
     "no-console": [

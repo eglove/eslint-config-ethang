@@ -88,7 +88,7 @@ module.exports = {
     ],
     "no-empty-static-block": "off",
     "no-new-native-nonconstructor": "off",
-    "no-undef": "warn",
+    "no-undef": "off",
     "prettier/prettier": [
       "error",
       {

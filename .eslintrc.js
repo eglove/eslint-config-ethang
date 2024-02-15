@@ -277,7 +277,10 @@ module.exports = {
     "@typescript-eslint/prefer-enum-initializers": "error",
     "@typescript-eslint/prefer-find": "error",
     "@typescript-eslint/prefer-readonly": "error",
-    "@typescript-eslint/prefer-readonly-parameter-types": "error",
+    "@typescript-eslint/prefer-readonly-parameter-types": [
+      "error",
+      { checkParameterProperties: false, ignoreInferredTypes: true },
+    ],
     "@typescript-eslint/prefer-regexp-exec": "error",
     "@typescript-eslint/promise-function-async": "error",
     "@typescript-eslint/require-array-sort-compare": "error",

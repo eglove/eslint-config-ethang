@@ -17,12 +17,13 @@ module.exports = {
   },
   extends: [
     "plugin:unicorn/all",
-    "xo-react/space",
     "plugin:@typescript-eslint/strict-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:typescript-sort-keys/recommended",
     "plugin:functional/external-vanilla-recommended",
     "plugin:functional/external-typescript-recommended",
+    "plugin:react/all",
+    "plugin:react-hooks/recommended",
     "plugin:tailwindcss/recommended",
     "plugin:jsx-a11y/strict",
     "plugin:import/recommended",
@@ -259,6 +260,9 @@ module.exports = {
     "line-comment-position": "error",
     "unicode-bom": ["error", "never"],
 
+    // React
+    "react-hooks/exhaustive-deps": "warn",
+
     "@typescript-eslint/ban-types": [
       "error",
       {
@@ -285,22 +289,6 @@ module.exports = {
         trailingComma: "all",
       },
     ],
-    "react-hooks/exhaustive-deps": "error",
-    "react-hooks/rules-of-hooks": "error",
-    "react/jsx-no-bind": "error",
-    "react/jsx-sort-props": [
-      2,
-      {
-        callbacksLast: true,
-        multiline: "last",
-        shorthandFirst: true,
-      },
-    ],
-    "react/no-array-index-key": "error",
-    "react/no-multi-comp": "error",
-    "react/no-unknown-property": "warn",
-    "react/react-in-jsx-scope": "off",
-    "react/require-default-props": "error",
     "simple-import-sort/exports": "error",
     "simple-import-sort/imports": "error",
     "sort-keys-fix/sort-keys-fix": "error",

@@ -20,9 +20,6 @@ dependencies:
   eslint-config-prettier:
     specifier: ^9.1.0
     version: 9.1.0(eslint@8.56.0)
-  eslint-config-xo-react:
-    specifier: ^0.27.0
-    version: 0.27.0(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.33.2)(eslint@8.56.0)
   eslint-config-xo-typescript:
     specifier: ^2.0.0
     version: 2.0.0(@typescript-eslint/eslint-plugin@7.0.1)(@typescript-eslint/parser@7.0.1)(eslint@8.56.0)(typescript@5.3.3)
@@ -1655,19 +1652,6 @@ packages:
       eslint: '>=7.0.0'
     dependencies:
       eslint: 8.56.0
-    dev: false
-
-  /eslint-config-xo-react@0.27.0(eslint-plugin-react-hooks@4.6.0)(eslint-plugin-react@7.33.2)(eslint@8.56.0):
-    resolution: {integrity: sha512-wiV215xQIn71XZyyVfaOXHaFpR1B14IJttwOjMi/eqUK1s+ojJdHr7eHqTLaGUfh6FKgWha1QNwePlIXx7mBUg==}
-    engines: {node: '>=12'}
-    peerDependencies:
-      eslint: '>=8.6.0'
-      eslint-plugin-react: '>=7.29.0'
-      eslint-plugin-react-hooks: '>=4.3.0'
-    dependencies:
-      eslint: 8.56.0
-      eslint-plugin-react: 7.33.2(eslint@8.56.0)
-      eslint-plugin-react-hooks: 4.6.0(eslint@8.56.0)
     dev: false
 
   /eslint-config-xo-typescript@2.0.0(@typescript-eslint/eslint-plugin@7.0.1)(@typescript-eslint/parser@7.0.1)(eslint@8.56.0)(typescript@5.3.3):

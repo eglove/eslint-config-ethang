@@ -5,15 +5,22 @@
   * 100's of opinionated rules for a consistent codebase.
 * [xojs/eslint-config-xo](https://github.com/sindresorhus/eslint-config-xo)
   * Extends unicorn, adds import sorting, 2 space formatting, as well as rules specific to TypeScript and React.
+* [@typescript-eslint/strict-type-checked](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/src/configs/strict-type-checked.ts)
+* [@typescript-eslint/stylistic-type-checked](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/src/configs/stylistic-type-checked.ts)
+  * Strictest config options from typescript-eslint
+* Sort all the things!
+  * Type, interface, and enum keys.
+  * Imports
+  * Tailwind classes
+  * JSX props
+  * Object keys (Dangerous! This config is meant for greenfield projects!)
 * [eslint-functional/eslint-plugin-functional](https://github.com/eslint-functional/eslint-plugin-functional)
-  * Borrows rules to enforce immutable object & array mutations.
+  * Enables functional rules from ESLint and TypeScript EsLint
 * [eslint-plugin-tailwindcss](https://github.com/francoismassart/eslint-plugin-tailwindcss)
   * Keep tailwind classnames organized and remove redundancies.
 * Includes Prettier built in (do NOT use this with a separate Prettier config.)
-* Object key sorting.
-* Explicit return types.
 * Strict react hook enforcement.
-* JSX prop sorting
+* Auto fix unused imports
 * And more...
 
 # Install

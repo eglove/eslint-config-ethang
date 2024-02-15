@@ -251,6 +251,8 @@ module.exports = {
     "unicode-bom": ["error", "never"],
 
     // React
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": ["error", { extensions: [".jsx", ".tsx"] }],
     "react-hooks/exhaustive-deps": "error",
 
     // TypeScript

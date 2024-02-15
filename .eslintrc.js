@@ -17,7 +17,6 @@ module.exports = {
   },
   extends: [
     "plugin:unicorn/all",
-    "xo-space",
     "xo-react/space",
     "plugin:@typescript-eslint/strict-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",

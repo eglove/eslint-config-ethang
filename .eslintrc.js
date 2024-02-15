@@ -20,8 +20,6 @@ module.exports = {
     "plugin:@typescript-eslint/strict-type-checked",
     "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:typescript-sort-keys/recommended",
-    "plugin:functional/external-vanilla-recommended",
-    "plugin:functional/external-typescript-recommended",
     "plugin:react/all",
     "plugin:react-hooks/recommended",
     "plugin:tailwindcss/recommended",
@@ -31,7 +29,6 @@ module.exports = {
     "prettier",
   ],
   plugins: [
-    "functional",
     "simple-import-sort",
     "sort-keys-fix",
     "unused-imports",
@@ -190,6 +187,7 @@ module.exports = {
     "no-object-constructor": "error",
     "no-octal": "error",
     "no-octal-escape": "error",
+    "no-param-reassign": "error",
     "no-plusplus": "error",
     "no-proto": "error",
     "no-redeclare": "off", // Handled by @typescript/eslint

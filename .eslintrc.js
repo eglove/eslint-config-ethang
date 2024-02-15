@@ -30,13 +30,7 @@ module.exports = {
     "plugin:import/typescript",
     "prettier",
   ],
-  plugins: [
-    "functional",
-    "simple-import-sort",
-    "sort-keys-fix",
-    "unused-imports",
-    "prettier",
-  ],
+  plugins: ["functional", "sort-keys-fix", "unused-imports", "prettier"],
   rules: {
     // Possible Problems
     "array-callback-return": [
@@ -311,8 +305,6 @@ module.exports = {
         trailingComma: "all",
       },
     ],
-    "simple-import-sort/exports": "error",
-    "simple-import-sort/imports": "error",
     "sort-keys-fix/sort-keys-fix": "error",
     "unicorn/no-keyword-prefix": "off",
     "unicorn/no-null": "off",

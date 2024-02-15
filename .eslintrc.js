@@ -60,7 +60,7 @@ module.exports = {
     "no-control-regex": "error",
     "no-debugger": "error",
     "no-dupe-args": "error",
-    "no-dupe-class-members": "error",
+    "no-dupe-class-members": "off", // Handled by @typescript/eslint
     "no-dupe-else-if": "error",
     "no-dupe-keys": "error",
     "no-duplicate-case": "error",
@@ -74,7 +74,7 @@ module.exports = {
     "no-inner-declarations": "error",
     "no-invalid-regexp": "error",
     "no-irregular-whitespace": "error",
-    "no-loss-of-precision": "error",
+    "no-loss-of-precision": "off", // Handled by @typescript/eslint
     "no-misleading-character-class": "error",
     "no-new-native-nonconstructor": "error",
     "no-new-symbol": "error",
@@ -99,18 +99,7 @@ module.exports = {
       { disallowArithmeticOperators: true },
     ],
     "no-unused-private-class-members": "error",
-    "no-unused-vars": [
-      "error",
-      {
-        vars: "all",
-        varsIgnorePattern: /^_/.source,
-        args: "after-used",
-        ignoreRestSiblings: true,
-        argsIgnorePattern: /^_/.source,
-        caughtErrors: "all",
-        caughtErrorsIgnorePattern: /^_$/.source,
-      },
-    ],
+    "no-unused-vars": "off", // Handled by @typescript/eslint
     "no-useless-backreference": "error",
     "require-atomic-updates": ["error", { allowProperties: true }],
     "use-isnan": "error",
@@ -133,8 +122,8 @@ module.exports = {
     curly: "error",
     "default-case": "error",
     "default-case-last": "error",
-    "default-param-last": "error",
-    "dot-notation": "error",
+    "default-param-last": "off", // Handled by @typescript/eslint
+    "dot-notation": "off", // Handled by @typescript/eslint
     eqeqeq: "error",
     "func-name-matching": [
       "error",
@@ -156,12 +145,12 @@ module.exports = {
     "max-lines": "error",
     "max-lines-per-function": "error",
     "max-nested-callbacks": "error",
-    "max-params": "error",
+    "max-params": "off", // Handled by @typescript/eslint
     "max-statements": "error",
     "multiline-comment-style": "error",
     "new-cap": ["error", { newIsCap: true, capIsNew: true }],
     "no-alert": "error",
-    "no-array-constructor": "error",
+    "no-array-constructor": "off", // Handled by @typescript/eslint
     "no-bitwise": "error",
     "no-caller": "error",
     "no-case-declarations": "error",
@@ -170,7 +159,7 @@ module.exports = {
     "no-div-regex": "error",
     "no-else-return": ["error", { allowElseIf: false }],
     "no-empty": ["error", { allowEmptyCatch: true }],
-    "no-empty-function": "error",
+    "no-empty-function": "off", // Handled by @typescript/eslint
     "no-empty-static-block": "error",
     "no-eq-null": "error",
     "no-eval": "error",
@@ -181,15 +170,15 @@ module.exports = {
     "no-global-assign": "error",
     "no-implicit-coercion": "error",
     "no-implicit-globals": "error",
-    "no-implied-eval": "error",
+    "no-implied-eval": "off", // Handled by @typescript/eslint
     "no-inline-comments": "error",
-    "no-invalid-this": "error",
+    "no-invalid-this": "off", // Handled by @typescript/eslint
     "no-iterator": "error",
     "no-label-var": "error",
     "no-labels": "error",
     "no-lone-blocks": "error",
     "no-lonely-if": "error",
-    "no-magic-numbers": "error",
+    "no-magic-numbers": "off", // Handled by @typescript/eslint
     "no-multi-assign": "error",
     "no-multi-str": "error",
     "no-negated-condition": "error",
@@ -203,22 +192,22 @@ module.exports = {
     "no-octal-escape": "error",
     "no-plusplus": "error",
     "no-proto": "error",
-    "no-redeclare": "error",
+    "no-redeclare": "off", // Handled by @typescript/eslint
     "no-regex-spaces": "error",
     "no-return-assign": ["error", "always"],
     "no-script-url": "error",
     "no-sequences": "error",
     "no-shadow-restricted-names": "error",
-    "no-throw-literal": "error",
+    "no-throw-literal": "off", // Handled by @typescript/eslint
     "no-undef-init": "error",
     "no-unneeded-ternary": "error",
-    "no-unused-expressions": ["error", { enforceForJSX: true }],
+    "no-unused-expressions": "off", // Handled by @typescript/eslint
     "no-unused-labels": "error",
     "no-useless-call": "error",
     "no-useless-catch": "error",
     "no-useless-computed-key": ["error", { enforceForClassMembers: true }],
     "no-useless-concat": "error",
-    "no-useless-constructor": "error",
+    "no-useless-constructor": "off", // Handled by @typescript/eslint
     "no-useless-escape": "error",
     "no-useless-rename": "error",
     "no-useless-return": "error",
@@ -235,19 +224,20 @@ module.exports = {
     "operator-assignment": ["error", "always"],
     "prefer-arrow-callback": ["error", { allowNamedFunctions: true }],
     "prefer-const": ["error", { destructuring: "all" }],
-    "prefer-destructuring": "error",
+    "prefer-destructuring": "off", // Handled by @typescript/eslint
     "prefer-exponentiation-operator": "error",
     "prefer-named-capture-group": "error",
     "prefer-numeric-literals": "error",
     "prefer-object-has-own": "error",
     "prefer-object-spread": "error",
-    "prefer-promise-reject-errors": ["error", { allowEmptyReject: true }],
+    "prefer-promise-reject-errors": "off", // Handled by @typescript/eslint
     "prefer-regex-literals": ["error", { disallowRedundantWrapping: true }],
     "prefer-rest-params": "error",
     "prefer-spread": "error",
     "prefer-template": "error",
     radix: "error",
-    "require-await": "error",
+    "require-await": "off", // Handled by @typescript/eslint
+    "no-return-await": "off", // Handled by @typescript/eslint
     "require-unicode-regexp": "error",
     "require-yield": "error",
     "sort-imports": "error",
@@ -261,24 +251,54 @@ module.exports = {
     "unicode-bom": ["error", "never"],
 
     // React
-    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/exhaustive-deps": "error",
 
-    "@typescript-eslint/ban-types": [
+    // TypeScript
+    "@typescript-eslint/consistent-type-exports": "error",
+    "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/default-param-last": "error",
+    "@typescript-eslint/explicit-function-return-type": "error",
+    "@typescript-eslint/explicit-member-accessibility": "error",
+    "@typescript-eslint/explicit-module-boundary-types": "error",
+    "@typescript-eslint/max-params": "error",
+    "@typescript-eslint/member-ordering": "error",
+    "@typescript-eslint/no-dupe-class-members": "error",
+    "@typescript-eslint/no-import-type-side-effects": "error",
+    "@typescript-eslint/no-invalid-this": "error",
+    "@typescript-eslint/no-magic-numbers": "error",
+    "@typescript-eslint/no-redeclare": "error",
+    "@typescript-eslint/no-require-imports": "error",
+    "@typescript-eslint/no-unnecessary-qualifier": "error",
+    "@typescript-eslint/no-unsafe-unary-minus": "error",
+    "@typescript-eslint/no-unused-expressions": "error",
+    "@typescript-eslint/no-useless-empty-export": "error",
+    "@typescript-eslint/prefer-destructuring": "error",
+    "@typescript-eslint/prefer-enum-initializers": "error",
+    "@typescript-eslint/prefer-find": "error",
+    "@typescript-eslint/prefer-readonly": "error",
+    "@typescript-eslint/prefer-readonly-parameter-types": "error",
+    "@typescript-eslint/prefer-regexp-exec": "error",
+    "@typescript-eslint/promise-function-async": "error",
+    "@typescript-eslint/require-array-sort-compare": "error",
+    "@typescript-eslint/sort-type-constituents": "error",
+    "@typescript-eslint/strict-boolean-expressions": "error",
+    "@typescript-eslint/switch-exhaustiveness-check": "error",
+    "@typescript-eslint/typedef": "error",
+    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
+    "@typescript-eslint/no-unused-vars": [
       "error",
       {
-        types: {
-          null: false,
-        },
+        vars: "all",
+        varsIgnorePattern: /^_/.source,
+        args: "after-used",
+        ignoreRestSiblings: true,
+        argsIgnorePattern: /^_/.source,
+        caughtErrors: "all",
+        caughtErrorsIgnorePattern: /^_$/.source,
       },
     ],
-    "@typescript-eslint/consistent-type-definitions": ["error", "type"],
-    "@typescript-eslint/consistent-type-imports": "error",
-    "@typescript-eslint/explicit-member-accessibility": "error",
-    "@typescript-eslint/naming-convention": "off",
-    "@typescript-eslint/no-explicit-any": "error",
-    "@typescript-eslint/no-floating-promises": "error",
-    "@typescript-eslint/no-import-type-side-effects": "error",
-    "@typescript-eslint/strict-boolean-expressions": "error",
+    "@typescript-eslint/return-await": "error",
+
     "prettier/prettier": [
       "error",
       {

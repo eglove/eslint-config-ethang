@@ -20,9 +20,6 @@ dependencies:
   eslint-config-prettier:
     specifier: ^9.1.0
     version: 9.1.0(eslint@8.56.0)
-  eslint-config-xo-typescript:
-    specifier: ^2.0.0
-    version: 2.0.0(@typescript-eslint/eslint-plugin@7.0.1)(@typescript-eslint/parser@7.0.1)(eslint@8.56.0)(typescript@5.3.3)
   eslint-plugin-astro:
     specifier: ^0.31.4
     version: 0.31.4(eslint@8.56.0)
@@ -1652,21 +1649,6 @@ packages:
       eslint: '>=7.0.0'
     dependencies:
       eslint: 8.56.0
-    dev: false
-
-  /eslint-config-xo-typescript@2.0.0(@typescript-eslint/eslint-plugin@7.0.1)(@typescript-eslint/parser@7.0.1)(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-Z6LxmerEsGzLH4niSgfD/ZfqnCkOWZmE1XPnbU9gyYRQbHFZUkjstvi2prvGF9ToXkTDBiBZWvAWwNw9F2lFHg==}
-    engines: {node: '>=18'}
-    peerDependencies:
-      '@typescript-eslint/eslint-plugin': '>=6.21.0'
-      '@typescript-eslint/parser': '>=6.21.0'
-      eslint: '>=8.56.0'
-      typescript: '>=5.0.0'
-    dependencies:
-      '@typescript-eslint/eslint-plugin': 7.0.1(@typescript-eslint/parser@7.0.1)(eslint@8.56.0)(typescript@5.3.3)
-      '@typescript-eslint/parser': 7.0.1(eslint@8.56.0)(typescript@5.3.3)
-      eslint: 8.56.0
-      typescript: 5.3.3
     dev: false
 
   /eslint-import-resolver-node@0.3.9:

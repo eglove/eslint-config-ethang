@@ -254,6 +254,15 @@ module.exports = {
     "react/jsx-filename-extension": ["error", { extensions: [".jsx", ".tsx"] }],
     "react/jsx-no-literals": "off",
     "react-hooks/exhaustive-deps": "error",
+    "react/jsx-sort-props": [
+      "error",
+      {
+        callbacksLast: true,
+        shorthandFirst: true,
+        noSortAlphabetically: true,
+        reservedFirst: true,
+      },
+    ],
 
     // TypeScript
     "@typescript-eslint/consistent-type-exports": "error",

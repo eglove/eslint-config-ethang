@@ -12,17 +12,11 @@
   "keywords": [],
   "author": "Ethan Glover",
   "license": "ISC",
-  "eslintConfig": {
-    "extends": [
-      "./.eslintrc.js"
-    ]
-  },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.0.1",
     "@typescript-eslint/parser": "^7.0.1",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-config-xo": "^0.44.0",
     "eslint-config-xo-react": "^0.27.0",
     "eslint-config-xo-space": "^0.35.0",
     "eslint-config-xo-typescript": "^2.0.0",

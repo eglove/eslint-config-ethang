@@ -11,12 +11,12 @@ module.exports = {
     "node_modules",
   ],
   extends: [
-    "plugin:@typescript-eslint/strict",
     "plugin:unicorn/all",
     "xo",
     "xo-space",
     "xo-react/space",
-    "plugin:@typescript-eslint/recommended-type-checked",
+    "plugin:@typescript-eslint/strict-type-checked",
+    "plugin:@typescript-eslint/stylistic-type-checked",
     "plugin:typescript-sort-keys/recommended",
     "plugin:functional/external-vanilla-recommended",
     "plugin:functional/external-typescript-recommended",
@@ -24,7 +24,6 @@ module.exports = {
     "plugin:jsx-a11y/strict",
     "plugin:import/recommended",
     "plugin:import/typescript",
-    "plugin:astro/recommended",
     "prettier",
   ],
   parserOptions: {
@@ -36,27 +35,6 @@ module.exports = {
     "sort-keys-fix",
     "unused-imports",
     "prettier",
-  ],
-  overrides: [
-    {
-      files: ["*.astro"],
-      parser: "astro-eslint-parser",
-      parserOptions: {
-        parser: "@typescript-eslint/parser",
-        extraFileExtensions: [".astro"],
-      },
-      rules: {
-        "import/namespace": "off",
-        "import/no-unresolved": "warn",
-        "no-template-curly-in-string": "warn",
-        "prettier/prettier": "off",
-        "react/no-unknown-property": "off",
-        "react/no-unescaped-entities": "off",
-        "react/jsx-key": "off",
-        "unicorn/filename-case": "off",
-        "unicorn/prevent-abbreviations": "warn",
-      },
-    },
   ],
   rules: {
     camelcase: "off",

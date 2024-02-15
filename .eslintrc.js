@@ -148,7 +148,7 @@ module.exports = {
     "max-params": "off", // Handled by @typescript/eslint
     "max-statements": "error",
     "multiline-comment-style": "error",
-    "new-cap": ["error", { newIsCap: true, capIsNew: true }],
+    "new-cap": "off",
     "no-alert": "error",
     "no-array-constructor": "off", // Handled by @typescript/eslint
     "no-bitwise": "error",

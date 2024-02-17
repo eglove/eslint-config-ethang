@@ -308,8 +308,8 @@ module.exports = {
     "react/iframe-missing-sandbox": "error",
     "react/jsx-boolean-value": "error",
     "react/jsx-child-element-spacing": "error",
-    "react/jsx-closing-bracket-location": "error",
-    "react/jsx-closing-tag-location": "error",
+    "react/jsx-closing-bracket-location": "off", // Handled by prettier
+    "react/jsx-closing-tag-location": "off", // Handled by prettier
     "react/jsx-curly-brace-presence": "error",
     "react/jsx-curly-newline": "error",
     "react/jsx-curly-spacing": "error",
@@ -322,8 +322,8 @@ module.exports = {
     "react/jsx-indent": "off", // Handled by prettier
     "react/jsx-key": "error",
     "react/jsx-max-depth": "error",
-    "react/jsx-max-props-per-line": "error",
-    "react/jsx-newline": "error",
+    "react/jsx-max-props-per-line": "off", // Handled by prettier
+    "react/jsx-newline": "off", // Handled by prettier
     "react/jsx-no-bind": "error",
     "react/jsx-no-comment-textnodes": "error",
     "react/jsx-no-constructed-context-values": "error",

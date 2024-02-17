@@ -318,8 +318,8 @@ module.exports = {
     "react/jsx-first-prop-new-line": "error",
     "react/jsx-fragments": "error",
     "react/jsx-handler-names": "error",
-    "react/jsx-indent-props": "error",
-    "react/jsx-indent": "error",
+    "react/jsx-indent-props": "off", // Handled by prettier
+    "react/jsx-indent": "off", // Handled by prettier
     "react/jsx-key": "error",
     "react/jsx-max-depth": "error",
     "react/jsx-max-props-per-line": "error",
@@ -403,16 +403,6 @@ module.exports = {
     "react-hooks/exhaustive-deps": "error",
 
     // Other
-    "prettier/prettier": [
-      "error",
-      {
-        arrowParens: "avoid",
-        endOfLine: "crlf",
-        printWidth: 80,
-        singleQuote: true,
-        trailingComma: "all",
-      },
-    ],
     "simple-import-sort/exports": "error",
     "simple-import-sort/imports": "error",
     "sort-keys-fix/sort-keys-fix": "error",
@@ -427,6 +417,16 @@ module.exports = {
         argsIgnorePattern: "^_",
         vars: "all",
         varsIgnorePattern: "^_",
+      },
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        arrowParens: "avoid",
+        endOfLine: "crlf",
+        printWidth: 80,
+        singleQuote: true,
+        trailingComma: "all",
       },
     ],
   },

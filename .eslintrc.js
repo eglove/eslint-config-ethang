@@ -334,7 +334,7 @@ module.exports = {
     "react/jsx-no-target-blank": "error",
     "react/jsx-no-undef": "error",
     "react/jsx-no-useless-fragment": "error",
-    "react/jsx-one-expression-per-line": "error",
+    "react/jsx-one-expression-per-line": "off", // Handled by prettier
     "react/jsx-pascal-case": "error",
     "react/jsx-props-no-multi-spaces": "error",
     "react/jsx-props-no-spreading": "off",

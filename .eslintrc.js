@@ -168,7 +168,7 @@ module.exports = {
     "no-implicit-coercion": "error",
     "no-implicit-globals": "error",
     "no-implied-eval": "off", // Handled by @typescript/eslint
-    "no-inline-comments": "error",
+    "no-inline-comments": "off",
     "no-invalid-this": "off", // Handled by @typescript/eslint
     "no-iterator": "error",
     "no-label-var": "error",
@@ -244,7 +244,7 @@ module.exports = {
     yoda: "error",
 
     // Layout & formatting
-    "line-comment-position": "error",
+    "line-comment-position": "off",
     "unicode-bom": ["error", "never"],
 
     // TypeScript

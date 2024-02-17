@@ -10,7 +10,7 @@
   * Plus more! Nearly all rules added.
 * [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
 * [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)
-  * Nearly all react plugin rules enabled, exhaustive peer dependencies labelled as error
+  * Nearly all react plugin rules enabled, exhaustive peer dependencies labeled as error
 * [eslint-plugin-jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
   * Strictest ruleset for proper accessibility
 * [eslint-plugin-tailwindcss](https://github.com/francoismassart/eslint-plugin-tailwindcss)

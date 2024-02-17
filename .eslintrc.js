@@ -259,7 +259,7 @@ module.exports = {
     "@typescript-eslint/no-dupe-class-members": "error",
     "@typescript-eslint/no-import-type-side-effects": "error",
     "@typescript-eslint/no-invalid-this": "error",
-    "@typescript-eslint/no-magic-numbers": "error",
+    "@typescript-eslint/no-magic-numbers": "off",
     "@typescript-eslint/no-redeclare": "error",
     "@typescript-eslint/no-require-imports": "error",
     "@typescript-eslint/no-unnecessary-qualifier": "error",

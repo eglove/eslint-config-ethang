@@ -298,7 +298,7 @@ module.exports = {
     "react/default-props-match-prop-types": "error",
     "react/destructuring-assignment": ["error", "always"],
     "react/display-name": "error",
-    "react/forbid-component-props": "off", // Off to allow extending components and spreading props
+    "react/forbid-component-props": "off", // off to allow extending components and spreading props
     "react/forbid-dom-props": "error",
     "react/forbid-elements": "error",
     "react/forbid-foreign-prop-types": "error",

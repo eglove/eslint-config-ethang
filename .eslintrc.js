@@ -27,6 +27,8 @@ module.exports = {
     "prettier",
   ],
   plugins: [
+    "react",
+    "react-hooks",
     "simple-import-sort",
     "sort-keys-fix",
     "unused-imports",

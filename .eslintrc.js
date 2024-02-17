@@ -143,7 +143,7 @@ module.exports = {
     "max-lines-per-function": "error",
     "max-nested-callbacks": "error",
     "max-params": "off", // Handled by @typescript/eslint
-    "max-statements": "error",
+    "max-statements": ["error", 10, { ignoreTopLevelFunctions: true }],
     "multiline-comment-style": "error",
     "new-cap": "off",
     "no-alert": "error",

@@ -62,8 +62,8 @@ dependencies:
 
 devDependencies:
   '@ethang/project-builder':
-    specifier: ^1.1.33
-    version: 1.1.33(@ethang/util@3.1.1)(chalk@5.3.0)(inquirer@9.2.18)(rimraf@5.0.5)(simple-git@3.24.0)(tsup@8.0.2)(typescript@5.4.5)
+    specifier: ^1.1.34
+    version: 1.1.34(@ethang/util@3.1.1)(chalk@5.3.0)(inquirer@9.2.18)(rimraf@5.0.5)(simple-git@3.24.0)(tsup@8.0.2)(typescript@5.4.5)
 
 packages:
 
@@ -351,8 +351,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: false
 
-  /@ethang/project-builder@1.1.33(@ethang/util@3.1.1)(chalk@5.3.0)(inquirer@9.2.18)(rimraf@5.0.5)(simple-git@3.24.0)(tsup@8.0.2)(typescript@5.4.5):
-    resolution: {integrity: sha512-EA03fflkifc/JXPSaK+eahvzNdM2mf+z+C1z94+75kAVwDZKSDqRizhDg25vNNiwQ5YBlxFuM7REY0Yw0saRqw==}
+  /@ethang/project-builder@1.1.34(@ethang/util@3.1.1)(chalk@5.3.0)(inquirer@9.2.18)(rimraf@5.0.5)(simple-git@3.24.0)(tsup@8.0.2)(typescript@5.4.5):
+    resolution: {integrity: sha512-6vIjyMME08Y7s6XslR0cVldaAKr+ahvfocJg3D14C2V6zX2d1AiLXcLMF3m5CNjBuTfxLyTmvRsrdzyVruRw8Q==}
     peerDependencies:
       '@ethang/util': ^3.1.1
       chalk: ^5.3.0

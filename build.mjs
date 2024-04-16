@@ -1,23 +1,23 @@
 // @ts-check
-import { projectBuilder } from '@ethang/project-builder/project-builder.js'
+import { projectBuilder } from "@ethang/project-builder/project-builder.js";
 
-await projectBuilder('eslint-config-ethang', 'master', {
+await projectBuilder("eslint-config-ethang", "master", {
+  ignorePeerDependencies: ["@rushstack/eslint-patch"],
   isLibrary: true,
-  publishDirectory: 'dist',
-  preVersionBumpScripts: ['UPDATE'],
-  postVersionBumpScripts: ['DEDUPE', 'LINT'],
-  ignorePeerDependencies: ['@rushstack/eslint-patch'],
+  postVersionBumpScripts: ["DEDUPE", "LINT"],
+  preVersionBumpScripts: ["UPDATE"],
+  publishDirectory: "dist",
   tsConfigOverrides: {
-    include: ['src'],
     compilerOptions: {
       emitDeclarationOnly: true,
     },
+    include: ["src"],
   },
   tsupOptions: {
-    format: ['cjs', 'esm'],
-    minify: true,
-    outDir: 'dist',
-    entry: ['index.ts'],
     bundle: true,
+    entry: ["index.ts"],
+    format: ["cjs", "esm"],
+    minify: true,
+    outDir: "dist",
   },
-})
+});

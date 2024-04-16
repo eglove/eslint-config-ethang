@@ -12,4 +12,12 @@ export default tseslint.config(
   eslintPluginUnicorn.configs["flat/all"],
   eslintConfigPrettier,
   eslintPluginPrettier,
+  {
+    languageOptions: {
+      parserOptions: {
+        project: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
+  },
 );

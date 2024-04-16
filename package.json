@@ -4,7 +4,7 @@
   "repository": {
     "url": "git+https://github.com/eglove/eslint-config-ethang.git"
   },
-  "main": "index.js",
+  "main": "eslint.config.js",
   "scripts": {
     "lint": "eslint --fix",
     "build": "node build.mjs"

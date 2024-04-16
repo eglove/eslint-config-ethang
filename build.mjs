@@ -1,9 +1,9 @@
 // @ts-check
-/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-call,@typescript-eslint/no-unsafe-member-access */
+import * as fs from "node:fs";
 import { projectBuilder } from "@ethang/project-builder/project-builder.js";
-import * as fs from 'node:fs'
 
-fs.copyFileSync('index.js', 'eslint.config.js')
+fs.copyFileSync("index.js", "eslint.config.js");
 
 await projectBuilder("eslint-config-ethang", "master", {
   isLibrary: true,

@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-ethang",
+  "name": "@ethang/eslint-config",
   "version": "14.1.10",
   "repository": {
     "url": "git+https://github.com/eglove/eslint-config-ethang.git"

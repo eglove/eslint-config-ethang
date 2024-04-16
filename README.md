@@ -11,7 +11,7 @@
 
 # Install
 
-`pnpm|yarn|npm install eslint-config-ethang`
+`{your package manager install} @ethang/eslint-config`
 
 **Requires TypesScript and tsconfig.json at root directory.**
 

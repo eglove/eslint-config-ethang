@@ -9,5 +9,4 @@ await projectBuilder("eslint-config-ethang", "master", {
   isLibrary: true,
   postVersionBumpScripts: ["DEDUPE", "LINT"],
   preVersionBumpScripts: ["UPDATE"],
-  publishDirectory: "dist",
 });

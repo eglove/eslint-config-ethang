@@ -24,7 +24,11 @@ export default tseslint.config(
       "simple-import-sort": importSort,
     },
     rules: {
+      "consistent-return": "off",
+      "no-ternary": "off",
       "no-undefined": "off",
+      "no-underscore-dangle": "off",
+      "no-use-before-define": "off",
       "one-var": ["error", "never"],
       "simple-import-sort/exports": "error",
       "simple-import-sort/imports": "error",

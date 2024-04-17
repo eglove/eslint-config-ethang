@@ -13,16 +13,16 @@ export default tseslint.config(
   eslintConfigPrettier,
   eslintPluginPrettier,
   {
-    rules: {
-      "no-undefined": "off",
-      "one-var": "never",
-      "unicorn/no-null": "off",
-    },
     languageOptions: {
       parserOptions: {
         project: true,
         tsconfigRootDir: import.meta.dirname,
       },
+    },
+    rules: {
+      "no-undefined": "off",
+      "one-var": ["error", "never"],
+      "unicorn/no-null": "off",
     },
   },
 );

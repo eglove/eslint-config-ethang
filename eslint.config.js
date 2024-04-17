@@ -24,7 +24,9 @@ export default tseslint.config(
       "simple-import-sort": importSort,
     },
     rules: {
+      "capitalized-comments": "off",
       "consistent-return": "off",
+      "no-magic-numbers": "off",
       "no-ternary": "off",
       "no-undefined": "off",
       "no-underscore-dangle": "off",
@@ -33,6 +35,15 @@ export default tseslint.config(
       "simple-import-sort/exports": "error",
       "simple-import-sort/imports": "error",
       "sort-imports": "off",
+
+      "@typescript-eslint/consistent-type-exports": "error",
+      "@typescript-eslint/consistent-type-imports": "error",
+      "@typescript-eslint/no-import-type-side-effects": "error",
+      "@typescript-eslint/prefer-readonly": "error",
+      "@typescript-eslint/prefer-readonly-parameter-types": "error",
+      "@typescript-eslint/strict-boolean-expressions": "error",
+      "@typescript-eslint/switch-exhaustiveness-check": "error",
+
       "unicorn/no-null": "off",
     },
   },

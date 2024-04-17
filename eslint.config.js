@@ -38,6 +38,7 @@ export default tseslint.config(
       "@typescript-eslint/switch-exhaustiveness-check": "error",
       "arrow-body-style": ["error", "always"],
       "capitalized-comments": "off",
+      "class-methods-use-this": "off",
       "consistent-return": "off",
       "id-length": ["error", { exceptionPatterns: ["^_"] }],
       "no-duplicate-imports": "off",

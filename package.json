@@ -37,6 +37,7 @@
     "typescript-eslint": "^7.7.0"
   },
   "devDependencies": {
-    "@ethang/project-builder": "^1.1.35"
+    "@ethang/project-builder": "^1.1.35",
+    "eslint-plugin-simple-import-sort": "^12.1.0"
   }
 }

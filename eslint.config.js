@@ -30,7 +30,7 @@ export default tseslint.config(
       "@typescript-eslint/no-import-type-side-effects": "error",
       "@typescript-eslint/no-unused-vars": [
         "error",
-        { args: "all", argsIgnorePattern: "^_" },
+        { args: "all", argsIgnorePattern: "^_$|^_" },
       ],
       "@typescript-eslint/prefer-readonly": "error",
       "@typescript-eslint/prefer-readonly-parameter-types": "error",

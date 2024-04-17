@@ -24,6 +24,7 @@ export default tseslint.config(
       "simple-import-sort": importSort,
     },
     rules: {
+      "@typescript-eslint/consistent-type-definitions": ["error", "type"],
       "@typescript-eslint/consistent-type-exports": "error",
       "@typescript-eslint/consistent-type-imports": "error",
       "@typescript-eslint/no-import-type-side-effects": "error",

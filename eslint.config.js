@@ -33,7 +33,7 @@ export default tseslint.config(
         { args: "all", argsIgnorePattern: "^_" },
       ],
       "@typescript-eslint/prefer-readonly": "error",
-      "@typescript-eslint/prefer-readonly-parameter-types": "error",
+      "@typescript-eslint/prefer-readonly-parameter-types": "off",
       "@typescript-eslint/strict-boolean-expressions": "error",
       "@typescript-eslint/switch-exhaustiveness-check": "error",
       "arrow-body-style": ["error", "always"],

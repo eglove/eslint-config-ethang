@@ -8,5 +8,5 @@ await projectBuilder("eslint-config-ethang", "master", {
   preVersionBumpScripts: ["UPDATE"],
   tsupOptions: {
     bundle: true,
-  }
+  },
 });

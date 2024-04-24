@@ -6,4 +6,7 @@ await projectBuilder("eslint-config-ethang", "master", {
   isLibrary: true,
   postVersionBumpScripts: ["DEDUPE", "LINT"],
   preVersionBumpScripts: ["UPDATE"],
+  tsupOptions: {
+    bundle: true,
+  }
 });

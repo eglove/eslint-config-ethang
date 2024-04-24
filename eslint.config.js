@@ -43,6 +43,7 @@ export default tseslint.config(
       "id-length": ["error", { exceptionPatterns: ["^_"] }],
       "line-comment-position": "off",
       "multiline-comment-style": "off",
+      "new-cap": "off",
       "no-duplicate-imports": "off",
       "no-inline-comments": "off",
       "no-magic-numbers": "off",

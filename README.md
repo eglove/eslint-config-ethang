@@ -1,11 +1,14 @@
 # Opinionated, Strict, Brutal, Unforgiving
 
-* Nearly every EsLint rule error's as a default.
-* [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
-  * 100's of opinionated rules for a consistent codebase.
-* [@typescript-eslint/strict-type-checked](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/src/configs/strict-type-checked.ts)
-* [@typescript-eslint/stylistic-type-checked](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/src/configs/stylistic-type-checked.ts)
-  * Strictest config options from typescript-eslint
+* More than 500 errored rules.
+* Over 100 vanilla EsLint rules.
+* Over 100 rules from [@typescript/eslint](https://github.com/typescript-eslint/typescript-eslint)
+* Over 100 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
+* Nearly 100 rules from [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
+* Includes [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)
+* Includes [jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
+* Includes [eslint-plugin-astro](https://www.npmjs.com/package/eslint-plugin-astro)
+* Import sorting with [eslint-plugin-simple-import-sort](https://github.com/lydell/eslint-plugin-simple-import-sort)
 * Includes Prettier built in (do NOT use this with a separate Prettier config.)
 * And more...
 
@@ -20,19 +23,21 @@
 In **eslint.config.js**
 
 ```js
-import config from "@ethang/eslint-config/index.js";
+import config from "@ethang/eslint-config/eslint.config.js";
+import tseslint from "typescript-eslint";
 
-export default [
-  ...config,
-  {
-    languageOptions: {
-      parserOptions: {
-        project: true,
-        tsconfigRootDir: import.meta.dirname,
-      },
+export default tseslint.config(...config, {
+  ignores: ["dist/"], // Your ignores directories
+  languageOptions: {
+    parserOptions: {
+      project: true,
+      tsconfigRootDir: "./tsconfig.json",
     },
   },
-];
+  rules: {
+    // your custom rules here
+  },
+});
 ```
 
 **Scripts**:

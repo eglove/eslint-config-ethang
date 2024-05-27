@@ -1,7 +1,7 @@
 # Opinionated, Strict, Brutal, Unforgiving
 
 * More than 500 errored rules.
-* Over 100 vanilla EsLint rules.
+* Over 100 vanilla ESLint rules.
 * Over 100 rules from [@typescript/eslint](https://github.com/typescript-eslint/typescript-eslint)
 * Over 100 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
 * Nearly 100 rules from [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)

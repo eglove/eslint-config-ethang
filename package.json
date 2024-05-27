@@ -47,6 +47,6 @@
     "typescript-eslint": "^7.10.0"
   },
   "devDependencies": {
-    "@ethang/project-builder": "^1.1.35"
+    "@ethang/project-builder": "^1.1.36"
   }
 }

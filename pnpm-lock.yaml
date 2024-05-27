@@ -55,8 +55,8 @@ importers:
         version: 7.10.0(eslint@9.3.0)(typescript@5.4.5)
     devDependencies:
       '@ethang/project-builder':
-        specifier: ^1.1.35
-        version: 1.1.35(chalk@5.3.0)(inquirer@9.2.22)(lodash@4.17.21)(rimraf@5.0.7)(simple-git@3.24.0)(tsup@8.0.2(postcss@8.4.38)(typescript@5.4.5))(typescript@5.4.5)
+        specifier: ^1.1.36
+        version: 1.1.36(chalk@5.3.0)(inquirer@9.2.22)(lodash@4.17.21)(rimraf@5.0.7)(simple-git@3.24.0)(tsup@8.0.2(postcss@8.4.38)(typescript@5.4.5))(typescript@5.4.5)
 
 packages:
 
@@ -235,13 +235,13 @@ packages:
     resolution: {integrity: sha512-niBqk8iwv96+yuTwjM6bWg8ovzAPF9qkICsGtcoa5/dmqcEMfdwNAX7+/OHcJHc7wj7XqPxH98oAHytFYlw6Sw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@ethang/project-builder@1.1.35':
-    resolution: {integrity: sha512-UaP4intPPtTVwNoz9Y6NFGxwQDlIg7k6pBlkW509YvW/T5d3IMzsj63J1A7SFN1dhgqnbUeyXZ3Tt5oIAdWnlQ==}
+  '@ethang/project-builder@1.1.36':
+    resolution: {integrity: sha512-H6DV5lqtPLmhUSZRcMc8RbxZlc0Qv3pDczYe8s9rIIFs5WW7RXWcDBx2b/Jt7/v+K9xIQct4xEudipFEVYpAdw==}
     peerDependencies:
       chalk: ^5.3.0
-      inquirer: ^9.2.19
+      inquirer: ^9.2.22
       lodash: ^4.17.21
-      rimraf: ^5.0.5
+      rimraf: ^5.0.7
       simple-git: ^3.24.0
       tsup: ^8.0.2
       typescript: ^5.4.5
@@ -2105,7 +2105,7 @@ snapshots:
 
   '@eslint/js@9.3.0': {}
 
-  '@ethang/project-builder@1.1.35(chalk@5.3.0)(inquirer@9.2.22)(lodash@4.17.21)(rimraf@5.0.7)(simple-git@3.24.0)(tsup@8.0.2(postcss@8.4.38)(typescript@5.4.5))(typescript@5.4.5)':
+  '@ethang/project-builder@1.1.36(chalk@5.3.0)(inquirer@9.2.22)(lodash@4.17.21)(rimraf@5.0.7)(simple-git@3.24.0)(tsup@8.0.2(postcss@8.4.38)(typescript@5.4.5))(typescript@5.4.5)':
     dependencies:
       chalk: 5.3.0
       inquirer: 9.2.22

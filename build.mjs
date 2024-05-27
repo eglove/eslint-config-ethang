@@ -1,5 +1,5 @@
 // @ts-check
-/* eslint-disable @typescript-eslint/no-unsafe-call */
+/** eslint-disable **/
 import { projectBuilder } from "@ethang/project-builder/project-builder.js";
 
 await projectBuilder("eslint-config-ethang", "master", {

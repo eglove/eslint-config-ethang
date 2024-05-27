@@ -1,5 +1,5 @@
 // @ts-check
-/* eslint-disable @typescript-eslint/no-unsafe-call,@typescript-eslint/no-unsafe-assignment,@typescript-eslint/no-unsafe-member-access,max-lines */
+/** eslint-disable **/
 import parser from "@typescript-eslint/parser";
 import astro from "eslint-plugin-astro";
 import a11y from "eslint-plugin-jsx-a11y/lib/index.js";
@@ -23,6 +23,7 @@ export default tseslint.config(
   eslintPluginPrettier,
   {
     files: ["astro"],
+    languageOptions,
     plugins: { astro },
     rules: {
       "astro/missing-client-only-directive-value": "error",
@@ -44,6 +45,7 @@ export default tseslint.config(
   },
   {
     files: ["jsx", "tsx"],
+    languageOptions,
     plugins: {
       react,
       "react-hooks": reactHooks,
@@ -134,12 +136,13 @@ export default tseslint.config(
       "react/static-property-placement": "error",
       "react/style-prop-object": "error",
       "react/void-dom-elements-no-children": "error",
-      // eslint-disable-next-line sort-keys
+
       "react-hooks/exhaustive-deps": "error",
       "react-hooks/rules-of-hooks": "error",
     },
   },
   {
+    files: ["js", "ts", "mjs"],
     languageOptions,
     plugins: {
       "@typescript-eslint": tseslint.plugin,
@@ -302,7 +305,7 @@ export default tseslint.config(
       "vars-on-top": "error",
       yoda: ["error", "always"],
       // eslint overloads
-      // eslint-disable-next-line sort-keys
+
       "class-methods-use-this": "off", // Handled by tseslint
       "default-param-last": "off", // Handled by tseslint
       "dot-notation": "off", // Handled by tseslint
@@ -326,7 +329,6 @@ export default tseslint.config(
       "prefer-promise-reject-errors": "off", // Handled by tseslint
       "require-await": "off", // Handled by tseslint
 
-      // eslint-disable-next-line sort-keys
       "n/exports-style": ["error", "exports"],
       "n/file-extension-in-import": ["error", "always"],
       "n/no-deprecated-api": "error",
@@ -343,7 +345,7 @@ export default tseslint.config(
       "n/prefer-node-protocol": "error",
 
       // typescript-eslint
-      // eslint-disable-next-line sort-keys
+
       "@typescript-eslint/adjacent-overload-signatures": "error",
       "@typescript-eslint/array-type": "error",
       "@typescript-eslint/await-thenable": "error",
@@ -582,11 +584,9 @@ export default tseslint.config(
       "unicorn/text-encoding-identifier-case": "error",
       "unicorn/throw-new-error": "error",
 
-      // eslint-disable-next-line sort-keys
       "simple-import-sort/exports": "error",
       "simple-import-sort/imports": "error",
 
-      // eslint-disable-next-line sort-keys
       "a11y/alt-text": "error",
       "a11y/anchor-ambiguous-text": "error",
       "a11y/anchor-has-content": "error",

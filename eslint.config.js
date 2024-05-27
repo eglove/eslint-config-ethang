@@ -334,7 +334,6 @@ export default tseslint.config(
       "require-await": "off", // Handled by tseslint
 
       "n/exports-style": ["error", "exports"],
-      "n/file-extension-in-import": ["error", "always"],
       "n/no-deprecated-api": "error",
       "n/no-exports-assign": "error",
       "n/no-extraneous-import": "error",

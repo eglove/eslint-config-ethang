@@ -6,7 +6,7 @@
   },
   "main": "eslint.config.js",
   "scripts": {
-    "lint": "eslint --fix",
+    "lint": "eslint . --fix",
     "build": "node build.mjs"
   },
   "type": "module",

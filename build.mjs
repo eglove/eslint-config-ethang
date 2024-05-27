@@ -1,5 +1,4 @@
 // @ts-check
-/** eslint-disable **/
 import { projectBuilder } from "@ethang/project-builder/project-builder.js";
 
 await projectBuilder("eslint-config-ethang", "master", {

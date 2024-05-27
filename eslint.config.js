@@ -1,5 +1,4 @@
 // @ts-check
-/** eslint-disable **/
 import parser from "@typescript-eslint/parser";
 import astro from "eslint-plugin-astro";
 import a11y from "eslint-plugin-jsx-a11y/lib/index.js";

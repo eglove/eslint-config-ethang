@@ -75,8 +75,6 @@ export default tseslint.config(
       "react/jsx-filename-extension": "error",
       "react/jsx-fragments": "error",
       "react/jsx-handler-names": "error",
-      "react/jsx-indent": "error",
-      "react/jsx-indent-props": "error",
       "react/jsx-key": "error",
       "react/jsx-max-depth": "error",
       "react/jsx-max-props-per-line": "error",

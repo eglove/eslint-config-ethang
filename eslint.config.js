@@ -306,7 +306,6 @@ export default tseslint.config(
       yoda: ["error", "always"],
       // eslint overloads
 
-      "class-methods-use-this": "off", // Handled by tseslint
       "default-param-last": "off", // Handled by tseslint
       "dot-notation": "off", // Handled by tseslint
       "max-params": "off", // Handled by tseslint
@@ -351,7 +350,6 @@ export default tseslint.config(
       "@typescript-eslint/ban-tslint-comment": "error",
       "@typescript-eslint/ban-types": "error",
       "@typescript-eslint/class-literal-property-style": "error",
-      "@typescript-eslint/class-methods-use-this": "error",
       "@typescript-eslint/consistent-generic-constructors": "error",
       "@typescript-eslint/consistent-indexed-object-style": "error",
       "@typescript-eslint/consistent-type-assertions": "error",

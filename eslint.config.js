@@ -478,7 +478,6 @@ export default tseslint.config(
       "unicorn/error-message": "error",
       "unicorn/escape-case": "error",
       "unicorn/expiring-todo-comments": "error",
-      "unicorn/explicit-length-check": "error",
       "unicorn/filename-case": "error",
       "unicorn/import-style": "error",
       "unicorn/new-for-builtins": "error",

@@ -136,7 +136,7 @@ export default tseslint.config(
     },
   },
   {
-    files: ["**/*.{js,ts,mjs}"],
+    files: ["**/*.{js,ts,mjs,jsx,tsx,astro}"],
     ignores,
     languageOptions,
     plugins: {

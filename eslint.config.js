@@ -18,10 +18,13 @@ const languageOptions = {
   },
 };
 
+const ignores = ["eslint.config.js", "node_modules", "dist"];
+
 export default tseslint.config(
   eslintPluginPrettier,
   {
-    files: ["astro"],
+    files: ["**/*.{astro}"],
+    ignores,
     languageOptions,
     plugins: { astro },
     rules: {
@@ -43,7 +46,8 @@ export default tseslint.config(
     },
   },
   {
-    files: ["jsx", "tsx"],
+    files: ["**/*.{jsx,tsx}"],
+    ignores,
     languageOptions,
     plugins: {
       react,
@@ -141,7 +145,8 @@ export default tseslint.config(
     },
   },
   {
-    files: ["js", "ts", "mjs"],
+    files: ["**/*.{js,ts,mjs}"],
+    ignores,
     languageOptions,
     plugins: {
       "@typescript-eslint": tseslint.plugin,

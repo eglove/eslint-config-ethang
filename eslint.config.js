@@ -256,7 +256,6 @@ export default tseslint.config(
       "no-shadow-restricted-names": "error",
       "no-sparse-arrays": "error",
       "no-this-before-super": "error",
-      "no-undef": "error",
       "no-undef-init": "error",
       "no-unmodified-loop-condition": "error",
       "no-unneeded-ternary": "error",

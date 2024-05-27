@@ -9,6 +9,7 @@ import reactHooks from "eslint-plugin-react-hooks";
 import importSort from "eslint-plugin-simple-import-sort";
 import unicorn from "eslint-plugin-unicorn";
 import tseslint from "typescript-eslint";
+import sonar from "eslint-plugin-sonarjs";
 
 const languageOptions = {
   parser,
@@ -65,20 +66,12 @@ export default tseslint.config(
       "react/hook-use-state": "error",
       "react/iframe-missing-sandbox": "error",
       "react/jsx-boolean-value": "error",
-      "react/jsx-child-element-spacing": "error",
-      "react/jsx-closing-bracket-location": "error",
-      "react/jsx-closing-tag-location": "error",
       "react/jsx-curly-brace-presence": "error",
-      "react/jsx-curly-newline": "error",
-      "react/jsx-curly-spacing": "error",
-      "react/jsx-equals-spacing": "error",
       "react/jsx-filename-extension": "error",
       "react/jsx-fragments": "error",
       "react/jsx-handler-names": "error",
       "react/jsx-key": "error",
       "react/jsx-max-depth": "error",
-      "react/jsx-max-props-per-line": "error",
-      "react/jsx-newline": "error",
       "react/jsx-no-bind": "error",
       "react/jsx-no-comment-textnodes": "error",
       "react/jsx-no-constructed-context-values": "error",
@@ -150,6 +143,7 @@ export default tseslint.config(
       "@typescript-eslint": tseslint.plugin,
       a11y,
       n,
+      sonar,
       "simple-import-sort": importSort,
       unicorn,
     },
@@ -157,7 +151,6 @@ export default tseslint.config(
       "accessor-pairs": "error",
       "array-callback-return": "error",
       "block-scoped-var": "error",
-      complexity: "error",
       "consistent-this": "error",
       "constructor-super": "error",
       eqeqeq: "error",
@@ -306,6 +299,7 @@ export default tseslint.config(
       yoda: ["error", "always"],
       // eslint overloads
 
+      complexity: "off", // Handled by Sonar
       "default-param-last": "off", // Handled by tseslint
       "dot-notation": "off", // Handled by tseslint
       "max-params": "off", // Handled by tseslint
@@ -494,7 +488,6 @@ export default tseslint.config(
       "unicorn/no-lonely-if": "error",
       "unicorn/no-magic-array-flat-depth": "error",
       "unicorn/no-negated-condition": "error",
-      "unicorn/no-nested-ternary": "error",
       "unicorn/no-new-array": "error",
       "unicorn/no-new-buffer": "error",
       "unicorn/no-object-as-default-parameter": "error",
@@ -516,7 +509,6 @@ export default tseslint.config(
       "unicorn/no-useless-switch-case": "error",
       "unicorn/no-useless-undefined": "error",
       "unicorn/no-zero-fractions": "error",
-      "unicorn/number-literal-case": "error",
       "unicorn/numeric-separators-style": "error",
       "unicorn/prefer-add-event-listener": "error",
       "unicorn/prefer-array-find": "error",
@@ -573,9 +565,41 @@ export default tseslint.config(
       "unicorn/require-post-message-target-origin": "error",
       "unicorn/string-content": "error",
       "unicorn/switch-case-braces": "error",
-      "unicorn/template-indent": "error",
       "unicorn/text-encoding-identifier-case": "error",
       "unicorn/throw-new-error": "error",
+
+      "sonar/cognitive-complexity": "error",
+      "sonar/elseif-without-else": "error",
+      "sonar/max-switch-cases": "error",
+      "sonar/no-all-duplicated-branches": "error",
+      "sonar/no-collapsible-if": "error",
+      "sonar/no-collection-size-mischeck": "error",
+      "sonar/no-duplicate-string": "error",
+      "sonar/no-duplicated-branches": "error",
+      "sonar/no-element-overwrite": "error",
+      "sonar/no-empty-collection": "error",
+      "sonar/no-extra-arguments": "error",
+      "sonar/no-gratuitous-expressions": "error",
+      "sonar/no-identical-conditions": "error",
+      "sonar/no-identical-expressions": "error",
+      "sonar/no-identical-functions": "error",
+      "sonar/no-ignored-return": "error",
+      "sonar/no-inverted-boolean-check": "error",
+      "sonar/no-nested-switch": "error",
+      "sonar/no-nested-template-literals": "error",
+      "sonar/no-one-iteration-loop": "error",
+      "sonar/no-redundant-boolean": "error",
+      "sonar/no-redundant-jump": "error",
+      "sonar/no-same-line-conditional": "error",
+      "sonar/no-small-switch": "error",
+      "sonar/no-unused-collection": "error",
+      "sonar/no-use-of-empty-return-value": "error",
+      "sonar/no-useless-catch": "error",
+      "sonar/non-existent-operator": "error",
+      "sonar/prefer-immediate-return": "error",
+      "sonar/prefer-object-literal": "error",
+      "sonar/prefer-single-boolean-return": "error",
+      "sonar/prefer-while": "error",
 
       "simple-import-sort/exports": "error",
       "simple-import-sort/imports": "error",

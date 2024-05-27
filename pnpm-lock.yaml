@@ -57,6 +57,9 @@ importers:
       '@ethang/project-builder':
         specifier: ^1.1.37
         version: 1.1.37(chalk@5.3.0)(inquirer@9.2.22)(lodash@4.17.21)(rimraf@5.0.7)(simple-git@3.24.0)(tsup@8.0.2(postcss@8.4.38)(typescript@5.4.5))(typescript@5.4.5)
+      eslint-plugin-sonarjs:
+        specifier: ^1.0.3
+        version: 1.0.3(eslint@9.3.0)
 
 packages:
 
@@ -887,6 +890,12 @@ packages:
     resolution: {integrity: sha512-Y2fqAfC11TcG/WP3TrI1Gi3p3nc8XJyEOJYHyEPEGI/UAgNx6akxxlX74p7SbAQdLcgASKhj8M0GKvH3vq/+ig==}
     peerDependencies:
       eslint: '>=5.0.0'
+
+  eslint-plugin-sonarjs@1.0.3:
+    resolution: {integrity: sha512-6s41HLPYPyDrp+5+7Db5yFYbod6h9pC7yx+xfcNwHRcLe1EZwbbQT/tdOAkR7ekVUkNGEvN3GmYakIoQUX7dEg==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      eslint: ^8.0.0 || ^9.0.0
 
   eslint-plugin-unicorn@53.0.0:
     resolution: {integrity: sha512-kuTcNo9IwwUCfyHGwQFOK/HjJAYzbODHN3wP0PgqbW+jbXqpNWxNVpVhj2tO9SixBwuAdmal8rVcWKBxwFnGuw==}
@@ -2887,6 +2896,10 @@ snapshots:
       string.prototype.matchall: 4.0.11
 
   eslint-plugin-simple-import-sort@12.1.0(eslint@9.3.0):
+    dependencies:
+      eslint: 9.3.0
+
+  eslint-plugin-sonarjs@1.0.3(eslint@9.3.0):
     dependencies:
       eslint: 9.3.0
 

@@ -67,7 +67,10 @@ export default tseslint.config(
       "react/iframe-missing-sandbox": "error",
       "react/jsx-boolean-value": "error",
       "react/jsx-curly-brace-presence": "error",
-      "react/jsx-filename-extension": "error",
+      "react/jsx-filename-extension": [
+        "error",
+        { extensions: [".jsx", ".tsx"] },
+      ],
       "react/jsx-fragments": "error",
       "react/jsx-handler-names": "error",
       "react/jsx-key": "error",

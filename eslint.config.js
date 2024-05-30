@@ -14,7 +14,7 @@ import sonar from "eslint-plugin-sonarjs";
 const languageOptions = {
   parser,
   parserOptions: {
-    project: "./tsconfig.json",
+    project: true,
     tsconfigRootDir: import.meta.dirname,
   },
 };

@@ -150,7 +150,7 @@ export default tseslint.config(
       sonar,
       "simple-import-sort": importSort,
       unicorn,
-      tanstackQuery: {
+      "@tanstack/query": {
         rules: tanstackRules,
       },
     },
@@ -605,9 +605,9 @@ export default tseslint.config(
       "sonar/prefer-single-boolean-return": "error",
       "sonar/prefer-while": "error",
 
-      "tanstackQuery/exhaustive-deps": "error",
-      "tanstackQuery/stable-query-client": "error",
-      "tanstackQuery/no-rest-destructuring": "error",
+      "@tanstack/query/exhaustive-deps": "error",
+      "@tanstack/query/stable-query-client": "error",
+      "@tanstack/query/no-rest-destructuring": "error",
 
       "simple-import-sort/exports": "error",
       "simple-import-sort/imports": "error",

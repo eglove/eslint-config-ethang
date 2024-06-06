@@ -10,6 +10,7 @@ import importSort from "eslint-plugin-simple-import-sort";
 import unicorn from "eslint-plugin-unicorn";
 import tseslint from "typescript-eslint";
 import sonar from "eslint-plugin-sonarjs";
+import { rules as tanstackRules } from "@tanstack/eslint-plugin-query";
 
 const languageOptions = {
   parser,
@@ -149,6 +150,9 @@ export default tseslint.config(
       sonar,
       "simple-import-sort": importSort,
       unicorn,
+      tanstackQuery: {
+        rules: tanstackRules,
+      },
     },
     rules: {
       "accessor-pairs": "error",
@@ -300,8 +304,8 @@ export default tseslint.config(
       "valid-typeof": "error",
       "vars-on-top": "error",
       yoda: ["error", "always"],
-      // eslint overloads
 
+      // eslint overloads
       complexity: "off", // Handled by Sonar
       "default-param-last": "off", // Handled by tseslint
       "dot-notation": "off", // Handled by tseslint
@@ -337,8 +341,6 @@ export default tseslint.config(
       "n/no-unsupported-features/es-syntax": "error",
       "n/no-unsupported-features/node-builtins": "error",
       "n/prefer-node-protocol": "error",
-
-      // typescript-eslint
 
       "@typescript-eslint/adjacent-overload-signatures": "error",
       "@typescript-eslint/array-type": "error",
@@ -422,7 +424,7 @@ export default tseslint.config(
       ],
       "@typescript-eslint/no-useless-constructor": "error",
       "@typescript-eslint/no-useless-empty-export": "error",
-      "@typescript-eslint/no-useless-template-literals": "error",
+      "@typescript-eslint/no-unnecessary-template-expression": "error",
       "@typescript-eslint/no-var-requires": "error",
       "@typescript-eslint/non-nullable-type-assertion-style": "error",
       "@typescript-eslint/only-throw-error": "error",
@@ -443,7 +445,6 @@ export default tseslint.config(
       "@typescript-eslint/prefer-regexp-exec": "error",
       "@typescript-eslint/prefer-return-this-type": "error",
       "@typescript-eslint/prefer-string-starts-ends-with": "error",
-      "@typescript-eslint/prefer-ts-expect-error": "error",
       "@typescript-eslint/promise-function-async": "error",
       "@typescript-eslint/require-array-sort-compare": "error",
       "@typescript-eslint/require-await": "error",
@@ -603,6 +604,10 @@ export default tseslint.config(
       "sonar/prefer-object-literal": "error",
       "sonar/prefer-single-boolean-return": "error",
       "sonar/prefer-while": "error",
+
+      "tanstackQuery/exhaustive-deps": "error",
+      "tanstackQuery/stable-query-client": "error",
+      "tanstackQuery/no-rest-destructuring": "error",
 
       "simple-import-sort/exports": "error",
       "simple-import-sort/imports": "error",

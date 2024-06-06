@@ -9,6 +9,7 @@
 * Includes [jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
 * Includes [eslint-plugin-astro](https://www.npmjs.com/package/eslint-plugin-astro)
 * Includes [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
+* Include [@tanstack/eslint-plugin-query](https://tanstack.com/query/latest/docs/eslint/eslint-plugin-query)
 * Import sorting with [eslint-plugin-simple-import-sort](https://github.com/lydell/eslint-plugin-simple-import-sort)
 * Includes Prettier built in (do NOT use this with a separate Prettier config.)
 * And more...

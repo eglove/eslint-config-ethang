@@ -280,7 +280,7 @@ export default tseslint.config(
       "no-dupe-else-if": "error",
       "no-dupe-keys": "error",
       "no-duplicate-case": "error",
-      "no-duplicate-imports": "off",
+      "no-duplicate-imports": "off", // Conflicts with seperate type imports
       "no-else-return": "error",
       "no-empty": "error",
       "no-empty-character-class": "error",

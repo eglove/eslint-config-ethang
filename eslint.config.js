@@ -400,11 +400,13 @@ export default tseslint.config(
       "operator-assignment": "error",
       "padding-line-between-statements": "off",
       "prefer-const": "error",
+      "prefer-destructuring": "off", // Handled by tseslint
       "prefer-exponentiation-operator": "error",
       "prefer-named-capture-group": "error",
       "prefer-numeric-literals": "error",
       "prefer-object-has-own": "error",
       "prefer-object-spread": "error",
+      "prefer-promise-reject-errors": "off", // Handled by tseslint
       "prefer-reflect": "off",
       "prefer-regex-literals": "error",
       "prefer-rest-params": "error",
@@ -412,10 +414,12 @@ export default tseslint.config(
       "prefer-template": "error",
       radix: "error",
       "require-atomic-updates": "error",
+      "require-await": "off", // Handled by tseslint
       "require-unicode-regexp": "error",
       "require-yield": "error",
       "spaced-comment": "off",
       "sort-imports": "off",
+      "sort-keys": "off", // Handled by perfectionist
       "sort-vars": "error",
       strict: "error",
       "symbol-description": "error",
@@ -424,11 +428,6 @@ export default tseslint.config(
       "valid-typeof": "error",
       "vars-on-top": "error",
       yoda: ["error", "always"],
-
-      "prefer-destructuring": "off", // Handled by tseslint
-      "prefer-promise-reject-errors": "off", // Handled by tseslint
-      "require-await": "off", // Handled by tseslint
-      "sort-keys": "off", // Handled by perfectionist
 
       "n/callback-return": "off",
       "n/exports-style": ["error", "exports"],
@@ -779,7 +778,12 @@ export default tseslint.config(
       "@tanstack/query/stable-query-client": "error",
 
       "perfectionist/sort-array-includes": "error",
-      "perfectionist/sort-astro-attributes": "error",
+      "perfectionist/sort-astro-attributes": [
+        "error",
+        {
+          groups: ["astro-shorthand", "shorthand", "multiline"],
+        },
+      ],
       "perfectionist/sort-classes": "error",
       "perfectionist/sort-enums": "error",
       "perfectionist/sort-exports": "error",
@@ -800,16 +804,27 @@ export default tseslint.config(
         },
       ],
       "perfectionist/sort-interfaces": "error",
-      "perfectionist/sort-jsx-props": "error",
+      "perfectionist/sort-jsx-props": [
+        "error",
+        { groups: ["shorthand", "multiline"] },
+      ],
       "perfectionist/sort-maps": "error",
       "perfectionist/sort-named-exports": "error",
       "perfectionist/sort-named-imports": "error",
       "perfectionist/sort-object-types": "error",
       "perfectionist/sort-objects": "error",
-      "perfectionist/sort-svelte-attributes": "error",
+      "perfectionist/sort-svelte-attributes": [
+        "error",
+        {
+          groups: ["svelte-shorthand", "shorthand", "multiline"],
+        },
+      ],
       "perfectionist/sort-intersection-types": "error",
       "perfectionist/sort-union-types": "error",
-      "perfectionist/sort-vue-attributes": "error",
+      "perfectionist/sort-vue-attributes": [
+        "error",
+        { groups: ["shorthand", "multiline"] },
+      ],
 
       "a11y/accessible-emoji": "off",
       "a11y/alt-text": "error",

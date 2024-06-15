@@ -432,7 +432,7 @@ export default tseslint.config(
 
       "n/callback-return": "off",
       "n/exports-style": ["error", "exports"],
-      "n/file-extension-in-import": "error",
+      "n/file-extension-in-import": "off", // buggy with .ts
       "n/global-require": "off",
       "n/handle-callback-err": "error",
       "n/hashbang": "off",

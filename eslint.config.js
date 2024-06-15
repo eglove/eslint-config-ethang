@@ -492,6 +492,7 @@ export default tseslint.config(
       "unicorn/no-lonely-if": "error",
       "unicorn/no-magic-array-flat-depth": "error",
       "unicorn/no-negated-condition": "error",
+      "unicorn/no-negation-in-equality-check": "error",
       "unicorn/no-new-array": "error",
       "unicorn/no-new-buffer": "error",
       "unicorn/no-object-as-default-parameter": "error",
@@ -606,8 +607,9 @@ export default tseslint.config(
       "sonar/prefer-while": "error",
 
       "@tanstack/query/exhaustive-deps": "error",
+      "@tanstack/query/no-deprecated-options": "error",
+      "@tanstack/query/prefer-query-object-syntax": "error",
       "@tanstack/query/stable-query-client": "error",
-      "@tanstack/query/no-rest-destructuring": "error",
 
       "simple-import-sort/exports": "error",
       "simple-import-sort/imports": "error",

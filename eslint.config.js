@@ -123,7 +123,6 @@ export default tseslint.config(
       "react/prefer-read-only-props": "error",
       "react/prefer-stateless-function": "error",
       "react/prop-types": "error",
-      "react/require-default-props": "error",
       "react/require-optimization": "error",
       "react/require-render-return": "error",
       "react/self-closing-comp": "error",

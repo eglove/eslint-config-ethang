@@ -1,18 +1,18 @@
 # Opinionated, Strict, Brutal, Unforgiving
 
-* More than 500 errored rules.
-* Over 100 vanilla ESLint rules.
-* Over 100 rules from [@typescript/eslint](https://github.com/typescript-eslint/typescript-eslint)
-* Over 100 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
-* Nearly 100 rules from [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
-* Includes [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)
-* Includes [jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
-* Includes [eslint-plugin-astro](https://www.npmjs.com/package/eslint-plugin-astro)
-* Includes [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
-* Include [@tanstack/eslint-plugin-query](https://tanstack.com/query/latest/docs/eslint/eslint-plugin-query)
-* Import sorting with [eslint-plugin-simple-import-sort](https://github.com/lydell/eslint-plugin-simple-import-sort)
+* 593 errored rules.
+* 141 rules from vanilla EsLint
+* 112 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
+* 103 rules from [@typescript/eslint](https://github.com/typescript-eslint/typescript-eslint)
+* 75 rules from [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
+* 51 rules from [eslint-plugin-astro](https://www.npmjs.com/package/eslint-plugin-astro)
+* 35 rules from [jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
+* 32 rules from [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
+* 21 rules from [eslint-plugin-n](https://github.com/eslint-community/eslint-plugin-n/tree/67bbfdf3c6862dcbfe455a4afbd83fa60f9d1ea4)
+* 17 rules from [eslint-plugin-perfectionist](https://github.com/azat-io/eslint-plugin-perfectionist)
+* 3 rules from [@tanstack/eslint-plugin-query](https://tanstack.com/query/latest/docs/eslint/eslint-plugin-query)
+* 2 rules from [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)
 * Includes Prettier built in (do NOT use this with a separate Prettier config.)
-* And more...
 
 # Install
 

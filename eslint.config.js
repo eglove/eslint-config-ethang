@@ -494,7 +494,7 @@ export default tseslint.config(
       "@typescript-eslint/init-declarations": "off",
       "@typescript-eslint/lines-between-class-members": "off",
       "@typescript-eslint/max-params": "error",
-      "@typescript-eslint/member-ordering": "error",
+      "@typescript-eslint/member-ordering": "off", // Conflicts with perfectionist/sort-classes
       "@typescript-eslint/method-signature-style": "error",
       "@typescript-eslint/naming-convention": "off",
       "@typescript-eslint/no-array-constructor": "error",

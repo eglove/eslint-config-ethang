@@ -607,8 +607,7 @@ export default tseslint.config(
       "sonar/prefer-while": "error",
 
       "@tanstack/query/exhaustive-deps": "error",
-      "@tanstack/query/no-deprecated-options": "error",
-      "@tanstack/query/prefer-query-object-syntax": "error",
+      "@tanstack/query/no-rest-destructuring": "error",
       "@tanstack/query/stable-query-client": "error",
 
       "simple-import-sort/exports": "error",

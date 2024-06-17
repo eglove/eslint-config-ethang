@@ -1,5 +1,7 @@
 # Opinionated, Strict, Brutal, Unforgiving
 
+[View Config](https://eslint-config-ethang.pages.dev/rules)
+
 * 589 errored rules.
 * 140 rules from vanilla EsLint
 * 112 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)

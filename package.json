@@ -9,6 +9,9 @@
     "lint": "eslint . --fix",
     "build": "node build.mjs"
   },
+  "engines": {
+    "node": ">=20"
+  },
   "type": "module",
   "author": "Ethan Glover",
   "license": "ISC",

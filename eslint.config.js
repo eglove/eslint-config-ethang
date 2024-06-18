@@ -204,6 +204,7 @@ export default tseslint.config(
     rules: {
       "accessor-pairs": "error",
       "array-callback-return": "error",
+      "arrow-body-style": ["error", "always"],
       "block-scoped-var": "error",
       "callback-return": "off", // deprecated
       camelcase: "off", // not useful

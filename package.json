@@ -6,7 +6,7 @@
   },
   "main": "eslint.config.js",
   "scripts": {
-    "lint": "eslint . --fix",
+    "lint": "eslint . --fix --ignore-pattern=\".eslint-config-inspector\"",
     "build": "pnpx @eslint/config-inspector build"
   },
   "engines": {

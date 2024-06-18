@@ -20,7 +20,12 @@ const languageOptions = {
   },
 };
 
-const ignores = ["eslint.config.js", "node_modules", "dist"];
+const ignores = [
+  "eslint.config.js",
+  "node_modules",
+  "dist",
+  ".eslint-config-inspector",
+];
 
 export default tseslint.config(
   eslintPluginPrettier,

@@ -400,6 +400,7 @@ export default tseslint.config(
       "one-var": "off",
       "operator-assignment": "error",
       "padding-line-between-statements": "off",
+      "prefer-arrow-callback": "error",
       "prefer-const": "error",
       "prefer-destructuring": "off", // Handled by tseslint
       "prefer-exponentiation-operator": "error",

@@ -382,7 +382,7 @@ export default tseslint.config(
       "no-unused-private-class-members": "error",
       "no-unused-vars": "off", // Handled by tseslint
       "no-use-before-define": "off",
-      "no-useless-assignment": "error",
+      "no-useless-assignment": "off", // Currently causing version errors
       "no-useless-backreference": "error",
       "no-useless-call": "error",
       "no-useless-catch": "error",

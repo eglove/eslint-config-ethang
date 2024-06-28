@@ -18,7 +18,7 @@
 
 # Install
 
-`pnpm i -D typescript-eslint prettier @ethang/eslint-config`
+`pnpm i -D eslint prettier typescript-eslint @ethang/eslint-config`
 
 **Requires TypesScript and tsconfig.json at root directory.**
 

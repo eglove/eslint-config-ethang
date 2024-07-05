@@ -9,7 +9,7 @@ import reactHooks from "eslint-plugin-react-hooks";
 import unicorn from "eslint-plugin-unicorn";
 import tseslint from "typescript-eslint";
 import sonar from "eslint-plugin-sonarjs";
-import { rules as tanstackRules } from "@tanstack/eslint-plugin-query";
+import tanstack from "@tanstack/eslint-plugin-query";
 import perfectionist from "eslint-plugin-perfectionist";
 
 const languageOptions = {
@@ -197,9 +197,7 @@ export default tseslint.config(
       perfectionist,
       sonar,
       unicorn,
-      "@tanstack/query": {
-        rules: tanstackRules,
-      },
+      "@tanstack/query": tanstack,
     },
     rules: {
       "accessor-pairs": "error",

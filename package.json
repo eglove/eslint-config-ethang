@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@eslint/js": "^9.6.0",
-    "@tanstack/eslint-plugin-query": "^5.50.1",
+    "@tanstack/eslint-plugin-query": "^5.51.1",
     "@typescript-eslint/parser": "^7.16.0",
     "eslint": "^9.6.0",
     "eslint-config-prettier": "^9.1.0",

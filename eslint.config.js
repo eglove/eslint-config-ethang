@@ -778,6 +778,7 @@ export default tseslint.config(
       "sonar/prefer-while": "error",
 
       "@tanstack/query/exhaustive-deps": "error",
+      // "@tanstack/query/no-deprecated-options": "error", // not yet implemented
       "@tanstack/query/no-rest-destructuring": "error",
       "@tanstack/query/stable-query-client": "error",
 

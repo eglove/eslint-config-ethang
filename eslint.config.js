@@ -128,6 +128,7 @@ export default tseslint.config(
       "react/jsx-no-undef": "error",
       "react/jsx-no-useless-fragment": "error",
       "react/jsx-pascal-case": "error",
+      "react/jsx-props-no-spread-multi": "error",
       "react/jsx-props-no-spreading": "off",
       "react/jsx-sort-default-props": "off",
       "react/jsx-sort-props": "off", // Conflicts with perfectionist/sort-jsx-props

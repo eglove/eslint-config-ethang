@@ -17,7 +17,7 @@
   "license": "ISC",
   "peerDependencies": {
     "@eslint/js": "^9.7.0",
-    "@tanstack/eslint-plugin-query": "^5.51.10",
+    "@tanstack/eslint-plugin-query": "^5.51.12",
     "@typescript-eslint/parser": "^7.16.1",
     "eslint": "^9.7.0",
     "eslint-config-prettier": "^9.1.0",
@@ -26,7 +26,7 @@
     "eslint-plugin-n": "^17.9.0",
     "eslint-plugin-perfectionist": "^2.11.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.34.4",
+    "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-sonarjs": "1.0.3",
     "eslint-plugin-unicorn": "^54.0.0",

@@ -806,7 +806,7 @@ export default tseslint.config(
             "object",
             "unknown",
           ],
-          "newlines-between": "always",
+          newlinesBetween: "always",
         },
       ],
       "perfectionist/sort-interfaces": "error",
@@ -826,7 +826,21 @@ export default tseslint.config(
         },
       ],
       "perfectionist/sort-intersection-types": "error",
+      "perfectionist/sort-switch-case": [
+        "error",
+        {
+          type: "alphabetical",
+          order: "asc",
+        },
+      ],
       "perfectionist/sort-union-types": "error",
+      "perfectionist/sort-variable-declarations": [
+        "error",
+        {
+          type: "alphabetical",
+          order: "asc",
+        },
+      ],
       "perfectionist/sort-vue-attributes": [
         "error",
         { groups: ["shorthand", "multiline"] },

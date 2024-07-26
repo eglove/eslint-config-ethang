@@ -2,9 +2,9 @@
 
 [View Config](https://eslint-config-ethang.pages.dev/rules)
 
-* 598 errored rules.
+* 599 errored rules.
 * 141 rules from vanilla EsLint
-* 112 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
+* 113 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
 * 107 rules from [@typescript/eslint](https://github.com/typescript-eslint/typescript-eslint)
 * 75 rules from [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
 * 51 rules from [eslint-plugin-astro](https://www.npmjs.com/package/eslint-plugin-astro)

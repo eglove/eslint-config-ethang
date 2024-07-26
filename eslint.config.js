@@ -620,6 +620,7 @@ export default tseslint.config(
       "unicorn/consistent-empty-array-spread": "error",
       "unicorn/consistent-function-scoping": "error",
       "unicorn/custom-error-definition": "error",
+      "unicorn/no-length-as-slice-end": "error",
       "unicorn/error-message": "error",
       "unicorn/escape-case": "error",
       "unicorn/explicit-length-check": "off",

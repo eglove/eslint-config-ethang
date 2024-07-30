@@ -54,7 +54,7 @@
     "typescript-eslint": "^7.18.0"
   },
   "devDependencies": {
-    "@ethang/project-builder": "^1.1.49",
+    "@ethang/project-builder": "^1.1.50",
     "@tsconfig/node-lts": "^20.1.3",
     "@tsconfig/strictest": "^2.0.5"
   }

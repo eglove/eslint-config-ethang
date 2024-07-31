@@ -536,7 +536,6 @@ export default tseslint.config(
       "@typescript-eslint/no-restricted-types": "error",
       "@typescript-eslint/no-shadow": "error",
       "@typescript-eslint/no-this-alias": "error",
-      "@typescript-eslint/no-throw-literal": "off",
       "@typescript-eslint/no-type-alias": "off",
       "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
       "@typescript-eslint/no-unnecessary-condition": "error",
@@ -572,7 +571,6 @@ export default tseslint.config(
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-useless-constructor": "error",
       "@typescript-eslint/no-useless-empty-export": "error",
-      "@typescript-eslint/no-useless-template-literals": "off",
       "@typescript-eslint/no-unnecessary-template-expression": "error",
       "@typescript-eslint/no-var-requires": "off", // Deprecated
       "@typescript-eslint/no-wrapper-object-types": "error",

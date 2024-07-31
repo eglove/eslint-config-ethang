@@ -312,7 +312,7 @@ export default tseslint.config(
       "no-lone-blocks": "error",
       "no-lonely-if": "error",
       "no-loop-func": "off", // Handled by tseslint
-      "no-loss-of-precision": "off", // Handled by tseslint
+      "no-loss-of-precision": "error",
       "no-magic-numbers": "off",
       "no-misleading-character-class": "error",
       "no-mixed-requires": "off",
@@ -507,7 +507,7 @@ export default tseslint.config(
       "@typescript-eslint/no-duplicate-type-constituents": "error",
       "@typescript-eslint/no-dynamic-delete": "error",
       "@typescript-eslint/no-empty-function": "error",
-      "@typescript-eslint/no-empty-interface": "error",
+      "@typescript-eslint/no-empty-interface": "off", // Deprecated
       "@typescript-eslint/no-empty-object-type": "error",
       "@typescript-eslint/no-explicit-any": "error",
       "@typescript-eslint/no-extra-non-null-assertion": "error",
@@ -520,7 +520,7 @@ export default tseslint.config(
       "@typescript-eslint/no-invalid-this": "off",
       "@typescript-eslint/no-invalid-void-type": "error",
       "@typescript-eslint/no-loop-func": "error",
-      "@typescript-eslint/no-loss-of-precision": "error",
+      "@typescript-eslint/no-loss-of-precision": "off", // Deprecated
       "@typescript-eslint/no-magic-numbers": "off",
       "@typescript-eslint/no-meaningless-void-operator": "error",
       "@typescript-eslint/no-misused-new": "error",
@@ -534,6 +534,7 @@ export default tseslint.config(
       "@typescript-eslint/no-redundant-type-constituents": "error",
       "@typescript-eslint/no-require-imports": "error",
       "@typescript-eslint/no-restricted-imports": "error",
+      "@typescript-eslint/no-restricted-types": "error",
       "@typescript-eslint/no-shadow": "error",
       "@typescript-eslint/no-this-alias": "error",
       "@typescript-eslint/no-throw-literal": "off",
@@ -574,7 +575,7 @@ export default tseslint.config(
       "@typescript-eslint/no-useless-empty-export": "error",
       "@typescript-eslint/no-useless-template-literals": "off",
       "@typescript-eslint/no-unnecessary-template-expression": "error",
-      "@typescript-eslint/no-var-requires": "error",
+      "@typescript-eslint/no-var-requires": "off", // Deprecated
       "@typescript-eslint/no-wrapper-object-types": "error",
       "@typescript-eslint/non-nullable-type-assertion-style": "error",
       "@typescript-eslint/only-throw-error": "error",

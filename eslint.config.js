@@ -37,7 +37,7 @@ export default tseslint.config(eslintPluginPrettier, {
     "@tanstack/query": tanstack,
   },
   rules: {
-    "depend/ban-dependencies": "error",
+    "depend/ban-dependencies": ["error", { allowed: ["lodash"] }],
     "barrel/avoid-barrel-files": "error",
     "barrel/avoid-importing-barrel-files": "error",
     "barrel/avoid-namespace-import": "error",

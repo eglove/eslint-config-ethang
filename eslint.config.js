@@ -12,6 +12,7 @@ import depend from "eslint-plugin-depend";
 import barrel from "eslint-plugin-barrel-files";
 import compat from "eslint-plugin-compat";
 import lodashConfig from "eslint-plugin-lodash";
+import tailwind from "eslint-plugin-tailwindcss";
 
 export const languageOptions = {
   parser,
@@ -28,6 +29,7 @@ export default tseslint.config(eslintPluginPrettier, {
   ignores,
   languageOptions,
   plugins: {
+    "@tanstack/query": tanstack,
     "@typescript-eslint": tseslint.plugin,
     a11y,
     barrel,
@@ -37,8 +39,8 @@ export default tseslint.config(eslintPluginPrettier, {
     n,
     perfectionist,
     sonar,
+    tailwind,
     unicorn,
-    "@tanstack/query": tanstack,
   },
   rules: {
     "depend/ban-dependencies": ["error", { allowed: ["lodash"] }],
@@ -525,9 +527,16 @@ export default tseslint.config(eslintPluginPrettier, {
     "sonar/prefer-while": "error",
 
     "@tanstack/query/exhaustive-deps": "error",
-    // "@tanstack/query/no-deprecated-options": "error", // not yet implemented
     "@tanstack/query/no-rest-destructuring": "error",
     "@tanstack/query/stable-query-client": "error",
+
+    "tailwind/classnames-order": "error",
+    "tailwind/enforces-negative-arbitrary-values": "error",
+    "tailwind/enforces-shorthand": "error",
+    "tailwind/migration-from-tailwind-2": "error",
+    "tailwind/no-arbitrary-value": "error",
+    "tailwind/no-contradicting-classname": "error",
+    "tailwind/no-unnecessary-arbitrary-value": "error",
 
     "perfectionist/sort-array-includes": "error",
     "perfectionist/sort-astro-attributes": [

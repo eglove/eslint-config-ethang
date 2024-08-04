@@ -15,10 +15,10 @@
 
 # Add Even More!
 * 51 rules for **Astro**
-  * install [@ethang/eslint-config-astro](https://github.com/eglove/eslint-config-ethang-astro)
+  * pnpm i -D [@ethang/eslint-config-astro](https://github.com/eglove/eslint-config-ethang-astro)
   * 51 rules from [eslint-plugin-astro](https://github.com/ota-meshi/eslint-plugin-astro)
 * 77 rules for **React**
-  * install [@ethang/eslint-config-react](https://github.com/eglove/eslint-config-ethang-react)
+  * pnpm i -D [@ethang/eslint-config-react](https://github.com/eglove/eslint-config-ethang-react)
   * 75 rules from [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
   * 2 rules from [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)
 

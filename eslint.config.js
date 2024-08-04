@@ -10,6 +10,7 @@ import tanstack from "@tanstack/eslint-plugin-query";
 import perfectionist from "eslint-plugin-perfectionist";
 import depend from "eslint-plugin-depend";
 import barrel from "eslint-plugin-barrel-files";
+import github from "eslint-plugin-github";
 
 export const languageOptions = {
   parser,
@@ -30,6 +31,7 @@ export default tseslint.config(eslintPluginPrettier, {
     a11y,
     barrel,
     depend,
+    github,
     n,
     perfectionist,
     sonar,
@@ -328,6 +330,27 @@ export default tseslint.config(eslintPluginPrettier, {
     "@typescript-eslint/unbound-method": "error",
     "@typescript-eslint/unified-signatures": "error",
     "@typescript-eslint/use-unknown-in-catch-callback-variable": "error",
+
+    "github/a11y-no-visually-hidden-interactive-element": "error",
+    "github/a11y-no-title-attribute": "error",
+    "github/a11y-aria-label-is-well-formatted": "error",
+    "github/a11y-role-supports-aria-props": "error",
+    "github/a11y-svg-has-accessible-name": "error",
+    "github/array-foreach": "error",
+    "github/async-currenttarget": "error",
+    "github/async-preventdefault": "error",
+    "github/get-attribute": "error",
+    "github/no-blur": "error",
+    "github/no-dataset": "error",
+    "github/no-implicit-buggy-globals": "error",
+    "github/no-inner-html": "error",
+    "github/no-innerText": "error",
+    "github/no-dynamic-script-tag": "error",
+    "github/no-then": "error",
+    "github/no-useless-passive": "error",
+    "github/prefer-observers": "error",
+    "github/require-passive-events": "error",
+    "github/unescaped-html-literal": "error",
 
     "unicorn/better-regex": "error",
     "unicorn/catch-error-name": "error",

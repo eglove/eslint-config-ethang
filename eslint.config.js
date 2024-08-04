@@ -13,6 +13,7 @@ import barrel from "eslint-plugin-barrel-files";
 import compat from "eslint-plugin-compat";
 import lodashConfig from "eslint-plugin-lodash";
 import tailwind from "eslint-plugin-tailwindcss";
+import { plugin as exception } from "eslint-plugin-exception-handling";
 
 export const languageOptions = {
   parser,
@@ -35,6 +36,7 @@ export default tseslint.config(eslintPluginPrettier, {
     barrel,
     compat,
     depend,
+    exception,
     lodash: lodashConfig,
     n,
     perfectionist,
@@ -529,6 +531,10 @@ export default tseslint.config(eslintPluginPrettier, {
     "@tanstack/query/exhaustive-deps": "error",
     "@tanstack/query/no-rest-destructuring": "error",
     "@tanstack/query/stable-query-client": "error",
+
+    "exception/no-unhandled": "error",
+    "exception/might-throw": "error",
+    "exception/use-error-cause": "error",
 
     "tailwind/classnames-order": "error",
     "tailwind/enforces-negative-arbitrary-values": "error",

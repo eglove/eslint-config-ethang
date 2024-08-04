@@ -60,7 +60,7 @@
     "typescript-eslint": "^8.0.0"
   },
   "devDependencies": {
-    "@ethang/project-builder": "^1.1.52",
+    "@ethang/project-builder": "^1.1.53",
     "@tsconfig/node-lts": "^20.1.3",
     "@tsconfig/strictest": "^2.0.5"
   }

@@ -2,7 +2,7 @@
 
 [View Config](https://eslint-config-ethang.pages.dev/rules)
 
-* 597 errored rules.
+* 546 errored rules.
 * 142 rules from vanilla EsLint
 * 113 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
 * 104 rules from [@typescript/eslint](https://github.com/typescript-eslint/typescript-eslint)
@@ -16,8 +16,8 @@
 * Includes Prettier built in (do NOT use this with a separate Prettier config.)
 
 # Add Even More!
-* 51 rules for Astro files: [eslint-config-astro](https://github.com/eglove/eslint-config-ethang-astro)
-  * install @ethang/eslint-config-astro
+* 51 rules for **Astro** files.
+  * install [@ethang/eslint-config-astro](https://github.com/eglove/eslint-config-ethang-astro)
 
 # Install
 

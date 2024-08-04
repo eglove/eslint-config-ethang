@@ -25,7 +25,7 @@
   * 51 rules from [eslint-plugin-astro](https://github.com/ota-meshi/eslint-plugin-astro)
 * 72 rules for **React**
   * `import configReact from "@ethang/eslint-config/config.react.js";`
-  * 70 rules from [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
+  * 70 rules from [@eslint-react/eslint-plugin](https://eslint-react.xyz/)
   * 2 rules from [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)
 
 # Install

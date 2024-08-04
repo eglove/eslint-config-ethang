@@ -10,7 +10,8 @@ import tanstack from "@tanstack/eslint-plugin-query";
 import perfectionist from "eslint-plugin-perfectionist";
 import depend from "eslint-plugin-depend";
 import barrel from "eslint-plugin-barrel-files";
-import github from "eslint-plugin-github";
+import compat from "eslint-plugin-compat";
+import lodashConfig from "eslint-plugin-lodash";
 
 export const languageOptions = {
   parser,
@@ -30,8 +31,9 @@ export default tseslint.config(eslintPluginPrettier, {
     "@typescript-eslint": tseslint.plugin,
     a11y,
     barrel,
+    compat,
     depend,
-    github,
+    lodash: lodashConfig,
     n,
     perfectionist,
     sonar,
@@ -44,6 +46,7 @@ export default tseslint.config(eslintPluginPrettier, {
     "barrel/avoid-importing-barrel-files": "error",
     "barrel/avoid-namespace-import": "error",
     "barrel/avoid-re-export-all": "error",
+    "compat/compat": "error",
 
     "accessor-pairs": "error",
     "array-callback-return": "error",
@@ -444,6 +447,49 @@ export default tseslint.config(eslintPluginPrettier, {
     "unicorn/switch-case-braces": "error",
     "unicorn/text-encoding-identifier-case": "error",
     "unicorn/throw-new-error": "error",
+
+    "lodash/callback-binding": "error",
+    "lodash/chain-style": ["error", "as-needed"],
+    "lodash/chaining": "error",
+    "lodash/collection-method-value": "error",
+    "lodash/collection-ordering": "error",
+    "lodash/collection-return": "error",
+    "lodash/consistent-compose": ["error", "flow"],
+    "lodash/identity-shorthand": ["error", "always"],
+    "lodash/import-scope": ["error", "method"],
+    "lodash/matches-prop-shorthand": ["error", "always"],
+    "lodash/matches-shorthand": ["error", "always", 3],
+    "lodash/no-commit": "error",
+    "lodash/no-double-unwrap": "error",
+    "lodash/no-extra-args": "error",
+    "lodash/no-unbound-this": "error",
+    "lodash/path-style": ["error", "string"],
+    "lodash/prefer-compact": "error",
+    "lodash/prefer-constant": "error",
+    "lodash/prefer-filter": "error",
+    "lodash/prefer-find": "error",
+    "lodash/prefer-flat-map": "error",
+    "lodash/prefer-get": "error",
+    "lodash/prefer-immutable-method": "error",
+    "lodash/prefer-includes": ["error", { includeNative: true }],
+    "lodash/prefer-invoke-map": "error",
+    "lodash/prefer-is-nil": "error",
+    "lodash/prefer-lodash-chain": "error",
+    "lodash/prefer-lodash-method": "error",
+    "lodash/prefer-lodash-typecheck": "error",
+    "lodash/prefer-map": "error",
+    "lodash/prefer-matches": "error",
+    "lodash/prefer-noop": "error",
+    "lodash/prefer-over-quantifier": "error",
+    "lodash/prefer-reject": "error",
+    "lodash/prefer-some": ["error", { includeNative: true }],
+    "lodash/prefer-startswith": "error",
+    "lodash/prefer-thru": "error",
+    "lodash/prefer-times": "error",
+    "lodash/prefer-wrapper-method": "error",
+    "lodash/preferred-alias": "error",
+    "lodash/prop-shorthand": ["error", "always"],
+    "lodash/unwrap": "error",
 
     "sonar/cognitive-complexity": "error",
     "sonar/elseif-without-else": "error",

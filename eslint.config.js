@@ -342,7 +342,6 @@ export default tseslint.config(eslintPluginPrettier, {
     "github/get-attribute": "error",
     "github/no-blur": "error",
     "github/no-dataset": "error",
-    "github/no-implicit-buggy-globals": "error",
     "github/no-inner-html": "error",
     "github/no-innerText": "error",
     "github/no-dynamic-script-tag": "error",

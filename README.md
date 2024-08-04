@@ -66,7 +66,7 @@ export default tseslint.config(...config, ...astroConfig, ...reactConfig, {
 }
 ```
 
-** Browserslist **
+**Browserslist**
 
 This config will also lint for browserslist features. Make sure to set this in package.json. [More info.](https://github.com/browserslist/browserslist)
 

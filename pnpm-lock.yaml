@@ -1195,6 +1195,7 @@ packages:
     resolution: {integrity: sha512-NXeHXtFLZd6QGbS5af9tiwIoI+BVptHUcGkkF/ouvEPa+ZiZvK0xek4Yh6cd5jNDEg8P+tIA5xxB2ZC/RnqXyw==}
     peerDependencies:
       eslint: '>= 5'
+    bundledDependencies: []
 
   eslint-plugin-compat@6.0.0:
     resolution: {integrity: sha512-oIynkQYqGnW9ibHl1cGLER8XkUlKaOI8bS80Qz7CjKROvbQm4oN8fWb5l2cG9GJJ4h5eFIHPqkB9ZJuMzwpPFQ==}

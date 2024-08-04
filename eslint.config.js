@@ -9,7 +9,7 @@ import sonar from "eslint-plugin-sonarjs";
 import tanstack from "@tanstack/eslint-plugin-query";
 import perfectionist from "eslint-plugin-perfectionist";
 
-const languageOptions = {
+export const languageOptions = {
   parser,
   parserOptions: {
     project: true,
@@ -17,7 +17,7 @@ const languageOptions = {
   },
 };
 
-const ignores = ["eslint.config.js", "node_modules", "dist"];
+export const ignores = ["eslint.config.js", "node_modules", "dist"];
 
 export default tseslint.config(eslintPluginPrettier, {
   files: ["**/*.{js,ts,mjs,jsx,tsx}"],

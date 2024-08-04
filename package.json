@@ -25,6 +25,7 @@
     "eslint-plugin-astro": "^1.2.3",
     "eslint-plugin-barrel-files": "^2.1.0",
     "eslint-plugin-depend": "^0.9.0",
+    "eslint-plugin-github": "^5.0.1",
     "eslint-plugin-jsx-a11y": "^6.9.0",
     "eslint-plugin-n": "^17.10.1",
     "eslint-plugin-perfectionist": "^3.1.0",

@@ -35,8 +35,9 @@ In **eslint.config.js**
 ```js
 import config from "@ethang/eslint-config/eslint.config.js";
 import tseslint from "typescript-eslint";
+import astroConfig from "@ethang/eslint-config-astro" // OPTIONAL
 
-export default tseslint.config(...config, {
+export default tseslint.config(...config, ...astroConfig, {
   ignores: ["dist/"], // Your ignores directories
   languageOptions: {
     parserOptions: {

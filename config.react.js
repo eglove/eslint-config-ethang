@@ -1,20 +1,17 @@
-import parser from "@typescript-eslint/parser";
 import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import tseslint from "typescript-eslint";
 
+import { ignores, languageOptions } from "./eslint.config.js";
+
 export default tseslint.config({
   files: ["**/*.{jsx,tsx}"],
-  ignores: ["eslint.config.js", "node_modules", "dist"],
-  languageOptions: {
-    parser,
-    parserOptions: {
-      project: true,
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
+  ignores,
+  languageOptions,
   plugins: {
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     react,
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     "react-hooks": reactHooks,
   },
   rules: {

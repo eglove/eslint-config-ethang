@@ -2,7 +2,7 @@
 
 [View Config](https://eslint-config-ethang.pages.dev/rules)
 
-* 546 errored rules.
+* 468 errored rules.
 * 142 rules from vanilla EsLint
 * 113 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
 * 104 rules from [@typescript/eslint](https://github.com/typescript-eslint/typescript-eslint)

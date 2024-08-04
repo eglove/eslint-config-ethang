@@ -15,10 +15,10 @@
 
 # Add Even More!
 * 51 rules for **Astro**
-  * pnpm i -D [@ethang/eslint-config-astro](https://github.com/eglove/eslint-config-ethang-astro)
+  * `import configAstro from "@ethang/eslint-config/config.astro.js";`
   * 51 rules from [eslint-plugin-astro](https://github.com/ota-meshi/eslint-plugin-astro)
 * 77 rules for **React**
-  * pnpm i -D [@ethang/eslint-config-react](https://github.com/eglove/eslint-config-ethang-react)
+  * `import configReact from "@ethang/eslint-config/config.react.js";`
   * 75 rules from [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react)
   * 2 rules from [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)
 
@@ -35,10 +35,10 @@ In **eslint.config.js**
 ```js
 import config from "@ethang/eslint-config/eslint.config.js";
 import tseslint from "typescript-eslint";
-import astroConfig from "@ethang/eslint-config-astro" // OPTIONAL
+import configAstro from "@ethang/eslint-config/config.astro.js"; // OPTIONAL
+import configReact from "@ethang/eslint-config/config.react.js"; // OPTINAL
 
-export default tseslint.config(...config, ...astroConfig, {
-  ignores: ["dist/"], // Your ignores directories
+export default tseslint.config(...config, ...astroConfig, ...reactConfig, {
   languageOptions: {
     parserOptions: {
       project: true,

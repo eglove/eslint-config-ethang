@@ -22,7 +22,7 @@ export const languageOptions = {
 export const ignores = ["eslint.config.js", "node_modules", "dist"];
 
 export default tseslint.config(eslintPluginPrettier, {
-  files: ["**/*.*"],
+  files: ["**/*.{js,ts,jsx,tsx,cjs,mjs}"],
   ignores,
   languageOptions,
   plugins: {

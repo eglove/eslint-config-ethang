@@ -8,6 +8,8 @@ import tseslint from "typescript-eslint";
 import sonar from "eslint-plugin-sonarjs";
 import tanstack from "@tanstack/eslint-plugin-query";
 import perfectionist from "eslint-plugin-perfectionist";
+import depend from "eslint-plugin-depend";
+import barrel from "eslint-plugin-barrel-files";
 
 export const languageOptions = {
   parser,
@@ -20,12 +22,13 @@ export const languageOptions = {
 export const ignores = ["eslint.config.js", "node_modules", "dist"];
 
 export default tseslint.config(eslintPluginPrettier, {
-  files: ["**/*.{js,ts,mjs,jsx,tsx}"],
   ignores,
   languageOptions,
   plugins: {
     "@typescript-eslint": tseslint.plugin,
     a11y,
+    barrel,
+    depend,
     n,
     perfectionist,
     sonar,
@@ -33,6 +36,12 @@ export default tseslint.config(eslintPluginPrettier, {
     "@tanstack/query": tanstack,
   },
   rules: {
+    "depend/ban-dependencies": "error",
+    "barrel/avoid-barrel-files": "error",
+    "barrel/avoid-importing-barrel-files": "error",
+    "barrel/avoid-namespace-import": "error",
+    "barrel/avoid-re-export-all": "error",
+
     "accessor-pairs": "error",
     "array-callback-return": "error",
     "arrow-body-style": ["error", "always"],

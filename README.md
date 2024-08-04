@@ -68,8 +68,8 @@ export default tseslint.config(...config, ...astroConfig, ...reactConfig, {
 This config will also lint for browserslist features. Make sure to set this in package.json. [More info.](https://github.com/browserslist/browserslist)
 
 ```json
-  "browserslist": [
-"defaults and fully supports es6-module",
-"maintained node versions"
+"browserslist": [
+  "defaults and fully supports es6-module",
+  "maintained node versions"
 ]
 ```

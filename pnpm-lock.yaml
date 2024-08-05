@@ -79,8 +79,8 @@ importers:
         version: 8.0.1(eslint@9.8.0)(typescript@5.5.4)
     devDependencies:
       '@ethang/project-builder':
-        specifier: ^1.2.1
-        version: 1.2.1(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.1.8)(lodash@4.17.21)(simple-git@3.25.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.41)(typescript@5.5.4)(yaml@2.5.0))(typescript@5.5.4)
+        specifier: ^1.2.2
+        version: 1.2.2(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.1.8)(lodash@4.17.21)(simple-git@3.25.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.41)(typescript@5.5.4)(yaml@2.5.0))(typescript@5.5.4)
       '@tsconfig/node-lts':
         specifier: ^20.1.3
         version: 20.1.3
@@ -319,12 +319,12 @@ packages:
     resolution: {integrity: sha512-BsWiH1yFGjXXS2yvrf5LyuoSIIbPrGUWob917o+BTKuZ7qJdxX8aJLRxs1fS9n6r7vESrq1OUqb68dANcFXuQQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@ethang/project-builder@1.2.1':
-    resolution: {integrity: sha512-Kk+Ndzxxt7OUtoEsEbOQcC4KMEwQwU/hTugapbvpQ9qcuxWg7ye/zKAADjz5XrXXI10QHDVJhFdWq8aCinkmUw==}
+  '@ethang/project-builder@1.2.2':
+    resolution: {integrity: sha512-3gvdy80YqHVHDIrL70iS5siCrEpcF6C/1nAtRjGD6su0gWhquV3pdcNoGZNCpu6/cRzziPIEL21NrV04pOHppg==}
     peerDependencies:
       chalk: ^5.3.0
       fs-extra: ^11.2.0
-      inquirer: ^10.1.7
+      inquirer: ^10.1.8
       lodash: ^4.17.21
       simple-git: ^3.25.0
       tsup: ^8.2.4
@@ -2783,7 +2783,7 @@ snapshots:
 
   '@eslint/object-schema@2.1.4': {}
 
-  '@ethang/project-builder@1.2.1(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.1.8)(lodash@4.17.21)(simple-git@3.25.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.41)(typescript@5.5.4)(yaml@2.5.0))(typescript@5.5.4)':
+  '@ethang/project-builder@1.2.2(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.1.8)(lodash@4.17.21)(simple-git@3.25.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.41)(typescript@5.5.4)(yaml@2.5.0))(typescript@5.5.4)':
     dependencies:
       chalk: 5.3.0
       fs-extra: 11.2.0

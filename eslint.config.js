@@ -68,6 +68,7 @@ export default tseslint.config(eslintPluginPrettier, {
     "getter-return": "error",
     "grouped-accessor-pairs": "error",
     "guard-for-in": "error",
+    "linebreak-style": ["error", "unix"],
     "logical-assignment-operators": "error",
     "max-classes-per-file": "error",
     "max-depth": "error",

@@ -79,3 +79,11 @@ This config will also lint for browserslist features. Make sure to set this in p
   "maintained node versions"
 ]
 ```
+
+**.gitattributes**
+
+Line breaks are enforced for Unix style. (\n, not \r\n). It's highly recommended reflecting this in .gitattributes
+
+```githubexpressionlanguage
+* text eol=crlf
+```

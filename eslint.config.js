@@ -555,7 +555,7 @@ export default tseslint.config({
     "stylistic/func-call-spacing": "error",
     "stylistic/function-call-argument-newline": "error",
     "stylistic/function-call-spacing": "error",
-    "stylistic/function-paren-newline": "error",
+    "stylistic/function-paren-newline": ["error", "consistent"],
     "stylistic/generator-star-spacing": "error",
     "stylistic/implicit-arrow-linebreak": "error",
     "stylistic/indent": ["error", 2],

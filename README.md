@@ -35,7 +35,7 @@
 
 # Install
 
-`pnpm i -D eslint prettier typescript-eslint @ethang/eslint-config`
+`pnpm i -D eslint typescript-eslint @ethang/eslint-config`
 
 **Requires TypesScript and tsconfig.json at root directory.**
 
@@ -80,12 +80,4 @@ This config will also lint for browserslist features. Make sure to set this in p
   "defaults and fully supports es6-module",
   "maintained node versions"
 ]
-```
-
-**.gitattributes**
-
-Line breaks are enforced for Unix style. (\n, not \r\n). It's highly recommended reflecting this in .gitattributes
-
-```githubexpressionlanguage
-* text eol=crlf
 ```

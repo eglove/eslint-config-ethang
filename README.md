@@ -2,10 +2,13 @@
 
 [View Config](https://eslint-config-ethang.pages.dev/rules)
 
-* 524 errored rules.
+**Do NOT** use this with Prettier! Styling rules are included.
+
+* 615 errored rules.
 * 142 rules from vanilla EsLint
 * 113 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
 * 104 rules from [@typescript/eslint](https://github.com/typescript-eslint/typescript-eslint)
+* 92 rules from [@stylistic/eslint-plugin](https://eslint.style/)
 * 42 rules from [eslint-plugin-lodash](https://github.com/wix-incubator/eslint-plugin-lodash)
 * 35 rules from [jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
 * 32 rules from [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
@@ -17,7 +20,6 @@
 * 3 rules from [@tanstack/eslint-plugin-query](https://tanstack.com/query/latest/docs/eslint/eslint-plugin-query)
 * 1 rule from [eslint-plugin-depend](https://github.com/es-tooling/eslint-plugin-depend/tree/main)
 * 1 rule from [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat)
-* Includes Prettier built-in (do NOT use this with a separate Prettier config.)
 
 # Add Even More!
 * 51 rules for **Astro**

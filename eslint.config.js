@@ -2,7 +2,6 @@
 import parser from "@typescript-eslint/parser";
 import a11y from "eslint-plugin-jsx-a11y/lib/index.js";
 import n from "eslint-plugin-n";
-import eslintPluginPrettier from "eslint-plugin-prettier/recommended";
 import unicorn from "eslint-plugin-unicorn";
 import tseslint from "typescript-eslint";
 import sonar from "eslint-plugin-sonarjs";
@@ -13,18 +12,19 @@ import barrel from "eslint-plugin-barrel-files";
 import compat from "eslint-plugin-compat";
 import lodashConfig from "eslint-plugin-lodash";
 import tailwind from "eslint-plugin-tailwindcss";
+import stylistic from "@stylistic/eslint-plugin";
 
 export const languageOptions = {
   parser,
   parserOptions: {
     project: true,
-    tsconfigRootDir: import.meta.dirname,
-  },
+    tsconfigRootDir: import.meta.dirname
+  }
 };
 
 export const ignores = ["eslint.config.js", "node_modules", "dist"];
 
-export default tseslint.config(eslintPluginPrettier, {
+export default tseslint.config({
   files: ["**/*.{js,ts,jsx,tsx,cjs,mjs}"],
   ignores,
   languageOptions,
@@ -39,8 +39,9 @@ export default tseslint.config(eslintPluginPrettier, {
     n,
     perfectionist,
     sonar,
+    stylistic,
     tailwind,
-    unicorn,
+    unicorn
   },
   rules: {
     "depend/ban-dependencies": ["error", { allowed: ["lodash"] }],
@@ -62,13 +63,12 @@ export default tseslint.config(eslintPluginPrettier, {
       "error",
       "declaration",
       {
-        allowArrowFunctions: true,
-      },
+        allowArrowFunctions: true
+      }
     ],
     "getter-return": "error",
     "grouped-accessor-pairs": "error",
     "guard-for-in": "error",
-    "linebreak-style": ["error", "unix"],
     "logical-assignment-operators": "error",
     "max-classes-per-file": "error",
     "max-depth": "error",
@@ -298,8 +298,8 @@ export default tseslint.config(eslintPluginPrettier, {
         caughtErrorsIgnorePattern: "^_",
         destructuredArrayIgnorePattern: "^_",
         ignoreRestSiblings: true,
-        varsIgnorePattern: "^_",
-      },
+        varsIgnorePattern: "^_"
+      }
     ],
     "@typescript-eslint/no-useless-constructor": "error",
     "@typescript-eslint/no-useless-empty-export": "error",
@@ -539,12 +539,112 @@ export default tseslint.config(eslintPluginPrettier, {
     "tailwind/no-contradicting-classname": "error",
     "tailwind/no-unnecessary-arbitrary-value": "error",
 
+    "stylistic/array-bracket-newline": "error",
+    "stylistic/array-bracket-spacing": "error",
+    "stylistic/array-element-newline": "error",
+    "stylistic/arrow-parens": "error",
+    "stylistic/arrow-spacing": "error",
+    "stylistic/block-spacing": "error",
+    "stylistic/brace-style": "error",
+    "stylistic/comma-dangle": ["error", "always-multiline"],
+    "stylistic/comma-spacing": "error",
+    "stylistic/comma-style": "error",
+    "stylistic/computed-property-spacing": "error",
+    "stylistic/dot-location": "error",
+    "stylistic/eol-last": "error",
+    "stylistic/func-call-spacing": "error",
+    "stylistic/function-call-argument-newline": "error",
+    "stylistic/function-call-spacing": "error",
+    "stylistic/function-paren-newline": "error",
+    "stylistic/generator-star-spacing": "error",
+    "stylistic/implicit-arrow-linebreak": "error",
+    "stylistic/indent": "error",
+    "stylistic/jsx-quotes": "error",
+    "stylistic/key-spacing": "error",
+    "stylistic/keyword-spacing": "error",
+    "stylistic/linebreak-style": "error",
+    "stylistic/lines-around-comment": "error",
+    "stylistic/lines-between-class-members": "error",
+    "stylistic/max-len": ["error", {
+      "ignoreComments": true,
+      "ignoreTrailingComments": true,
+      "ignoreUrls": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true,
+      "ignoreRegExpLiterals": true
+    }],
+    "stylistic/max-statements-per-line": "error",
+    "stylistic/multiline-comment-style": "error",
+    "stylistic/multiline-ternary": "error",
+    "stylistic/new-parens": "error",
+    "stylistic/newline-per-chained-call": "error",
+    "stylistic/no-confusing-arrow": "error",
+    "stylistic/no-extra-parens": "error",
+    "stylistic/no-extra-semi": "error",
+    "stylistic/no-floating-decimal": "error",
+    "stylistic/no-mixed-operators": "error",
+    "stylistic/no-mixed-spaces-and-tabs": "error",
+    "stylistic/no-multi-spaces": "error",
+    "stylistic/no-multiple-empty-lines": "error",
+    "stylistic/no-tabs": "error",
+    "stylistic/no-trailing-spaces": "error",
+    "stylistic/no-whitespace-before-property": "error",
+    "stylistic/nonblock-statement-body-position": "error",
+    "stylistic/object-curly-newline": "error",
+    "stylistic/object-curly-spacing": "error",
+    "stylistic/object-property-newline": "error",
+    "stylistic/one-var-declaration-per-line": "error",
+    "stylistic/operator-linebreak": "error",
+    "stylistic/padded-blocks": "error",
+    "stylistic/padding-line-between-statements": "error",
+    "stylistic/quote-props": "error",
+    "stylistic/quotes": "error",
+    "stylistic/rest-spread-spacing": "error",
+    "stylistic/semi": "error",
+    "stylistic/semi-spacing": "error",
+    "stylistic/semi-style": "error",
+    "stylistic/space-before-blocks": "error",
+    "stylistic/space-before-function-paren": "error",
+    "stylistic/space-in-parens": "error",
+    "stylistic/space-infix-ops": "error",
+    "stylistic/space-unary-ops": "error",
+    "stylistic/spaced-comment": "error",
+    "stylistic/switch-colon-spacing": "error",
+    "stylistic/template-curly-spacing": "error",
+    "stylistic/template-tag-spacing": "error",
+    "stylistic/wrap-iife": "error",
+    "stylistic/wrap-regex": "error",
+    "stylistic/yield-star-spacing": "error",
+    "stylistic/jsx-child-element-spacing": "error",
+    "stylistic/jsx-closing-bracket-location": "error",
+    "stylistic/jsx-closing-tag-location": "error",
+    "stylistic/jsx-curly-brace-presence": "error",
+    "stylistic/jsx-curly-newline": "error",
+    "stylistic/jsx-curly-spacing": "error",
+    "stylistic/jsx-equals-spacing": "error",
+    "stylistic/jsx-first-prop-new-line": "error",
+    "stylistic/jsx-function-call-newline": "error",
+    "stylistic/jsx-indent-props": "error",
+    "stylistic/jsx-max-props-per-line": "error",
+    "stylistic/jsx-newline": "error",
+    "stylistic/jsx-one-expression-per-line": "error",
+    "stylistic/jsx-pascal-case": "error",
+    "stylistic/jsx-props-no-multi-spaces": "error",
+    "stylistic/jsx-self-closing-comp": "error",
+    "stylistic/jsx-tag-spacing": "error",
+    "stylistic/jsx-wrap-multilines": "error",
+    "stylistic/member-delimiter-style": "error",
+    "stylistic/type-annotation-spacing": "error",
+    "stylistic/indent-binary-ops": "error",
+    "stylistic/type-generic-spacing": "error",
+    "stylistic/type-named-tuple-spacing": "error",
+
     "perfectionist/sort-array-includes": "error",
     "perfectionist/sort-astro-attributes": [
       "error",
       {
-        groups: ["astro-shorthand", "shorthand", "multiline"],
-      },
+        groups: ["astro-shorthand", "shorthand", "multiline"]
+      }
     ],
     "perfectionist/sort-classes": "error",
     "perfectionist/sort-enums": "error",
@@ -560,15 +660,15 @@ export default tseslint.config(eslintPluginPrettier, {
           ["parent-type", "sibling-type", "index-type"],
           ["parent", "sibling", "index"],
           "object",
-          "unknown",
+          "unknown"
         ],
-        newlinesBetween: "always",
-      },
+        newlinesBetween: "always"
+      }
     ],
     "perfectionist/sort-interfaces": "error",
     "perfectionist/sort-jsx-props": [
       "error",
-      { groups: ["shorthand", "multiline"] },
+      { groups: ["shorthand", "multiline"] }
     ],
     "perfectionist/sort-maps": "error",
     "perfectionist/sort-named-exports": "error",
@@ -578,28 +678,28 @@ export default tseslint.config(eslintPluginPrettier, {
     "perfectionist/sort-svelte-attributes": [
       "error",
       {
-        groups: ["svelte-shorthand", "shorthand", "multiline"],
-      },
+        groups: ["svelte-shorthand", "shorthand", "multiline"]
+      }
     ],
     "perfectionist/sort-intersection-types": "error",
     "perfectionist/sort-switch-case": [
       "error",
       {
         type: "alphabetical",
-        order: "asc",
-      },
+        order: "asc"
+      }
     ],
     "perfectionist/sort-union-types": "error",
     "perfectionist/sort-variable-declarations": [
       "error",
       {
         type: "alphabetical",
-        order: "asc",
-      },
+        order: "asc"
+      }
     ],
     "perfectionist/sort-vue-attributes": [
       "error",
-      { groups: ["shorthand", "multiline"] },
+      { groups: ["shorthand", "multiline"] }
     ],
 
     "a11y/alt-text": "error",
@@ -636,6 +736,6 @@ export default tseslint.config(eslintPluginPrettier, {
     "a11y/role-has-required-aria-props": "error",
     "a11y/role-supports-aria-props": "error",
     "a11y/scope": "error",
-    "a11y/tabindex-no-positive": "error",
-  },
+    "a11y/tabindex-no-positive": "error"
+  }
 });

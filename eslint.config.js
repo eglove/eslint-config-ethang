@@ -595,7 +595,7 @@ export default tseslint.config({
     "stylistic/object-property-newline": "error",
     "stylistic/one-var-declaration-per-line": "error",
     "stylistic/operator-linebreak": "error",
-    "stylistic/padded-blocks": "error",
+    "stylistic/padded-blocks": ["error", "never"],
     "stylistic/padding-line-between-statements": "error",
     "stylistic/quote-props": "error",
     "stylistic/quotes": "error",

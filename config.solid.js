@@ -4,11 +4,11 @@ import tseslint from "typescript-eslint";
 import { ignores, languageOptions } from "./eslint.config.js";
 
 export default tseslint.config({
-  "files": ["**/*.{jsx,tsx}"],
+  files: ["**/*.{jsx,tsx}"],
   ignores,
   languageOptions,
-  "plugins": { solid },
-  "rules": {
+  plugins: { solid },
+  rules: {
     "solid/components-return-once": "error",
     "solid/event-handlers": "error",
     "solid/imports": "error",

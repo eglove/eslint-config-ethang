@@ -5,15 +5,15 @@ import tseslint from "typescript-eslint";
 import { ignores, languageOptions } from "./eslint.config.js";
 
 export default tseslint.config({
-  "files": ["**/*.{jsx,tsx}"],
+  files: ["**/*.{jsx,tsx}"],
   ignores,
   languageOptions,
-  "plugins": {
+  plugins: {
     react,
     // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     "react-hooks": reactHooks,
   },
-  "rules": {
+  rules: {
     "react-hooks/exhaustive-deps": "error",
     "react-hooks/rules-of-hooks": "error",
     "react/dom/no-children-in-void-dom-elements": "error",
@@ -37,7 +37,7 @@ export default tseslint.config({
     "react/naming-convention/component-name": "error",
     "react/naming-convention/filename": [
       "error",
-      { "rule": "kebab-case" },
+      { rule: "kebab-case" },
     ],
     "react/naming-convention/filename-extension": "error",
     "react/naming-convention/use-state": "error",

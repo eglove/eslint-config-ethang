@@ -1,13 +1,13 @@
 import astro from "eslint-plugin-astro";
 import tseslint from "typescript-eslint";
 
-import {ignores, languageOptions} from "./eslint.config.js";
+import { ignores, languageOptions } from "./eslint.config.js";
 
 export default tseslint.config({
   "files": ["**/*.{astro}"],
   ignores,
   languageOptions,
-  "plugins": {astro},
+  "plugins": { astro },
   "rules": {
     "astro/jsx-a11y/alt-text": "error",
     "astro/jsx-a11y/anchor-ambiguous-text": "error",

@@ -1,13 +1,13 @@
 import solid from "eslint-plugin-solid";
 import tseslint from "typescript-eslint";
 
-import {ignores, languageOptions} from "./eslint.config.js";
+import { ignores, languageOptions } from "./eslint.config.js";
 
 export default tseslint.config({
   "files": ["**/*.{jsx,tsx}"],
   ignores,
   languageOptions,
-  "plugins": {solid},
+  "plugins": { solid },
   "rules": {
     "solid/components-return-once": "error",
     "solid/event-handlers": "error",

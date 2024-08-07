@@ -591,7 +591,7 @@ export default tseslint.config({
     "stylistic/no-whitespace-before-property": "error",
     "stylistic/nonblock-statement-body-position": "error",
     "stylistic/object-curly-newline": "error",
-    "stylistic/object-curly-spacing": "error",
+    "stylistic/object-curly-spacing": ["error", "always"],
     "stylistic/object-property-newline": "error",
     "stylistic/one-var-declaration-per-line": "error",
     "stylistic/operator-linebreak": "error",

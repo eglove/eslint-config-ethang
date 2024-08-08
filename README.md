@@ -2,7 +2,7 @@
 
 [View Config](https://eslint-config-ethang.pages.dev/rules)
 
-**Do NOT** use this with Prettier! Styling rules are included.
+Do **NOT** use this with Prettier! Styling rules are included.
 
 * 615 errored rules.
 * 142 rules from vanilla EsLint

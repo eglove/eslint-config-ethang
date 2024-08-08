@@ -13,6 +13,7 @@ import compat from "eslint-plugin-compat";
 import lodashConfig from "eslint-plugin-lodash";
 import tailwind from "eslint-plugin-tailwindcss";
 import stylistic from "@stylistic/eslint-plugin";
+import json from '@eslint/json';
 
 export const languageOptions = {
   parser,
@@ -25,6 +26,13 @@ export const languageOptions = {
 export const ignores = ["eslint.config.js", "node_modules", "dist"];
 
 export default tseslint.config({
+  files: ["**/*.json5", "**/*.jsonc", "**/*.json"],
+  ignores,
+  plugins: {
+    "json/no-duplicate-keys": "error",
+    "json/no-empty-keys": "error",
+  },
+}, {
   files: ["**/*.{js,ts,jsx,tsx,cjs,mjs}"],
   ignores,
   languageOptions,
@@ -35,6 +43,7 @@ export default tseslint.config({
     barrel,
     compat,
     depend,
+    json,
     lodash: lodashConfig,
     n,
     perfectionist,
@@ -160,7 +169,9 @@ export default tseslint.config({
     "no-unreachable-loop": "error",
     "no-unsafe-finally": "error",
     "no-unsafe-negation": "error",
-    "no-unsafe-optional-chaining": "error",
+    "no-unsafe-optional-chaining": ["error", {
+      disallowArithmeticOperators: true
+    }],
     "no-unused-labels": "error",
     "no-unused-private-class-members": "error",
     "no-useless-backreference": "error",

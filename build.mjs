@@ -3,8 +3,7 @@ import { projectBuilder } from '@ethang/project-builder/project-builder.js'
 
 await projectBuilder('eslint-config-ethang', 'master', {
 	isLibrary: true,
-	postVersionBumpScripts: ['DEDUPE', 'LINT'],
-	preVersionBumpScripts: ['UPDATE'],
+	scripts: ['DEDUPE', 'LINT', 'UPDATE'],
 	tsupOptions: {
 		bundle: true,
 	},

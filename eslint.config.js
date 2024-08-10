@@ -33,7 +33,7 @@ export default tseslint.config({
     "json/no-empty-keys": "error",
   },
 }, {
-  files: ["**/*.{js,ts,jsx,tsx,cjs,mjs}"],
+  files: ["**/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts}"],
   ignores,
   languageOptions,
   plugins: {

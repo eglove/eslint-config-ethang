@@ -19,7 +19,6 @@ export default tseslint.config({
     "solid/no-array-handlers": "error",
     "solid/no-destructure": "error",
     "solid/no-innerhtml": "error",
-    "solid/no-proxy-apis": "error",
     "solid/no-react-deps": "error",
     "solid/no-react-specific-props": "error",
     "solid/no-unknown-namespaces": "error",

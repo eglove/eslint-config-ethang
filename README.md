@@ -29,9 +29,9 @@ Do **NOT** use this with Prettier! Styling rules are included.
   * `import configReact from "@ethang/eslint-config/config.react.js";`
   * 70 rules from [@eslint-react/eslint-plugin](https://eslint-react.xyz/)
   * 2 rules from [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)
-* 19 rules for **Solid**
+* 18 rules for **Solid**
   * `import configSolid from "@ethang/eslint-config/config-solid.js";`
-  * 19 rules from [eslint-plugin-solid](https://github.com/solidjs-community/eslint-plugin-solid)
+  * 18 rules from [eslint-plugin-solid](https://github.com/solidjs-community/eslint-plugin-solid)
 
 # Install
 

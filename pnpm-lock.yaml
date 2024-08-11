@@ -39,8 +39,8 @@ importers:
         specifier: ^6.0.0
         version: 6.0.0(eslint@9.9.0(jiti@1.21.6))
       eslint-plugin-depend:
-        specifier: ^0.9.0
-        version: 0.9.0
+        specifier: ^0.10.0
+        version: 0.10.0
       eslint-plugin-jsx-a11y:
         specifier: ^6.9.0
         version: 6.9.0(eslint@9.9.0(jiti@1.21.6))
@@ -1222,8 +1222,8 @@ packages:
     peerDependencies:
       eslint: ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
 
-  eslint-plugin-depend@0.9.0:
-    resolution: {integrity: sha512-LApHjbTFvzuZR2hpHt67ehawywGpmLAQV0Th65oiTssmXk2UcbXdsr0+hCQFdV+C30HMZHSwofL0BSzLveNACA==}
+  eslint-plugin-depend@0.10.0:
+    resolution: {integrity: sha512-ERt7CCVY8uo3aYVu0nzpoJ+IyA4iLaRw/NEoKIrK9B3bMtL/urGeJRS5IVRI3ueQjSqUSOt0z8CSi5OcUbHfsw==}
 
   eslint-plugin-es-x@7.8.0:
     resolution: {integrity: sha512-7Ds8+wAAoV3T+LAKeu39Y5BzXCrGKrcISfgKEqTS4BDN8SFEDQd0S43jiQ8vIa3wUKD07qitZdfzlenSi8/0qQ==}
@@ -1871,8 +1871,8 @@ packages:
     resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
     engines: {node: '>=16 || 14 >=14.17'}
 
-  module-replacements@2.3.2:
-    resolution: {integrity: sha512-dK8FQwOCU0rKuqtS2kWIU6It0XrE8qYZWtDT6fK4BQPtcspQ9EjWo2V0hob2d6G1wvQ21q+b1HFHOp3E/0cQTg==}
+  module-replacements@2.4.0:
+    resolution: {integrity: sha512-8bWnDyW68vniWEfINBRnX742waNk1KcULEeAakZ5O46/NLcmdi76ns1kfr642xFbf+QK5Pt2goyY2vUxtS1l3Q==}
 
   ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
@@ -3834,10 +3834,10 @@ snapshots:
       lodash.memoize: 4.1.2
       semver: 7.6.3
 
-  eslint-plugin-depend@0.9.0:
+  eslint-plugin-depend@0.10.0:
     dependencies:
       fd-package-json: 1.2.0
-      module-replacements: 2.3.2
+      module-replacements: 2.4.0
       semver: 7.6.3
 
   eslint-plugin-es-x@7.8.0(eslint@9.9.0(jiti@1.21.6)):
@@ -4580,7 +4580,7 @@ snapshots:
 
   minipass@7.1.2: {}
 
-  module-replacements@2.3.2: {}
+  module-replacements@2.4.0: {}
 
   ms@2.1.2: {}
 

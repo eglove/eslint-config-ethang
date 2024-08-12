@@ -46,8 +46,8 @@ In **eslint.config.js**
 ```js
 import config from "@ethang/eslint-config/eslint.config.js";
 import tseslint from "typescript-eslint";
-import configAstro from "@ethang/eslint-config/config.astro.js"; // OPTIONAL
-import configReact from "@ethang/eslint-config/config.react.js"; // OPTIONAL
+import astroConfig from "@ethang/eslint-config/config.astro.js"; // OPTIONAL
+import reactConfig from "@ethang/eslint-config/config.react.js"; // OPTIONAL
 
 export default tseslint.config(...config, ...astroConfig, ...reactConfig, {
   languageOptions: {

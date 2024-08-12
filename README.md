@@ -4,11 +4,11 @@
 
 Do **NOT** use this with Prettier! Styling rules are included.
 
-* 615 errored rules.
+* 614 errored rules.
 * 142 rules from vanilla EsLint
 * 113 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
 * 104 rules from [@typescript/eslint](https://github.com/typescript-eslint/typescript-eslint)
-* 92 rules from [@stylistic/eslint-plugin](https://eslint.style/)
+* 91 rules from [@stylistic/eslint-plugin](https://eslint.style/)
 * 42 rules from [eslint-plugin-lodash](https://github.com/wix-incubator/eslint-plugin-lodash)
 * 35 rules from [jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
 * 32 rules from [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)

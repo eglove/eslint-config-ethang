@@ -585,7 +585,6 @@ export default tseslint.config({
       "ignoreRegExpLiterals": true
     }],
     "stylistic/max-statements-per-line": "error",
-    "stylistic/multiline-comment-style": "error",
     "stylistic/multiline-ternary": "error",
     "stylistic/new-parens": "error",
     "stylistic/newline-per-chained-call": "error",

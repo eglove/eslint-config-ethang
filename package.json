@@ -1,6 +1,6 @@
 {
   "name": "@ethang/eslint-config",
-  "version": "18.4.18",
+  "version": "18.4.19",
   "repository": {
     "url": "git+https://github.com/eglove/eslint-config-ethang.git"
   },
@@ -31,7 +31,7 @@
     "eslint-plugin-n": "^17.10.2",
     "eslint-plugin-perfectionist": "^3.2.0",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-solid": "^0.14.1",
+    "eslint-plugin-solid": "^0.14.2",
     "eslint-plugin-sonarjs": "1.0.4",
     "eslint-plugin-tailwindcss": "^3.17.4",
     "eslint-plugin-unicorn": "^55.0.0",
@@ -54,7 +54,7 @@
     "eslint-plugin-n": "^17.10.2",
     "eslint-plugin-perfectionist": "^3.2.0",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-solid": "^0.14.1",
+    "eslint-plugin-solid": "^0.14.2",
     "eslint-plugin-sonarjs": "1.0.4",
     "eslint-plugin-tailwindcss": "^3.17.4",
     "eslint-plugin-unicorn": "^55.0.0",

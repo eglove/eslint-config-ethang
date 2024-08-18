@@ -468,7 +468,7 @@ export default tseslint.config({
     "lodash/no-double-unwrap": "error",
     "lodash/no-extra-args": "error",
     "lodash/no-unbound-this": "error",
-    "lodash/path-style": ["error", "string"],
+    "lodash/path-style": ["error", "array"],
     "lodash/prefer-compact": "error",
     "lodash/prefer-constant": "error",
     "lodash/prefer-filter": "error",

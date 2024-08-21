@@ -52,6 +52,8 @@ export default tseslint.config({
     "react/no-class-component": "error",
     "react/no-clone-element": "error",
     "react/no-comment-textnodes": "error",
+    "react/no-complex-conditional-rendering": "error",
+    "react/no-complicated-conditional-rendering": "error",
     "react/no-component-will-mount": "error",
     "react/no-component-will-receive-props": "error",
     "react/no-component-will-update": "error",
@@ -80,8 +82,11 @@ export default tseslint.config({
     "react/no-useless-fragment": "error",
     "react/prefer-destructuring-assignment": "error",
     "react/prefer-read-only-props": "error",
-
     "react/prefer-shorthand-boolean": "error",
     "react/prefer-shorthand-fragment": "error",
+    "react/web-api/no-leaked-event-listener": "error",
+
+    "react/web-api/no-leaked-interval": "error",
+    "react/web-api/no-leaked-timeout": "error",
   },
 });

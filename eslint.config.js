@@ -531,6 +531,7 @@ export default tseslint.config({
 
     "@tanstack/query/exhaustive-deps": "error",
     "@tanstack/query/no-rest-destructuring": "error",
+    "@tanstack/query/no-unstable-deps": "error",
     "@tanstack/query/stable-query-client": "error",
 
     "tailwind/classnames-order": "error",

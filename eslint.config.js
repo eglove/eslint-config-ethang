@@ -753,7 +753,7 @@ export default tseslint.config({
     "sonar/reduce-initial-value": "error",
     "sonar/redundant-type-aliases": "error",
     "sonar/regex-complexity": "error",
-    "sonar/rules-of-hooks": "error",
+    "sonar/rules-of-hooks": "off", // TODO v9 compatibility?
     "sonar/session-regeneration": "error",
     "sonar/shorthand-property-grouping": "off", // Conflicts with perfectionist sorting
     "sonar/single-char-in-character-classes": "error",

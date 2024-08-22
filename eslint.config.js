@@ -650,7 +650,7 @@ export default tseslint.config({
     "sonar/no-implicit-global": "error",
     "sonar/no-in-misuse": "error",
     "sonar/no-incomplete-assertions": "error",
-    "sonar/no-inconsistent-returns": "error",
+    "sonar/no-inconsistent-returns": "off", // TODO v9 compatibility?
     "sonar/no-incorrect-string-concat": "error",
     "sonar/no-infinite-loop": "error",
     "sonar/no-intrusive-permissions": "error",
@@ -681,7 +681,7 @@ export default tseslint.config({
     "sonar/no-redundant-jump": "error",
     "sonar/no-redundant-optional": "error",
     "sonar/no-redundant-type-constituents": "error",
-    "sonar/no-reference-error": "error",
+    "sonar/no-reference-error": "off", // Not working correctly, TS can handle this
     "sonar/no-referrer-policy": "error",
     "sonar/no-require-or-define": "error",
     "sonar/no-return-type-any": "error",
@@ -765,7 +765,7 @@ export default tseslint.config({
     "sonar/sonar-no-control-regex": "error",
     "sonar/sonar-no-dupe-keys": "error",
     "sonar/sonar-no-empty-character-class": "error",
-    "sonar/sonar-no-fallthrough": "error",
+    "sonar/sonar-no-fallthrough": "off", // TODO v9 compatibility?
     "sonar/sonar-no-invalid-regexp": "error",
     "sonar/sonar-no-magic-numbers": "error",
     "sonar/sonar-no-misleading-character-class": "error",
@@ -781,7 +781,7 @@ export default tseslint.config({
     "sonar/strict-transport-security": "error",
     "sonar/strings-comparison": "error",
     "sonar/super-invocation": "error",
-    "sonar/switch-without-default": "error",
+    "sonar/switch-without-default": "off", // @typescript-eslint/switch-exhaustiveness-check works better
     "sonar/table-header": "error",
     "sonar/table-header-reference": "error",
     "sonar/test-check-exception": "error",

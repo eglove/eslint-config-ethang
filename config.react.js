@@ -85,7 +85,6 @@ export default tseslint.config({
     "react/prefer-shorthand-boolean": "error",
     "react/prefer-shorthand-fragment": "error",
     "react/web-api/no-leaked-event-listener": "error",
-
     "react/web-api/no-leaked-interval": "error",
     "react/web-api/no-leaked-timeout": "error",
   },

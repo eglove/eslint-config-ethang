@@ -572,7 +572,7 @@ export default tseslint.config({
     "sonar/frame-ancestors": "error",
     "sonar/function-inside-loop": "error",
     "sonar/function-name": "error",
-    "sonar/function-return-type": "error",
+    "sonar/function-return-type": "off", // No
     "sonar/future-reserved-words": "error",
     "sonar/generator-without-yield": "error",
     "sonar/hashing": "error",
@@ -694,7 +694,7 @@ export default tseslint.config({
     "sonar/no-throw-literal": "error",
     "sonar/no-try-promise": "error",
     "sonar/no-undefined-argument": "error",
-    "sonar/no-undefined-assignment": "error",
+    "sonar/no-undefined-assignment": "off", // No
     "sonar/no-unenclosed-multiline-block": "error",
     "sonar/no-uniq-key": "error",
     "sonar/no-unknown-property": "error",

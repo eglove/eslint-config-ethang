@@ -571,7 +571,9 @@ export default tseslint.config({
     "sonar/for-loop-increment-sign": "error",
     "sonar/frame-ancestors": "error",
     "sonar/function-inside-loop": "error",
-    "sonar/function-name": "error",
+    "sonar/function-name": ["error", {
+      format: '^(?:[a-z][a-zA-Z0-9]*|[A-Z][A-Z0-9]*)$'
+    }],
     "sonar/function-return-type": "off", // No
     "sonar/future-reserved-words": "error",
     "sonar/generator-without-yield": "error",

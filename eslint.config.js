@@ -25,7 +25,7 @@ export const languageOptions = {
 export const ignores = ["eslint.config.js", "node_modules", "dist"];
 
 export default tseslint.config({
-  files: ["**/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts}"],
+  files: ["**/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts,css,html}"],
   ignores,
   languageOptions,
   plugins: {
@@ -562,7 +562,7 @@ export default tseslint.config({
     "sonar/encryption-secure-mode": "error",
     "sonar/existing-groups": "error",
     "sonar/expression-complexity": "error",
-    "sonar/file-header": "error",
+    "sonar/file-header": "off", // No
     "sonar/file-name-differ-from-class": "error",
     "sonar/file-permissions": "error",
     "sonar/file-uploads": "error",
@@ -646,7 +646,7 @@ export default tseslint.config({
     "sonar/no-identical-expressions": "error",
     "sonar/no-identical-functions": "error",
     "sonar/no-ignored-return": "error",
-    "sonar/no-implicit-dependencies": "error",
+    "sonar/no-implicit-dependencies": "off", // doesn't seem to work well, n/ can handle this
     "sonar/no-implicit-global": "error",
     "sonar/no-in-misuse": "error",
     "sonar/no-incomplete-assertions": "error",
@@ -753,7 +753,7 @@ export default tseslint.config({
     "sonar/regex-complexity": "error",
     "sonar/rules-of-hooks": "error",
     "sonar/session-regeneration": "error",
-    "sonar/shorthand-property-grouping": "error",
+    "sonar/shorthand-property-grouping": "off", // Conflicts with perfectionist sorting
     "sonar/single-char-in-character-classes": "error",
     "sonar/single-character-alternation": "error",
     "sonar/slow-regex": "error",

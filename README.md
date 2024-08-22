@@ -4,7 +4,7 @@
 
 Do **NOT** use this with Prettier! Styling rules are included.
 
-* 614 errored rules.
+* 900 errored rules.
 * 300 rules from [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs)
 * 140 rules from vanilla EsLint
 * 113 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)

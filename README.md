@@ -23,13 +23,13 @@ Do **NOT** use this with Prettier! Styling rules are included.
 
 # Add Even More!
 * 51 rules for **Astro**
-  * `import configAstro from "@ethang/eslint-config/config.astro.js";`
+  * `import astroConfig from "@ethang/eslint-config/config.astro.js";`
   * 51 rules from [eslint-plugin-astro](https://github.com/ota-meshi/eslint-plugin-astro)
 * 68 rules for **React**
-  * `import configReact from "@ethang/eslint-config/config.react.js";`
+  * `import reactConfig from "@ethang/eslint-config/config.react.js";`
   * 68 rules from [@eslint-react/eslint-plugin](https://eslint-react.xyz/)
 * 18 rules for **Solid**
-  * `import configSolid from "@ethang/eslint-config/config-solid.js";`
+  * `import solidConfig from "@ethang/eslint-config/config-solid.js";`
   * 18 rules from [eslint-plugin-solid](https://github.com/solidjs-community/eslint-plugin-solid)
 
 # Install

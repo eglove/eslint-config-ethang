@@ -25,7 +25,7 @@ export const languageOptions = {
 export const ignores = ["eslint.config.js", "node_modules", "dist"];
 
 export default tseslint.config({
-  files: ["**/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts,css,html}"],
+  files: ["**/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts}"],
   ignores,
   languageOptions,
   plugins: {

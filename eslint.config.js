@@ -599,7 +599,7 @@ export default tseslint.config({
     "sonar/misplaced-loop-counter": "error",
     "sonar/mouse-events-a11y": "error",
     "sonar/nested-control-flow": "error",
-    "sonar/new-cap": "error",
+    "sonar/new-cap": "off", // No
     "sonar/new-operator-misuse": "error",
     "sonar/no-accessor-field-mismatch": "error",
     "sonar/no-all-duplicated-branches": "error",
@@ -769,7 +769,7 @@ export default tseslint.config({
     "sonar/sonar-no-empty-character-class": "error",
     "sonar/sonar-no-fallthrough": "off", // TODO v9 compatibility?
     "sonar/sonar-no-invalid-regexp": "error",
-    "sonar/sonar-no-magic-numbers": "error",
+    "sonar/sonar-no-magic-numbers": "off", // No
     "sonar/sonar-no-misleading-character-class": "error",
     "sonar/sonar-no-regex-spaces": "error",
     "sonar/sonar-no-unused-class-component-methods": "error",

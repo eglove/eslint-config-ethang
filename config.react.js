@@ -14,8 +14,8 @@ export default tseslint.config({
     "react-hooks": reactHooks,
   },
   rules: {
-    "react-hooks/exhaustive-deps": "off", // fix w/ v9 compatibility
-    "react-hooks/rules-of-hooks": "off", // fix w/ v9 compatibility
+    "react-hooks/exhaustive-deps": "off", // TODO fix w/ v9 compatibility
+    "react-hooks/rules-of-hooks": "off", // TODO fix w/ v9 compatibility
     "react/dom/no-children-in-void-dom-elements": "error",
     "react/dom/no-dangerously-set-innerhtml": "error",
     "react/dom/no-dangerously-set-innerhtml-with-children": "error",

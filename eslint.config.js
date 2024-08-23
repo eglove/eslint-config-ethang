@@ -787,7 +787,7 @@ export default tseslint.config({
     "sonar/table-header": "error",
     "sonar/table-header-reference": "error",
     "sonar/test-check-exception": "error",
-    "sonar/todo-tag": "error",
+    "sonar/todo-tag": "off", // Can be useful to leave
     "sonar/too-many-break-or-continue-in-loop": "error",
     "sonar/unicode-aware-regex": "error",
     "sonar/unnecessary-character-escapes": "error",

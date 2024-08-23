@@ -25,10 +25,9 @@ Do **NOT** use this with Prettier! Styling rules are included.
 * 51 rules for **Astro**
   * `import configAstro from "@ethang/eslint-config/config.astro.js";`
   * 51 rules from [eslint-plugin-astro](https://github.com/ota-meshi/eslint-plugin-astro)
-* 72 rules for **React**
+* 68 rules for **React**
   * `import configReact from "@ethang/eslint-config/config.react.js";`
-  * 70 rules from [@eslint-react/eslint-plugin](https://eslint-react.xyz/)
-  * 2 rules from [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks)
+  * 68 rules from [@eslint-react/eslint-plugin](https://eslint-react.xyz/)
 * 18 rules for **Solid**
   * `import configSolid from "@ethang/eslint-config/config-solid.js";`
   * 18 rules from [eslint-plugin-solid](https://github.com/solidjs-community/eslint-plugin-solid)

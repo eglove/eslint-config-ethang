@@ -3116,7 +3116,6 @@ packages:
       }
     peerDependencies:
       eslint: ">= 5"
-    bundledDependencies: []
 
   eslint-plugin-compat@6.0.0:
     resolution:

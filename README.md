@@ -2,35 +2,36 @@
 
 [View Config](https://eslint-config-ethang.pages.dev/rules)
 
-Do **NOT** use this with Prettier! Styling rules are included.
+> [!CAUTION]
+> Do not use this with Prettier! Styling rules are included.
 
-- 873 errored rules.
-- 289 rules from [eslint-plugin-sonarjs](https://github.com/SonarSource/SonarJS/blob/master/packages/jsts/src/rules/README.md)
-- 144 rules from [@eslint/js](https://github.com/eslint/eslint/tree/main/packages/js)
-- 113 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
-- 103 rules from [@typescript/eslint](https://github.com/typescript-eslint/typescript-eslint)
-- 91 rules from [@stylistic/eslint-plugin](https://eslint.style/)
-- 42 rules from [eslint-plugin-lodash](https://github.com/wix-incubator/eslint-plugin-lodash)
-- 35 rules from [jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
-- 20 rules from [eslint-plugin-n](https://github.com/eslint-community/eslint-plugin-n)
-- 19 rules from [eslint-plugin-perfectionist](https://github.com/azat-io/eslint-plugin-perfectionist)
-- 7 rules from [eslint-plugin-tailwindcss](https://github.com/francoismassart/eslint-plugin-tailwindcss)
-- 4 rules from [eslint-plugin-barrel-files](https://github.com/thepassle/eslint-plugin-barrel-files)
-- 4 rules from [@tanstack/eslint-plugin-query](https://tanstack.com/query/latest/docs/eslint/eslint-plugin-query)
-- 1 rule from [eslint-plugin-depend](https://github.com/es-tooling/eslint-plugin-depend/tree/main)
-- 1 rule from [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat)
+* 873 errored rules.
+* 289 rules from [eslint-plugin-sonarjs](https://github.com/SonarSource/SonarJS/blob/master/packages/jsts/src/rules/README.md)
+* 144 rules from [@eslint/js](https://github.com/eslint/eslint/tree/main/packages/js)
+* 113 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
+* 103 rules from [@typescript/eslint](https://github.com/typescript-eslint/typescript-eslint)
+* 91 rules from [@stylistic/eslint-plugin](https://eslint.style/)
+* 42 rules from [eslint-plugin-lodash](https://github.com/wix-incubator/eslint-plugin-lodash)
+* 35 rules from [jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)
+* 20 rules from [eslint-plugin-n](https://github.com/eslint-community/eslint-plugin-n)
+* 19 rules from [eslint-plugin-perfectionist](https://github.com/azat-io/eslint-plugin-perfectionist)
+* 7 rules from [eslint-plugin-tailwindcss](https://github.com/francoismassart/eslint-plugin-tailwindcss)
+* 4 rules from [eslint-plugin-barrel-files](https://github.com/thepassle/eslint-plugin-barrel-files)
+* 4 rules from [@tanstack/eslint-plugin-query](https://tanstack.com/query/latest/docs/eslint/eslint-plugin-query)
+* 1 rule from [eslint-plugin-depend](https://github.com/es-tooling/eslint-plugin-depend/tree/main)
+* 1 rule from [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat)
 
 # Add Even More!
 
-- 51 rules for **Astro**
-  - `import astroConfig from "@ethang/eslint-config/config.astro.js";`
-  - 51 rules from [eslint-plugin-astro](https://github.com/ota-meshi/eslint-plugin-astro)
-- 68 rules for **React**
-  - `import reactConfig from "@ethang/eslint-config/config.react.js";`
-  - 68 rules from [@eslint-react/eslint-plugin](https://eslint-react.xyz/)
-- 18 rules for **Solid**
-  - `import solidConfig from "@ethang/eslint-config/config.solid.js";`
-  - 18 rules from [eslint-plugin-solid](https://github.com/solidjs-community/eslint-plugin-solid)
+* 51 rules for **Astro**
+  * `import astroConfig from "@ethang/eslint-config/config.astro.js";`
+  * 51 rules from [eslint-plugin-astro](https://github.com/ota-meshi/eslint-plugin-astro)
+* 68 rules for **React**
+  * `import reactConfig from "@ethang/eslint-config/config.react.js";`
+  * 68 rules from [@eslint-react/eslint-plugin](https://eslint-react.xyz/)
+* 18 rules for **Solid**
+  * `import solidConfig from "@ethang/eslint-config/config.solid.js";`
+  * 18 rules from [eslint-plugin-solid](https://github.com/solidjs-community/eslint-plugin-solid)
 
 # Install
 
@@ -61,7 +62,7 @@ export default tseslint.config(...config, ...astroConfig, ...reactConfig, {
 });
 ```
 
-**Scripts**:
+**Scripts**
 
 ```json
 "scripts": {

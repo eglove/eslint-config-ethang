@@ -14,8 +14,20 @@ import { perfectionistRules } from "../setup/perfectionist.js";
 import { a11yRules } from "../setup/a11y.js";
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { MarkdownGenerator } from "@ethang/markdown-generator/markdown-generator.js";
 
 export const updateReadme = () => {
+  const md = new MarkdownGenerator();
+  md.header(1, "Opinionated, Strict, Brutal, Unforgiving");
+  md.newLine(2);
+  md.link("View Config", "https://eslint-config-ethang.pages.dev/rules");
+  md.newLine(2);
+  md.alert(
+    "CAUTION",
+    "Do not use this with Prettier! Styling rules are included.",
+  );
+  md.newLine(2);
+
   const getRuleCount = (rules) => {
     let count = 0;
     Object.values(rules).forEach((value) => {
@@ -110,43 +122,95 @@ export const updateReadme = () => {
     return b.count - a.count;
   });
 
-  const ruleDocs = [`- ${total} errored rules.`];
+  const ruleDocs = [`${total} errored rules.`];
   for (const list of ruleList) {
     ruleDocs.push(
-      `- ${list.count} ${list.count <= 1 ? "rule" : "rules"} from [${list.name}](${list.url})`,
+      `${list.count} ${list.count <= 1 ? "rule" : "rules"} from [${list.name}](${list.url})`,
     );
   }
 
-  const readme = readFileSync(
-    join(import.meta.dirname, "../README.md"),
-    "utf8",
+  md.unorderedList(ruleDocs);
+  md.newLine();
+  md.header(1, "Add Even More!");
+  md.newLine(2);
+  md.unorderedList(["51 rules for **Astro**"]);
+  md.unorderedList(
+    [
+      '`import astroConfig from "@ethang/eslint-config/config.astro.js";`',
+      "51 rules from [eslint-plugin-astro](https://github.com/ota-meshi/eslint-plugin-astro)",
+    ],
+    2,
   );
-  let readmeLines = readme.split("\n");
+  md.unorderedList(["68 rules for **React**"]);
+  md.unorderedList(
+    [
+      '`import reactConfig from "@ethang/eslint-config/config.react.js";`',
+      "68 rules from [@eslint-react/eslint-plugin](https://eslint-react.xyz/)",
+    ],
+    2,
+  );
+  md.unorderedList(["18 rules for **Solid**"]);
+  md.unorderedList(
+    [
+      '`import solidConfig from "@ethang/eslint-config/config.solid.js";`',
+      "18 rules from [eslint-plugin-solid](https://github.com/solidjs-community/eslint-plugin-solid)",
+    ],
+    2,
+  );
+  md.newLine();
+  md.header(1, "Install");
+  md.newLine(2);
+  md.inlineCode("pnpm i -D eslint typescript-eslint @ethang/eslint-config");
+  md.newLine(2);
+  md.bold("Requires TypesScript and tsconfig.json at root directory.");
+  md.newLine(2);
+  md.header(1, "Config");
+  md.newLine(2);
+  md.text("In **eslint.config.js**");
+  md.newLine(2);
+  md.codeBlock(
+    `import config from "@ethang/eslint-config/eslint.config.js";
+import tseslint from "typescript-eslint";
+import astroConfig from "@ethang/eslint-config/config.astro.js"; // OPTIONAL
+import reactConfig from "@ethang/eslint-config/config.react.js"; // OPTIONAL
 
-  let start = 0;
-  let end = 0;
-  for (let index = 1; index < readmeLines.length; index++) {
-    if (
-      readmeLines[index] ===
-      "Do **NOT** use this with Prettier! Styling rules are included."
-    ) {
-      start = index;
-    }
+export default tseslint.config(...config, ...astroConfig, ...reactConfig, {
+  languageOptions: {
+    parserOptions: {
+      project: true,
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+  rules: {
+    // your custom rules here
+  },
+});`,
+    "js",
+  );
+  md.newLine(2);
+  md.bold("Scripts");
+  md.newLine(2);
+  md.codeBlock(
+    `"scripts": {
+  "lint": "eslint",
+  "lint:fix": "eslint . --fix",
+}`,
+    "json",
+  );
+  md.newLine(2);
+  md.bold("Browserslist");
+  md.newLine(2);
+  md.text(
+    "This config will also lint for browserslist features. Make sure to set this in package.json. [More info.](https://github.com/browserslist/browserslist)",
+  );
+  md.newLine(2);
+  md.codeBlock(
+    `"browserslist": [
+  "defaults and fully supports es6-module",
+  "maintained node versions"
+]`,
+    "json",
+  );
 
-    if (readmeLines[index] === "# Add Even More!") {
-      end = index;
-    }
-
-    if (start !== 0 && end !== 0) {
-      break;
-    }
-  }
-
-  readmeLines = [
-    ...readmeLines.splice(0, start + 2),
-    ...ruleDocs,
-    ...readmeLines.splice(end - 7),
-  ].join("\n");
-
-  writeFileSync(join(import.meta.dirname, "../README.md"), readmeLines, "utf8");
+  writeFileSync(join(import.meta.dirname, "../README.md"), md.render(), "utf8");
 };

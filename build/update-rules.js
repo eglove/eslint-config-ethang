@@ -14,6 +14,7 @@ import { perfectionistRules } from "../setup/perfectionist.js";
 import { a11yRules } from "../setup/a11y.js";
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { deprecatedRules } from "../setup/deprecated.js";
 
 export const updateRules = () => {
   const rules = {
@@ -31,6 +32,7 @@ export const updateRules = () => {
     ...stylisticRules,
     ...perfectionistRules,
     ...a11yRules,
+    ...deprecatedRules,
   };
 
   let jsonified = JSON.stringify(rules);

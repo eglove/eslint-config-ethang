@@ -2,16 +2,17 @@
  * @param {Array<String>} ruleNames
  * @param {Array<{name: string, rule: unknown}>} customRules
  * @param {string?} prefix
+ * @param {string?} defaultOverride
  * @return {Object}
  */
-export const genRules = (ruleNames, customRules, prefix) => {
+export const genRules = (ruleNames, customRules, prefix, defaultOverride) => {
   const rules = {};
 
   for (const rule of ruleNames) {
     if (prefix === undefined) {
-      rules[rule] = "error";
+      rules[rule] = defaultOverride ?? "error";
     } else {
-      rules[`${prefix}/${rule}`] = "error";
+      rules[`${prefix}/${rule}`] = defaultOverride ?? "error";
     }
   }
 

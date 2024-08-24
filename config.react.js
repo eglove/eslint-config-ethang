@@ -35,10 +35,7 @@ export default tseslint.config({
     "react/hooks-extra/no-direct-set-state-in-use-layout-effect": "error",
     "react/hooks-extra/prefer-use-state-lazy-initialization": "error",
     "react/naming-convention/component-name": "error",
-    "react/naming-convention/filename": [
-      "error",
-      { rule: "kebab-case" },
-    ],
+    "react/naming-convention/filename": ["error", { rule: "kebab-case" }],
     "react/naming-convention/filename-extension": "error",
     "react/naming-convention/use-state": "error",
     "react/no-access-state-in-setstate": "error",

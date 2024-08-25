@@ -7,11 +7,11 @@ import { execSync } from "node:child_process";
 updateRules();
 updateReadme();
 execSync("pnpm lint");
-//
-// await projectBuilder("eslint-config-ethang", "master", {
-//   isLibrary: true,
-//   scripts: ["UPDATE", "DEDUPE", "LINT"],
-//   tsupOptions: {
-//     bundle: true,
-//   },
-// });
+
+await projectBuilder("eslint-config-ethang", "master", {
+  isLibrary: true,
+  scripts: ["UPDATE", "DEDUPE", "LINT"],
+  tsupOptions: {
+    bundle: true,
+  },
+});

@@ -78,8 +78,8 @@ importers:
         version: 8.2.0(eslint@9.9.1(jiti@1.21.6))(typescript@5.5.4)
     devDependencies:
       "@ethang/markdown-generator":
-        specifier: ^1.0.6
-        version: 1.0.6(lodash@4.17.21)
+        specifier: ^1.1.1
+        version: 1.1.1(lodash@4.17.21)
       "@ethang/project-builder":
         specifier: ^2.3.10
         version: 2.3.10(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.1.8)(lodash@4.17.21)(simple-git@3.25.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.41)(typescript@5.5.4)(yaml@2.5.0))(typescript@5.5.4)
@@ -1444,10 +1444,10 @@ packages:
       }
     engines: { node: ^18.18.0 || ^20.9.0 || >=21.1.0 }
 
-  "@ethang/markdown-generator@1.0.6":
+  "@ethang/markdown-generator@1.1.1":
     resolution:
       {
-        integrity: sha512-wrFvPwI8Uk1wdqWQ8h3dRlbCdpqd65cJGqw9Pv4yVKMrdfMtOdObNMfWpLa5HhvpXXO42oXLuvx3CbM/6pjR2A==,
+        integrity: sha512-dkYrlBGWyr6XqeWz71BU4LFZM5mSVJrkd3zybYCPc2V1VhrAGIu9gbkrkNCEC/WqgQL+P5dyNjryZOSKzUPxcg==,
       }
     peerDependencies:
       lodash: ^4.17.21
@@ -3209,6 +3209,7 @@ packages:
       }
     peerDependencies:
       eslint: ">= 5"
+    bundledDependencies: []
 
   eslint-plugin-compat@6.0.0:
     resolution:
@@ -7191,7 +7192,7 @@ snapshots:
 
   "@eslint/object-schema@2.1.4": {}
 
-  "@ethang/markdown-generator@1.0.6(lodash@4.17.21)":
+  "@ethang/markdown-generator@1.1.1(lodash@4.17.21)":
     dependencies:
       lodash: 4.17.21
 

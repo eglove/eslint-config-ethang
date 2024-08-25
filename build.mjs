@@ -3,8 +3,14 @@ import { projectBuilder } from "@ethang/project-builder/project-builder.js";
 import { updateRules } from "./build/update-rules.js";
 import { updateReadme } from "./build/update-readme.js";
 import { execSync } from "node:child_process";
+import { updateReactRules } from "./build/update-react-rules.js";
+import { updateSolidRules } from "./build/update-solid-rules.js";
+import { updateAstroRules } from "./build/update-astro-rules.js";
 
 updateRules();
+updateReactRules();
+updateSolidRules();
+updateAstroRules();
 updateReadme();
 execSync("pnpm lint");
 

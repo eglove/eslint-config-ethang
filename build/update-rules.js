@@ -39,14 +39,9 @@ export const updateRules = () => {
     ...deprecatedRules,
   };
 
-  let jsRulesJon = JSON.stringify(jsRules);
-  jsRulesJon = jsRulesJon.slice(1, -1);
-
-  let markdownRulesJson = JSON.stringify(markdownRules);
-  markdownRulesJson = markdownRulesJson.slice(1, -1);
-
-  let jsonRulesJson = JSON.stringify(jsonRules);
-  jsonRulesJson = jsonRulesJson.slice(1, -1);
+  const jsRulesJon = JSON.stringify(jsRules).slice(1, -1);
+  const markdownRulesJson = JSON.stringify(markdownRules).slice(1, -1);
+  const jsonRulesJson = JSON.stringify(jsonRules).slice(1, -1);
 
   const importList = [
     'import parser from "@typescript-eslint/parser";',

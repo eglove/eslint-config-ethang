@@ -12,23 +12,24 @@ import { tailwindRules } from "../setup/tailwind.js";
 import { stylisticRules } from "../setup/stylistic.js";
 import { perfectionistRules } from "../setup/perfectionist.js";
 import { a11yRules } from "../setup/a11y.js";
-import { readFileSync, writeFileSync } from "node:fs";
+import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { MarkdownGenerator } from "@ethang/markdown-generator/markdown-generator.js";
 import { markdownRules } from "../setup/markdown.js";
 import { jsonRules } from "../setup/json.js";
+import { astroRules } from "../setup/astro.js";
+import { reactRules } from "../setup/react.js";
+import { solidRules } from "../setup/solid.js";
 
 export const updateReadme = () => {
   const md = new MarkdownGenerator();
-  md.header(1, "Opinionated, Strict, Brutal, Unforgiving");
-  md.newLine(2);
-  md.link("View Config", "https://eslint-config-ethang.pages.dev/rules");
-  md.newLine(2);
+  md.header(1, "Opinionated, Strict, Brutal, Unforgiving", 2);
+  md.link("View Config", "https://eslint-config-ethang.pages.dev/rules", 2);
   md.alert(
     "CAUTION",
     "Do not use this with Prettier! Styling rules are included.",
+    2,
   );
-  md.newLine(2);
 
   const getRuleCount = (rules) => {
     let count = 0;
@@ -141,45 +142,36 @@ export const updateReadme = () => {
     );
   }
 
+  const astroCount = getRuleCount(astroRules);
+  const reactCount = getRuleCount(reactRules);
+  const solidCount = getRuleCount(solidRules);
+
   md.unorderedList(ruleDocs);
   md.newLine();
-  md.header(1, "Add Even More!");
-  md.newLine(2);
-  md.unorderedList(["51 rules for **Astro**"]);
-  md.unorderedList(
+  md.header(1, "Add Even More!", 2);
+  md.unorderedList([
+    `${astroCount} rules for **Astro**`,
     [
       '`import astroConfig from "@ethang/eslint-config/config.astro.js";`',
-      "51 rules from [eslint-plugin-astro](https://github.com/ota-meshi/eslint-plugin-astro)",
+      `${astroCount} rules from [eslint-plugin-astro](https://github.com/ota-meshi/eslint-plugin-astro)`,
     ],
-    2,
-  );
-  md.unorderedList(["68 rules for **React**"]);
-  md.unorderedList(
+    `${reactCount} rules for **React**`,
     [
       '`import reactConfig from "@ethang/eslint-config/config.react.js";`',
-      "68 rules from [@eslint-react/eslint-plugin](https://eslint-react.xyz/)",
+      `${reactCount} rules from [@eslint-react/eslint-plugin](https://eslint-react.xyz/)`,
     ],
-    2,
-  );
-  md.unorderedList(["18 rules for **Solid**"]);
-  md.unorderedList(
+    `${solidCount} rules for **Solid**`,
     [
       '`import solidConfig from "@ethang/eslint-config/config.solid.js";`',
-      "18 rules from [eslint-plugin-solid](https://github.com/solidjs-community/eslint-plugin-solid)",
+      `${solidCount} rules from [eslint-plugin-solid](https://github.com/solidjs-community/eslint-plugin-solid)`,
     ],
-    2,
-  );
+  ]);
   md.newLine();
-  md.header(1, "Install");
-  md.newLine(2);
-  md.inlineCode("pnpm i -D eslint typescript-eslint @ethang/eslint-config");
-  md.newLine(2);
-  md.bold("Requires TypesScript and tsconfig.json at root directory.");
-  md.newLine(2);
-  md.header(1, "Config");
-  md.newLine(2);
-  md.text("In **eslint.config.js**");
-  md.newLine(2);
+  md.header(1, "Install", 2);
+  md.inlineCode("pnpm i -D eslint typescript-eslint @ethang/eslint-config", 2);
+  md.bold("Requires TypesScript and tsconfig.json at root directory.", 2);
+  md.header(1, "Config", 2);
+  md.text("In **eslint.config.js**", 2);
   md.codeBlock(
     `import config from "@ethang/eslint-config/eslint.config.js";
 import tseslint from "typescript-eslint";
@@ -198,24 +190,22 @@ export default tseslint.config(...config, ...astroConfig, ...reactConfig, {
   },
 });`,
     "js",
+    2,
   );
-  md.newLine(2);
-  md.bold("Scripts");
-  md.newLine(2);
+  md.bold("Scripts", 2);
   md.codeBlock(
     `"scripts": {
   "lint": "eslint",
   "lint:fix": "eslint . --fix",
 }`,
     "json",
+    2,
   );
-  md.newLine(2);
-  md.bold("Browserslist");
-  md.newLine(2);
+  md.bold("Browserslist", 2);
   md.text(
     "This config will also lint for browserslist features. Make sure to set this in package.json. [More info.](https://github.com/browserslist/browserslist)",
+    2,
   );
-  md.newLine(2);
   md.codeBlock(
     `"browserslist": [
   "defaults and fully supports es6-module",

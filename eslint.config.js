@@ -1,23 +1,20 @@
-// @ts-check
-import parser from "@typescript-eslint/parser";
+import { ignores } from "./constants.js";
 import a11y from "eslint-plugin-jsx-a11y/lib/index.js";
-import n from "eslint-plugin-n";
-import unicorn from "eslint-plugin-unicorn";
-import tseslint from "typescript-eslint";
-import sonar from "eslint-plugin-sonarjs";
-import tanstack from "@tanstack/eslint-plugin-query";
-import perfectionist from "eslint-plugin-perfectionist";
-import depend from "eslint-plugin-depend";
 import barrel from "eslint-plugin-barrel-files";
 import compat from "eslint-plugin-compat";
-import lodashConfig from "eslint-plugin-lodash";
-import tailwind from "eslint-plugin-tailwindcss";
-import stylistic from "@stylistic/eslint-plugin";
-import markdown from "@eslint/markdown";
+import depend from "eslint-plugin-depend";
 import json from "@eslint/json";
-import { ignores } from "./constants.js";
-import { markdownRules } from "./setup/markdown.js";
-import { jsonRules } from "./setup/json.js";
+import lodashConfig from "eslint-plugin-lodash";
+import markdown from "@eslint/markdown";
+import n from "eslint-plugin-n";
+import parser from "@typescript-eslint/parser";
+import perfectionist from "eslint-plugin-perfectionist";
+import sonar from "eslint-plugin-sonarjs";
+import stylistic from "@stylistic/eslint-plugin";
+import tailwind from "eslint-plugin-tailwindcss";
+import tanstack from "@tanstack/eslint-plugin-query";
+import tseslint from "typescript-eslint";
+import unicorn from "eslint-plugin-unicorn";
 
 export const languageOptions = {
   parser,
@@ -1694,14 +1691,21 @@ export default tseslint.config(
       markdown,
     },
     rules: {
-      ...markdownRules,
+      "markdown/fenced-code-language": "error",
+      "markdown/heading-increment": "error",
+      "markdown/no-duplicate-headings": "error",
+      "markdown/no-empty-links": "error",
+      "markdown/no-html": "error",
+      "markdown/no-invalid-label-refs": "error",
+      "markdown/no-missing-label-refs": "error",
     },
   },
   {
     files: ["**/*.{json,jsonc,json5}"],
     plugins: { json },
     rules: {
-      ...jsonRules,
+      "json/no-duplicate-keys": "error",
+      "json/no-empty-keys": "error",
     },
   },
 );

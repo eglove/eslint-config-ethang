@@ -5,7 +5,7 @@
 > [!CAUTION]
 > Do not use this with Prettier! Styling rules are included.
 
-- 873 errored rules.
+- 882 errored rules.
 - 289 rules from [eslint-plugin-sonarjs](https://github.com/SonarSource/SonarJS/blob/master/packages/jsts/src/rules/README.md)
 - 144 rules from [@eslint/js](https://github.com/eslint/eslint/tree/main/packages/js)
 - 113 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
@@ -16,8 +16,10 @@
 - 20 rules from [eslint-plugin-n](https://github.com/eslint-community/eslint-plugin-n)
 - 19 rules from [eslint-plugin-perfectionist](https://github.com/azat-io/eslint-plugin-perfectionist)
 - 7 rules from [eslint-plugin-tailwindcss](https://github.com/francoismassart/eslint-plugin-tailwindcss)
+- 7 rules from [@eslint/markdown](https://github.com/eslint/markdown)
 - 4 rules from [eslint-plugin-barrel-files](https://github.com/thepassle/eslint-plugin-barrel-files)
 - 4 rules from [@tanstack/eslint-plugin-query](https://tanstack.com/query/latest/docs/eslint/eslint-plugin-query)
+- 2 rules from [@eslint/json](https://github.com/eslint/json)
 - 1 rule from [eslint-plugin-depend](https://github.com/es-tooling/eslint-plugin-depend/tree/main)
 - 1 rule from [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat)
 

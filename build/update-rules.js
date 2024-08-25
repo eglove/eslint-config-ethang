@@ -15,9 +15,13 @@ import { a11yRules } from "../setup/a11y.js";
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { deprecatedRules } from "../setup/deprecated.js";
+import { markdownRules } from "../setup/markdown.js";
+import { jsonRules } from "../setup/json.js";
 
 export const updateRules = () => {
-  const rules = {
+  let configFile = "";
+
+  const jsRules = {
     ...dependRules,
     ...barrelRules,
     ...compatRules,
@@ -35,38 +39,94 @@ export const updateRules = () => {
     ...deprecatedRules,
   };
 
-  let jsonified = JSON.stringify(rules);
-  jsonified = jsonified.slice(1, -1);
+  let jsRulesJon = JSON.stringify(jsRules);
+  jsRulesJon = jsRulesJon.slice(1, -1);
 
-  const config = readFileSync(
-    join(import.meta.dirname, "../eslint.config.js"),
-    "utf8",
-  );
-  const lines = config.split("\n");
+  let markdownRulesJson = JSON.stringify(markdownRules);
+  markdownRulesJson = markdownRulesJson.slice(1, -1);
 
-  let rulesStart = 0;
-  let rulesEnd = 0;
-  for (let index = 1; index < lines.length; index++) {
-    if (lines[index].endsWith("rules: {")) {
-      rulesStart = index;
-    }
+  let jsonRulesJson = JSON.stringify(jsonRules);
+  jsonRulesJson = jsonRulesJson.slice(1, -1);
 
-    if (0 !== rulesStart && lines[index].endsWith("},")) {
-      rulesEnd = index;
-    }
-  }
+  const importList = [
+    'import parser from "@typescript-eslint/parser";',
+    'import a11y from "eslint-plugin-jsx-a11y/lib/index.js";',
+    'import n from "eslint-plugin-n";',
+    'import unicorn from "eslint-plugin-unicorn";',
+    'import tseslint from "typescript-eslint";',
+    'import sonar from "eslint-plugin-sonarjs";',
+    'import tanstack from "@tanstack/eslint-plugin-query";',
+    'import perfectionist from "eslint-plugin-perfectionist";',
+    'import depend from "eslint-plugin-depend";',
+    'import barrel from "eslint-plugin-barrel-files";',
+    'import compat from "eslint-plugin-compat";',
+    'import lodashConfig from "eslint-plugin-lodash";',
+    'import tailwind from "eslint-plugin-tailwindcss";',
+    'import stylistic from "@stylistic/eslint-plugin";',
+    'import markdown from "@eslint/markdown";',
+    'import json from "@eslint/json";',
+    'import { ignores } from "./constants.js";',
+  ].sort((a, b) => {
+    return a.localeCompare(b);
+  });
 
-  const updated = [
-    ...lines.slice(0, rulesStart),
-    "rules: {",
-    jsonified,
-    "},",
-    ...lines.slice(rulesEnd + 1),
-  ].join("\n");
+  importList.forEach((item) => {
+    configFile += `${item}\n`;
+  });
+
+  configFile += `\nexport const languageOptions = {
+  parser,
+  parserOptions: {
+    project: true,
+    tsconfigRootDir: import.meta.dirname,
+  },
+};
+
+export default tseslint.config(
+  {
+    files: ["**/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts}"],
+    ignores,
+    languageOptions,
+    plugins: {
+      "@tanstack/query": tanstack,
+      "@typescript-eslint": tseslint.plugin,
+      a11y,
+      barrel,
+      compat,
+      depend,
+      lodash: lodashConfig,
+      n,
+      perfectionist,
+      sonar,
+      stylistic,
+      tailwind,
+      unicorn,
+    },
+    rules: {
+      ${jsRulesJon}
+    },
+  },
+  {
+    files: ["**/*.md"],
+    plugins: {
+      markdown,
+    },
+    rules: {
+      ${markdownRulesJson}
+    },
+  },
+  {
+    files: ["**/*.{json,jsonc,json5}"],
+    plugins: { json },
+    rules: {
+      ${jsonRulesJson}
+    },
+  },
+);\n`;
 
   writeFileSync(
     join(import.meta.dirname, "../eslint.config.js"),
-    updated,
+    configFile,
     "utf8",
   );
 };

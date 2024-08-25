@@ -15,6 +15,8 @@ import { a11yRules } from "../setup/a11y.js";
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { MarkdownGenerator } from "@ethang/markdown-generator/markdown-generator.js";
+import { markdownRules } from "../setup/markdown.js";
+import { jsonRules } from "../setup/json.js";
 
 export const updateReadme = () => {
   const md = new MarkdownGenerator();
@@ -109,6 +111,16 @@ export const updateReadme = () => {
       list: a11yRules,
       name: "jsx-a11y",
       url: "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y",
+    },
+    {
+      list: markdownRules,
+      name: "@eslint/markdown",
+      url: "https://github.com/eslint/markdown",
+    },
+    {
+      list: jsonRules,
+      name: "@eslint/json",
+      url: "https://github.com/eslint/json",
     },
   ];
 

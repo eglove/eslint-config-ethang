@@ -2560,10 +2560,10 @@ packages:
       }
     engines: { node: ">= 6" }
 
-  caniuse-lite@1.0.30001651:
+  caniuse-lite@1.0.30001653:
     resolution:
       {
-        integrity: sha512-9Cf+Xv1jJNe1xPZLGuUXLNkE1BoDkqRqYyFJ9TDYSqhduqA4hu4oR9HluGoWYQC/aj8WHjsGVV+bwkh0+tegRg==,
+        integrity: sha512-XGWQVB8wFQ2+9NZwZ10GxTYC5hk0Fa+q8cSkr0tgvMhYhMHP/QC+WTgrePMDBWiWc/pV+1ik82Al20XOK25Gcw==,
       }
 
   chalk@2.4.2:
@@ -7598,7 +7598,7 @@ snapshots:
 
   browserslist@4.23.3:
     dependencies:
-      caniuse-lite: 1.0.30001651
+      caniuse-lite: 1.0.30001653
       electron-to-chromium: 1.5.4
       node-releases: 2.0.18
       update-browserslist-db: 1.1.0(browserslist@4.23.3)
@@ -7626,7 +7626,7 @@ snapshots:
 
   camelcase-css@2.0.1: {}
 
-  caniuse-lite@1.0.30001651: {}
+  caniuse-lite@1.0.30001653: {}
 
   chalk@2.4.2:
     dependencies:
@@ -8033,7 +8033,7 @@ snapshots:
       "@mdn/browser-compat-data": 5.5.44
       ast-metadata-inferer: 0.8.0
       browserslist: 4.23.3
-      caniuse-lite: 1.0.30001651
+      caniuse-lite: 1.0.30001653
       eslint: 9.9.1(jiti@1.21.6)
       find-up: 5.0.0
       globals: 15.9.0

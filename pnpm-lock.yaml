@@ -81,8 +81,8 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(lodash@4.17.21)
       "@ethang/project-builder":
-        specifier: ^2.3.10
-        version: 2.3.10(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.1.8)(lodash@4.17.21)(simple-git@3.25.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.41)(typescript@5.5.4)(yaml@2.5.0))(typescript@5.5.4)
+        specifier: ^2.4.0
+        version: 2.4.0(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.1.8)(lodash@4.17.21)(simple-git@3.25.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.41)(typescript@5.5.4)(yaml@2.5.0))(typescript@5.5.4)
       "@tsconfig/node-lts":
         specifier: ^20.1.3
         version: 20.1.3
@@ -1452,10 +1452,10 @@ packages:
     peerDependencies:
       lodash: ^4.17.21
 
-  "@ethang/project-builder@2.3.10":
+  "@ethang/project-builder@2.4.0":
     resolution:
       {
-        integrity: sha512-No4Bu1E6pfUIFOFAQ7kKQgkY3amFB44ziZAfTOXv3IgKz2DuR4SeuQNgp0lxAinpbyw0ipCeKpyO32zS4CSaXA==,
+        integrity: sha512-VKYjJFZAEjGCRBw/wAhxYHXoy4dnuzr+aNVUF/9KkV5e+nSL3EkgoutJBx72t0oEbjZaC3Ai7Gn0j+3K0MKJjA==,
       }
     peerDependencies:
       chalk: ^5.3.0
@@ -7195,7 +7195,7 @@ snapshots:
     dependencies:
       lodash: 4.17.21
 
-  "@ethang/project-builder@2.3.10(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.1.8)(lodash@4.17.21)(simple-git@3.25.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.41)(typescript@5.5.4)(yaml@2.5.0))(typescript@5.5.4)":
+  "@ethang/project-builder@2.4.0(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.1.8)(lodash@4.17.21)(simple-git@3.25.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.41)(typescript@5.5.4)(yaml@2.5.0))(typescript@5.5.4)":
     dependencies:
       chalk: 5.3.0
       fs-extra: 11.2.0

@@ -1,8 +1,8 @@
-import { writeFileSync } from "node:fs";
+import { writeFile } from "node:fs";
 import { join } from "node:path";
 import { astroRules } from "../setup/astro.js";
 
-export function updateAstroRules() {
+export const updateAstroRules = async () => {
   let configFile = "";
 
   const rulesJson = JSON.stringify(astroRules).slice(1, -1);
@@ -31,9 +31,9 @@ export function updateAstroRules() {
 });
 `;
 
-  writeFileSync(
+  await writeFile(
     join(import.meta.dirname, "../config.astro.js"),
     configFile,
     "utf8",
   );
-}
+};

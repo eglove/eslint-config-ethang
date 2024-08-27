@@ -12,7 +12,7 @@ import { tailwindRules } from "../setup/tailwind.js";
 import { stylisticRules } from "../setup/stylistic.js";
 import { perfectionistRules } from "../setup/perfectionist.js";
 import { a11yRules } from "../setup/a11y.js";
-import { writeFileSync } from "node:fs";
+import { writeFile } from "node:fs";
 import { join } from "node:path";
 import { MarkdownGenerator } from "@ethang/markdown-generator/markdown-generator.js";
 import { markdownRules } from "../setup/markdown.js";
@@ -21,7 +21,7 @@ import { astroRules } from "../setup/astro.js";
 import { reactRules } from "../setup/react.js";
 import { solidRules } from "../setup/solid.js";
 
-export const updateReadme = () => {
+export const updateReadme = async () => {
   const md = new MarkdownGenerator();
   md.header(1, "Opinionated, Strict, Brutal, Unforgiving", 2);
   md.link("View Config", "https://eslint-config-ethang.pages.dev/rules", 2);
@@ -214,5 +214,9 @@ export default tseslint.config(...config, ...astroConfig, ...reactConfig, {
     "json",
   );
 
-  writeFileSync(join(import.meta.dirname, "../README.md"), md.render(), "utf8");
+  await writeFile(
+    join(import.meta.dirname, "../README.md"),
+    md.render(),
+    "utf8",
+  );
 };

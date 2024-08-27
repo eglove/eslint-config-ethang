@@ -1,8 +1,8 @@
 import { reactRules } from "../setup/react.js";
-import { writeFileSync } from "node:fs";
+import { writeFile } from "node:fs";
 import { join } from "node:path";
 
-export function updateReactRules() {
+export const updateReactRules = async () => {
   let configFile = "";
 
   const rulesJson = JSON.stringify(reactRules).slice(1, -1);
@@ -35,9 +35,9 @@ export function updateReactRules() {
 });
 `;
 
-  writeFileSync(
+  await writeFile(
     join(import.meta.dirname, "../config.react.js"),
     configFile,
     "utf8",
   );
-}
+};

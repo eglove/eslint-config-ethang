@@ -1,5 +1,5 @@
 import { reactRules } from "../setup/react.js";
-import { writeFile } from "node:fs";
+import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 export const updateReactRules = async () => {
@@ -35,7 +35,7 @@ export const updateReactRules = async () => {
 });
 `;
 
-  await writeFile(
+  writeFileSync(
     join(import.meta.dirname, "../config.react.js"),
     configFile,
     "utf8",

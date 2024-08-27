@@ -12,7 +12,7 @@ import { tailwindRules } from "../setup/tailwind.js";
 import { stylisticRules } from "../setup/stylistic.js";
 import { perfectionistRules } from "../setup/perfectionist.js";
 import { a11yRules } from "../setup/a11y.js";
-import { writeFile } from "node:fs";
+import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { deprecatedRules } from "../setup/deprecated.js";
 import { markdownRules } from "../setup/markdown.js";
@@ -119,7 +119,7 @@ export default tseslint.config(
   },
 );\n`;
 
-  await writeFile(
+  await writeFileSync(
     join(import.meta.dirname, "../eslint.config.js"),
     configFile,
     "utf8",

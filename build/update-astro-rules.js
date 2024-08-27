@@ -1,4 +1,4 @@
-import { writeFile } from "node:fs";
+import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { astroRules } from "../setup/astro.js";
 
@@ -31,7 +31,7 @@ export const updateAstroRules = async () => {
 });
 `;
 
-  await writeFile(
+  writeFileSync(
     join(import.meta.dirname, "../config.astro.js"),
     configFile,
     "utf8",

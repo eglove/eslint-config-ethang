@@ -1,5 +1,5 @@
 import { solidRules } from "../setup/solid.js";
-import { writeFile } from "node:fs";
+import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 export const updateSolidRules = async () => {
@@ -31,7 +31,7 @@ export const updateSolidRules = async () => {
 });
 `;
 
-  await writeFile(
+  await writeFileSync(
     join(import.meta.dirname, "../config.solid.js"),
     configFile,
     "utf8",

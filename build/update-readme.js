@@ -12,7 +12,7 @@ import { tailwindRules } from "../setup/tailwind.js";
 import { stylisticRules } from "../setup/stylistic.js";
 import { perfectionistRules } from "../setup/perfectionist.js";
 import { a11yRules } from "../setup/a11y.js";
-import { writeFile } from "node:fs";
+import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { MarkdownGenerator } from "@ethang/markdown-generator/markdown-generator.js";
 import { markdownRules } from "../setup/markdown.js";
@@ -214,9 +214,5 @@ export default tseslint.config(...config, ...astroConfig, ...reactConfig, {
     "json",
   );
 
-  await writeFile(
-    join(import.meta.dirname, "../README.md"),
-    md.render(),
-    "utf8",
-  );
+  writeFileSync(join(import.meta.dirname, "../README.md"), md.render(), "utf8");
 };

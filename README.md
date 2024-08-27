@@ -5,11 +5,11 @@
 > [!CAUTION]
 > Do not use this with Prettier! Styling rules are included.
 
-- 882 errored rules.
+- 883 errored rules.
 - 289 rules from [eslint-plugin-sonarjs](https://github.com/SonarSource/SonarJS/blob/master/packages/jsts/src/rules/README.md)
 - 144 rules from [@eslint/js](https://github.com/eslint/eslint/tree/main/packages/js)
 - 113 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
-- 103 rules from [@typescript/eslint](https://github.com/typescript-eslint/typescript-eslint)
+- 104 rules from [@typescript/eslint](https://github.com/typescript-eslint/typescript-eslint)
 - 91 rules from [@stylistic/eslint-plugin](https://eslint.style/)
 - 42 rules from [eslint-plugin-lodash](https://github.com/wix-incubator/eslint-plugin-lodash)
 - 35 rules from [jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)

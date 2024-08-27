@@ -2,7 +2,7 @@ import { reactRules } from "../setup/react.js";
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-export const updateReactRules = async () => {
+export const updateReactRules = () => {
   let configFile = "";
 
   const rulesJson = JSON.stringify(reactRules).slice(1, -1);

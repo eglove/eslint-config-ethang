@@ -18,7 +18,7 @@ import { deprecatedRules } from "../setup/deprecated.js";
 import { markdownRules } from "../setup/markdown.js";
 import { jsonRules } from "../setup/json.js";
 
-export const updateRules = async () => {
+export const updateRules = () => {
   let configFile = "";
 
   const jsRules = {
@@ -119,7 +119,7 @@ export default tseslint.config(
   },
 );\n`;
 
-  await writeFileSync(
+  writeFileSync(
     join(import.meta.dirname, "../eslint.config.js"),
     configFile,
     "utf8",

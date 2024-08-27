@@ -2,7 +2,7 @@ import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { astroRules } from "../setup/astro.js";
 
-export const updateAstroRules = async () => {
+export const updateAstroRules = () => {
   let configFile = "";
 
   const rulesJson = JSON.stringify(astroRules).slice(1, -1);

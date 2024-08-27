@@ -21,7 +21,7 @@ import { astroRules } from "../setup/astro.js";
 import { reactRules } from "../setup/react.js";
 import { solidRules } from "../setup/solid.js";
 
-export const updateReadme = async () => {
+export const updateReadme = () => {
   const md = new MarkdownGenerator();
   md.header(1, "Opinionated, Strict, Brutal, Unforgiving", 2);
   md.link("View Config", "https://eslint-config-ethang.pages.dev/rules", 2);

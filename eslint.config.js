@@ -29,6 +29,9 @@ export default tseslint.config(
     files: ["**/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts}"],
     ignores,
     languageOptions,
+    settings: {
+      react: { version: "18.3.1" },
+    },
     plugins: {
       "@tanstack/query": tanstack,
       "@typescript-eslint": tseslint.plugin,

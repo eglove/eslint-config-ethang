@@ -13,9 +13,7 @@ export default tseslint.config({
     "react-hooks": reactHooks,
   },
   settings: {
-    react: {
-      version: "18.3.1",
-    },
+    react: { version: "18.3.1" },
   },
   rules: {
     "react-hooks/rules-of-hooks": "off",

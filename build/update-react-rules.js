@@ -2,8 +2,15 @@ import { reactRules } from "../setup/react.js";
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-export const updateReactRules = () => {
+export const updateReactRules = async () => {
   let configFile = "";
+  const reactLatestResponse = await fetch(
+    "https://registry.npmjs.org/react/latest",
+  );
+  const reactLatest = await reactLatestResponse.json();
+  const settings = JSON.stringify({
+    react: { version: reactLatest.version },
+  }).slice(1, -1);
 
   const rulesJson = JSON.stringify(reactRules).slice(1, -1);
 
@@ -28,6 +35,9 @@ export const updateReactRules = () => {
   plugins: {
     react,
     "react-hooks": reactHooks,
+  },
+  settings: {
+    ${settings}
   },
   rules: {
     ${rulesJson}

@@ -9,10 +9,10 @@ import { updateAstroRules } from "./build/update-astro-rules.js";
 await projectBuilder("eslint-config-ethang", "master", {
   isLibrary: true,
   scripts: ["UPDATE", "DEDUPE", "LINT"],
-  postInstall: () => {
+  postInstall: async () => {
     console.log("Updating Rules...");
     updateRules();
-    updateReactRules();
+    await updateReactRules();
     updateSolidRules();
     updateAstroRules();
     updateReadme();

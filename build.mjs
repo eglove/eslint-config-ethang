@@ -11,7 +11,7 @@ await projectBuilder("eslint-config-ethang", "master", {
   scripts: ["UPDATE", "DEDUPE", "LINT"],
   postInstall: async () => {
     console.log("Updating Rules...");
-    updateRules();
+    await updateRules();
     await updateReactRules();
     updateSolidRules();
     updateAstroRules();

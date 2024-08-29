@@ -1,15 +1,13 @@
 import { reactRules } from "../setup/react.js";
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { getLatestReact } from "./get-react-version.mjs";
 
 export const updateReactRules = async () => {
   let configFile = "";
-  const reactLatestResponse = await fetch(
-    "https://registry.npmjs.org/react/latest",
-  );
-  const reactLatest = await reactLatestResponse.json();
+  const react = await getLatestReact();
   const settings = JSON.stringify({
-    react: { version: reactLatest.version },
+    react: { version: react.version },
   }).slice(1, -1);
 
   const rulesJson = JSON.stringify(reactRules).slice(1, -1);

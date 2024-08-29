@@ -17,9 +17,14 @@ import { join } from "node:path";
 import { deprecatedRules } from "../setup/deprecated.js";
 import { markdownRules } from "../setup/markdown.js";
 import { jsonRules } from "../setup/json.js";
+import { getLatestReact } from "./get-react-version.mjs";
 
-export const updateRules = () => {
+export const updateRules = async () => {
   let configFile = "";
+  const react = await getLatestReact();
+  const settings = JSON.stringify({
+    react: { version: react.version },
+  }).slice(1, -1);
 
   const jsRules = {
     ...dependRules,
@@ -82,6 +87,9 @@ export default tseslint.config(
     files: ["**/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts}"],
     ignores,
     languageOptions,
+    settings: {
+      ${settings}
+    },
     plugins: {
       "@tanstack/query": tanstack,
       "@typescript-eslint": tseslint.plugin,

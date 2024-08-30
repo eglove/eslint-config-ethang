@@ -31,5 +31,9 @@ export const genRules = (ruleNames, customRules, prefix, defaultOverride) => {
     }
   }
 
-  return rules;
+  return Object.fromEntries(
+    Object.entries(rules).sort(([a], [b]) => {
+      a.localeCompare(b);
+    }),
+  );
 };

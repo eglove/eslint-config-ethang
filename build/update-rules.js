@@ -18,6 +18,7 @@ import { deprecatedRules } from "../setup/deprecated.js";
 import { markdownRules } from "../setup/markdown.js";
 import { jsonRules } from "../setup/json.js";
 import { getLatestReact } from "./get-react-version.mjs";
+import { ethangRules } from "../setup/ethang.js";
 
 export const updateRules = async () => {
   let configFile = "";
@@ -36,6 +37,7 @@ export const updateRules = async () => {
     ...unicornRules,
     ...lodashRules,
     ...sonarRules,
+    ...ethangRules,
     ...tanstackQueryRules,
     ...tailwindRules,
     ...stylisticRules,
@@ -66,6 +68,7 @@ export const updateRules = async () => {
     'import markdown from "@eslint/markdown";',
     'import json from "@eslint/json";',
     'import { ignores } from "./constants.js";',
+    'import ethang from "@ethang/eslint-plugin";',
   ].sort((a, b) => {
     return a.localeCompare(b);
   });
@@ -97,6 +100,7 @@ export default tseslint.config(
       barrel,
       compat,
       depend,
+      ethang,
       lodash: lodashConfig,
       n,
       perfectionist,

@@ -3,6 +3,7 @@ import a11y from "eslint-plugin-jsx-a11y/lib/index.js";
 import barrel from "eslint-plugin-barrel-files";
 import compat from "eslint-plugin-compat";
 import depend from "eslint-plugin-depend";
+import ethang from "@ethang/eslint-plugin";
 import json from "@eslint/json";
 import lodashConfig from "eslint-plugin-lodash";
 import markdown from "@eslint/markdown";
@@ -39,6 +40,7 @@ export default tseslint.config(
       barrel,
       compat,
       depend,
+      ethang,
       lodash: lodashConfig,
       n,
       perfectionist,
@@ -938,6 +940,7 @@ export default tseslint.config(
       "sonar/x-powered-by": "error",
       "sonar/xml-parser-xxe": "error",
       "sonar/xpath": "off",
+      "ethang/handle-native-error": "error",
       "@tanstack/query/exhaustive-deps": "error",
       "@tanstack/query/stable-query-client": "error",
       "@tanstack/query/no-rest-destructuring": "error",

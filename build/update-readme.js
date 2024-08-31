@@ -20,6 +20,7 @@ import { jsonRules } from "../setup/json.js";
 import { astroRules } from "../setup/astro.js";
 import { reactRules } from "../setup/react.js";
 import { solidRules } from "../setup/solid.js";
+import { ethangRules } from "../setup/ethang.js";
 
 export const updateReadme = () => {
   const md = new MarkdownGenerator();
@@ -122,6 +123,11 @@ export const updateReadme = () => {
       list: jsonRules,
       name: "@eslint/json",
       url: "https://github.com/eslint/json",
+    },
+    {
+      list: ethangRules,
+      name: "@ethang/eslint-plugin",
+      url: "https://github.com/eglove/eslint-plugin",
     },
   ];
 

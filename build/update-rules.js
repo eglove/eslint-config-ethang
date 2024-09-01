@@ -64,7 +64,9 @@ export const updateRules = async () => {
   },
   {
     files: ["${getTypeFiles("json")}"],
-    plugins: { ${getListPlugins(jsonList)} },
+    plugins: { 
+      ${getListPlugins(jsonList)} 
+    },
     rules: {
       ${jsonRulesJson}
     },

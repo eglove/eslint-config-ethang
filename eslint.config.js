@@ -1251,7 +1251,7 @@ export default tseslint.config(
   {
     files: ["**/*.md"],
     plugins: {
-      markdown,
+      markdown: markdown,
     },
     rules: {
       "markdown/fenced-code-language": "error",
@@ -1265,7 +1265,7 @@ export default tseslint.config(
   },
   {
     files: ["**/*.{json,jsonc,json5}"],
-    plugins: { json },
+    plugins: { json: json },
     rules: {
       "json/no-duplicate-keys": "error",
       "json/no-empty-keys": "error",

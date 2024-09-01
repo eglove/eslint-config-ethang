@@ -21,6 +21,10 @@ const customRules = [
     rule: ["error", "type"],
   },
   {
+    name: "consistent-type-imports",
+    rule: ["error", { fixStyle: "inline-type-imports" }],
+  },
+  {
     name: "explicit-function-return-type",
     rule: "off",
   },

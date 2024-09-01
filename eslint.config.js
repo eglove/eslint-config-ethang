@@ -1265,7 +1265,9 @@ export default tseslint.config(
   },
   {
     files: ["**/*.{json,jsonc,json5}"],
-    plugins: { json: json },
+    plugins: {
+      json: json,
+    },
     rules: {
       "json/no-duplicate-keys": "error",
       "json/no-empty-keys": "error",

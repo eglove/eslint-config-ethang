@@ -6,7 +6,9 @@ export default tseslint.config({
   files: ["**/*.{astro}"],
   ignores,
   languageOptions,
-  plugins: { astro },
+  plugins: {
+    astro: astro,
+  },
   rules: {
     "astro/missing-client-only-directive-value": "error",
     "astro/no-conflict-set-directives": "error",

@@ -14,6 +14,13 @@ export const getListImportStrings = (list) => {
     .filter(Boolean);
 };
 
+export const getTypeImportStrings = (type) => {
+  return ruleList
+    .filter((list) => list.type === type)
+    .map((item) => item.importString)
+    .filter(Boolean);
+};
+
 export const getListJson = (list) => {
   return list
     .map((list) => {

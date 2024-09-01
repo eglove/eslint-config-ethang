@@ -6,7 +6,9 @@ export default tseslint.config({
   files: ["**/*.{jsx,tsx}"],
   ignores,
   languageOptions,
-  plugins: { solid },
+  plugins: {
+    solid: solid,
+  },
   rules: {
     "solid/components-return-once": "error",
     "solid/event-handlers": "error",

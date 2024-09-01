@@ -1,81 +1,83 @@
-import { writeFileSync } from "node:fs";
-import { join } from "node:path";
-import { getLatestReact } from "./get-react-version.js";
-import {
-  getListImportStrings,
-  getList,
-  getListJson,
-  getTypeFiles,
-  getListPlugins,
-} from "./list-utils.mjs";
+import { createConfigFile } from "./create-config-file.js";
+
+export const coreFile = [
+  {
+    name: "core",
+    label: "Core",
+    importString: 'import config from "@ethang/eslint-config/eslint.config.js',
+    options: {
+      includeReactVersion: true,
+      includeLanguageOptions: true,
+      includeIgnores: true,
+    },
+  },
+  {
+    name: "markdown",
+  },
+  {
+    name: "json",
+  },
+];
+
+const astroFile = [
+  {
+    name: "astro",
+    label: "Astro",
+    importString:
+      'import astroConfig from "@ethang/eslint-config/config.astro.js',
+    options: {
+      includeIgnores: true,
+      includeLanguageOptions: true,
+      extraImports: ['import tseslint from "typescript-eslint";'],
+    },
+  },
+];
+
+const reactFile = [
+  {
+    name: "react",
+    label: "React",
+    importString:
+      'import reactConfig from "@ethang/eslint-config/config.react.js',
+    options: {
+      includeReactVersion: true,
+      includeIgnores: true,
+      includeLanguageOptions: true,
+      extraImports: ['import tseslint from "typescript-eslint";'],
+    },
+  },
+];
+
+const solidFile = [
+  {
+    name: "solid",
+    label: "Solid",
+    importString:
+      'import reactConfig from "@ethang/eslint-config/config.solid.js',
+    options: {
+      includeIgnores: true,
+      includeLanguageOptions: true,
+      extraImports: ['import tseslint from "typescript-eslint";'],
+    },
+  },
+];
+
+export const secondaryRules = {
+  astro: astroFile,
+  react: reactFile,
+  solid: solidFile,
+};
+
+export const allRules = {
+  core: coreFile,
+  ...secondaryRules,
+};
 
 export const updateRules = async () => {
-  let configFile = "";
-  const react = await getLatestReact();
-  const settings = JSON.stringify({
-    react: { version: react.version },
-  }).slice(1, -1);
-
-  const coreList = getList("core");
-  const jsRulesJon = getListJson(coreList);
-
-  const markdownList = getList("markdown");
-  const markdownRulesJson = getListJson(markdownList);
-
-  const jsonList = getList("json");
-  const jsonRulesJson = getListJson(jsonList);
-
-  const importList = [
-    'import { ignores, languageOptions } from "./constants.js";',
-    ...getListImportStrings(markdownList),
-    ...getListImportStrings(jsonList),
-    ...getListImportStrings(coreList),
-  ].sort((a, b) => {
-    return a.localeCompare(b);
-  });
-
-  importList.forEach((item) => {
-    configFile += `${item}\n`;
-  });
-
-  configFile += `\nexport default tseslint.config(
-  {
-    files: ["${getTypeFiles("core")}"],
-    ignores,
-    languageOptions,
-    settings: {
-      ${settings}
-    },
-    plugins: {
-      ${getListPlugins(coreList)}
-    },
-    rules: {
-      ${jsRulesJon}
-    },
-  },
-  {
-    files: ["${getTypeFiles("markdown")}"],
-    plugins: {
-      ${getListPlugins(markdownList)}
-    },
-    rules: {
-      ${markdownRulesJson}
-    },
-  },
-  {
-    files: ["${getTypeFiles("json")}"],
-    plugins: { 
-      ${getListPlugins(jsonList)} 
-    },
-    rules: {
-      ${jsonRulesJson}
-    },
-  },
-);\n`;
-
-  writeFileSync(
-    join(import.meta.dirname, "../eslint.config.js"),
-    configFile,
-    "utf8",
-  );
+  await Promise.all([
+    createConfigFile(coreFile, "eslint.config.js"),
+    createConfigFile(astroFile, "config.astro.js"),
+    createConfigFile(reactFile, "config.react.js"),
+    createConfigFile(solidFile, "config.solid.js"),
+  ]);
 };

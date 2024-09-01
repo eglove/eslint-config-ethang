@@ -7,12 +7,12 @@ export default tseslint.config({
   files: ["**/*.{jsx,tsx}"],
   ignores,
   languageOptions,
-  plugins: {
-    react,
-    "react-hooks": reactHooks,
-  },
   settings: {
     react: { version: "18.3.1" },
+  },
+  plugins: {
+    react: react,
+    "react-hooks": reactHooks,
   },
   rules: {
     "react/avoid-shorthand-boolean": "off",

@@ -207,6 +207,8 @@ export const ruleList = [
     url: "https://github.com/ota-meshi/eslint-plugin-astro",
     type: "astro",
     importString: 'import astro from "eslint-plugin-astro";',
+    pluginName: "astro",
+    pluginValue: "astro",
   },
   {
     list: reactRules,
@@ -214,6 +216,8 @@ export const ruleList = [
     url: "https://eslint-react.xyz/",
     type: "react",
     importString: 'import react from "@eslint-react/eslint-plugin";',
+    pluginName: "react",
+    pluginValue: "react",
   },
   {
     list: reactHookRules,
@@ -221,6 +225,8 @@ export const ruleList = [
     url: "https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks",
     type: "react",
     importString: 'import reactHooks from "eslint-plugin-react-hooks";',
+    pluginName: "react-hooks",
+    pluginValue: "reactHooks",
   },
   {
     list: solidRules,
@@ -228,5 +234,7 @@ export const ruleList = [
     url: "https://github.com/solidjs-community/eslint-plugin-solid",
     type: "solid",
     importString: 'import solid from "eslint-plugin-solid";',
+    pluginName: "solid",
+    pluginValue: "solid",
   },
 ];

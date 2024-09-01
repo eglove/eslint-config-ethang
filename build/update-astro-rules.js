@@ -10,8 +10,7 @@ export const updateAstroRules = () => {
 
   const importList = [
     'import tseslint from "typescript-eslint";',
-    'import { languageOptions } from "./eslint.config.js";',
-    'import { ignores } from "./constants.js";',
+    'import { ignores, languageOptions } from "./constants.js";',
     ...getListImportStrings(astroList),
   ].sort((a, b) => {
     return a.localeCompare(b);

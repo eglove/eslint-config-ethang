@@ -1,4 +1,4 @@
-import { ignores } from "./constants.js";
+import { ignores, languageOptions } from "./constants.js";
 import a11y from "eslint-plugin-jsx-a11y/lib/index.js";
 import barrel from "eslint-plugin-barrel-files";
 import compat from "eslint-plugin-compat";
@@ -16,14 +16,6 @@ import tailwind from "eslint-plugin-tailwindcss";
 import tanstack from "@tanstack/eslint-plugin-query";
 import tseslint from "typescript-eslint";
 import unicorn from "eslint-plugin-unicorn";
-
-export const languageOptions = {
-  parser,
-  parserOptions: {
-    project: true,
-    tsconfigRootDir: import.meta.dirname,
-  },
-};
 
 export default tseslint.config(
   {

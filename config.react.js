@@ -1,5 +1,4 @@
-import { ignores } from "./constants.js";
-import { languageOptions } from "./eslint.config.js";
+import { ignores, languageOptions } from "./constants.js";
 import react from "@eslint-react/eslint-plugin";
 import reactHooks from "eslint-plugin-react-hooks";
 import tseslint from "typescript-eslint";

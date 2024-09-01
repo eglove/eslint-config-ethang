@@ -1,5 +1,4 @@
-import { ignores } from "./constants.js";
-import { languageOptions } from "./eslint.config.js";
+import { ignores, languageOptions } from "./constants.js";
 import solid from "eslint-plugin-solid";
 import tseslint from "typescript-eslint";
 

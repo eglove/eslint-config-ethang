@@ -21,7 +21,7 @@ export const updateRules = async () => {
 
   const importList = [
     'import parser from "@typescript-eslint/parser";',
-    'import { ignores } from "./constants.js";',
+    'import { ignores, languageOptions } from "./constants.js";',
     ...getListImportStrings(markdownList),
     ...getListImportStrings(jsonList),
     ...getListImportStrings(coreList),
@@ -33,15 +33,7 @@ export const updateRules = async () => {
     configFile += `${item}\n`;
   });
 
-  configFile += `\nexport const languageOptions = {
-  parser,
-  parserOptions: {
-    project: true,
-    tsconfigRootDir: import.meta.dirname,
-  },
-};
-
-export default tseslint.config(
+  configFile += `\nexport default tseslint.config(
   {
     files: ["**/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts}"],
     ignores,

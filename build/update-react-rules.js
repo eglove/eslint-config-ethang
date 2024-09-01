@@ -15,8 +15,7 @@ export const updateReactRules = async () => {
 
   const importList = [
     'import tseslint from "typescript-eslint";',
-    'import { languageOptions } from "./eslint.config.js";',
-    'import { ignores } from "./constants.js";',
+    'import { ignores, languageOptions } from "./constants.js";',
     ...getListImportStrings(reactList),
   ].sort((a, b) => {
     return a.localeCompare(b);

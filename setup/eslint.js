@@ -30,7 +30,6 @@ const changedRules = [
   { name: "max-params", rule: "off" },
   { name: "new-cap", rule: "off" },
   { name: "no-array-constructor", rule: "off" },
-  { name: "no-duplicate-imports", rule: "off" },
   { name: "no-empty-function", rule: "off" },
   { name: "no-implicit-globals", rule: "off" },
   { name: "no-implied-eval", rule: "off" },

@@ -1,6 +1,11 @@
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { getList, getListImportStrings, getListJson } from "./list-utils.mjs";
+import {
+  getList,
+  getListImportStrings,
+  getListJson,
+  getTypeFiles,
+} from "./list-utils.mjs";
 
 export const updateSolidRules = () => {
   let configFile = "";
@@ -21,7 +26,7 @@ export const updateSolidRules = () => {
   });
 
   configFile += `\nexport default tseslint.config({
-  files: ["**/*.{jsx,tsx}"],
+  files: ["${getTypeFiles("solid")}"],
   ignores,
   languageOptions,
   plugins: { solid },

@@ -1,7 +1,12 @@
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { getLatestReact } from "./get-react-version.mjs";
-import { getList, getListImportStrings, getListJson } from "./list-utils.mjs";
+import { getLatestReact } from "./get-react-version.js";
+import {
+  getList,
+  getListImportStrings,
+  getListJson,
+  getTypeFiles,
+} from "./list-utils.mjs";
 
 export const updateReactRules = async () => {
   let configFile = "";
@@ -26,7 +31,7 @@ export const updateReactRules = async () => {
   });
 
   configFile += `\nexport default tseslint.config({
-  files: ["**/*.{jsx,tsx}"],
+  files: ["${getTypeFiles("react")}"],
   ignores,
   languageOptions,
   plugins: {

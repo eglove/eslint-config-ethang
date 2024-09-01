@@ -21,3 +21,43 @@ export const getListJson = (list) => {
     })
     .join(",");
 };
+
+export const getTypeFiles = (type) => {
+  switch (type) {
+    case "core": {
+      return ["**/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts}"];
+    }
+
+    case "markdown": {
+      return ["**/*.md"];
+    }
+
+    case "json": {
+      return ["**/*.{json,jsonc,json5}"];
+    }
+
+    case "react": {
+      return ["**/*.{jsx,tsx}"];
+    }
+
+    case "astro": {
+      return ["**/*.{astro}"];
+    }
+
+    case "solid": {
+      return ["**/*.{jsx,tsx}"];
+    }
+  }
+};
+
+export const getListPlugins = (list) => {
+  let pluginString = "";
+
+  for (const item of list) {
+    if (item.pluginName && item.pluginValue) {
+      pluginString += `"${item.pluginName}": ${item.pluginValue},`;
+    }
+  }
+
+  return pluginString;
+};

@@ -28,6 +28,8 @@ export const ruleList = [
     type: "core",
     importString: 'import depend from "eslint-plugin-depend";',
     order: 0,
+    pluginName: "depend",
+    pluginValue: "depend",
   },
   {
     list: barrelRules,
@@ -36,6 +38,8 @@ export const ruleList = [
     type: "core",
     importString: 'import barrel from "eslint-plugin-barrel-files";',
     order: 1,
+    pluginName: "barrel",
+    pluginValue: "barrel",
   },
   {
     list: compatRules,
@@ -44,6 +48,8 @@ export const ruleList = [
     type: "core",
     importString: 'import compat from "eslint-plugin-compat";',
     order: 2,
+    pluginName: "compat",
+    pluginValue: "compat",
   },
   {
     list: eslintRules,
@@ -52,6 +58,8 @@ export const ruleList = [
     type: "core",
     importString: undefined,
     order: 3,
+    pluginName: undefined,
+    pluginValue: undefined,
   },
   {
     list: nRules,
@@ -60,6 +68,8 @@ export const ruleList = [
     type: "core",
     importString: 'import n from "eslint-plugin-n";',
     order: 4,
+    pluginName: "n",
+    pluginValue: "n",
   },
   {
     list: typescriptRules,
@@ -68,6 +78,8 @@ export const ruleList = [
     type: "core",
     importString: 'import tseslint from "typescript-eslint";',
     order: 5,
+    pluginName: "@typescript-eslint",
+    pluginValue: "tseslint.plugin",
   },
   {
     list: unicornRules,
@@ -76,6 +88,8 @@ export const ruleList = [
     type: "core",
     importString: 'import unicorn from "eslint-plugin-unicorn";',
     order: 6,
+    pluginName: "unicorn",
+    pluginValue: "unicorn",
   },
   {
     list: lodashRules,
@@ -84,6 +98,8 @@ export const ruleList = [
     type: "core",
     importString: 'import lodashConfig from "eslint-plugin-lodash";',
     order: 7,
+    pluginName: "lodash",
+    pluginValue: "lodashConfig",
   },
   {
     list: sonarRules,
@@ -92,6 +108,8 @@ export const ruleList = [
     type: "core",
     importString: 'import sonar from "eslint-plugin-sonarjs";',
     order: 8,
+    pluginName: "sonar",
+    pluginValue: "sonar",
   },
   {
     list: ethangRules,
@@ -100,6 +118,8 @@ export const ruleList = [
     type: "core",
     importString: 'import ethang from "@ethang/eslint-plugin";',
     order: 9,
+    pluginName: "ethang",
+    pluginValue: "ethang",
   },
   {
     list: tanstackQueryRules,
@@ -108,6 +128,8 @@ export const ruleList = [
     type: "core",
     importString: 'import tanstack from "@tanstack/eslint-plugin-query";',
     order: 10,
+    pluginName: "@tanstack/query",
+    pluginValue: "tanstack",
   },
   {
     list: tailwindRules,
@@ -116,6 +138,8 @@ export const ruleList = [
     type: "core",
     importString: 'import tailwind from "eslint-plugin-tailwindcss";',
     order: 11,
+    pluginName: "tailwind",
+    pluginValue: "tailwind",
   },
   {
     list: stylisticRules,
@@ -124,6 +148,8 @@ export const ruleList = [
     type: "core",
     importString: 'import stylistic from "@stylistic/eslint-plugin";',
     order: 12,
+    pluginName: "stylistic",
+    pluginValue: "stylistic",
   },
   {
     list: perfectionistRules,
@@ -132,6 +158,8 @@ export const ruleList = [
     type: "core",
     importString: 'import perfectionist from "eslint-plugin-perfectionist";',
     order: 13,
+    pluginName: "perfectionist",
+    pluginValue: "perfectionist",
   },
   {
     list: a11yRules,
@@ -140,6 +168,8 @@ export const ruleList = [
     type: "core",
     importString: 'import a11y from "eslint-plugin-jsx-a11y/lib/index.js";',
     order: 14,
+    pluginName: "a11y",
+    pluginValue: "a11y",
   },
   {
     list: deprecatedRules,
@@ -148,6 +178,8 @@ export const ruleList = [
     type: "core",
     importString: undefined,
     order: 15,
+    pluginName: undefined,
+    pluginValue: undefined,
   },
   {
     list: markdownRules,
@@ -156,6 +188,8 @@ export const ruleList = [
     type: "markdown",
     importString: 'import markdown from "@eslint/markdown";',
     order: 0,
+    pluginName: "markdown",
+    pluginValue: "markdown",
   },
   {
     list: jsonRules,
@@ -164,6 +198,8 @@ export const ruleList = [
     type: "json",
     importString: 'import json from "@eslint/json";',
     order: 0,
+    pluginName: "json",
+    pluginValue: "json",
   },
   {
     list: astroRules,

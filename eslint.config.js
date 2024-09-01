@@ -8,7 +8,6 @@ import json from "@eslint/json";
 import lodashConfig from "eslint-plugin-lodash";
 import markdown from "@eslint/markdown";
 import n from "eslint-plugin-n";
-import parser from "@typescript-eslint/parser";
 import perfectionist from "eslint-plugin-perfectionist";
 import sonar from "eslint-plugin-sonarjs";
 import stylistic from "@stylistic/eslint-plugin";
@@ -26,20 +25,20 @@ export default tseslint.config(
       react: { version: "18.3.1" },
     },
     plugins: {
-      "@tanstack/query": tanstack,
+      depend: depend,
+      barrel: barrel,
+      compat: compat,
+      n: n,
       "@typescript-eslint": tseslint.plugin,
-      a11y,
-      barrel,
-      compat,
-      depend,
-      ethang,
+      unicorn: unicorn,
       lodash: lodashConfig,
-      n,
-      perfectionist,
-      sonar,
-      stylistic,
-      tailwind,
-      unicorn,
+      sonar: sonar,
+      ethang: ethang,
+      "@tanstack/query": tanstack,
+      tailwind: tailwind,
+      stylistic: stylistic,
+      perfectionist: perfectionist,
+      a11y: a11y,
     },
     rules: {
       "depend/ban-dependencies": ["error", { allowed: ["lodash"] }],

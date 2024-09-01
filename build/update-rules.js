@@ -1,7 +1,13 @@
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { getLatestReact } from "./get-react-version.mjs";
-import { getListImportStrings, getList, getListJson } from "./list-utils.mjs";
+import { getLatestReact } from "./get-react-version.js";
+import {
+  getListImportStrings,
+  getList,
+  getListJson,
+  getTypeFiles,
+  getListPlugins,
+} from "./list-utils.mjs";
 
 export const updateRules = async () => {
   let configFile = "";
@@ -20,7 +26,6 @@ export const updateRules = async () => {
   const jsonRulesJson = getListJson(jsonList);
 
   const importList = [
-    'import parser from "@typescript-eslint/parser";',
     'import { ignores, languageOptions } from "./constants.js";',
     ...getListImportStrings(markdownList),
     ...getListImportStrings(jsonList),
@@ -35,44 +40,31 @@ export const updateRules = async () => {
 
   configFile += `\nexport default tseslint.config(
   {
-    files: ["**/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts}"],
+    files: ["${getTypeFiles("core")}"],
     ignores,
     languageOptions,
     settings: {
       ${settings}
     },
     plugins: {
-      "@tanstack/query": tanstack,
-      "@typescript-eslint": tseslint.plugin,
-      a11y,
-      barrel,
-      compat,
-      depend,
-      ethang,
-      lodash: lodashConfig,
-      n,
-      perfectionist,
-      sonar,
-      stylistic,
-      tailwind,
-      unicorn,
+      ${getListPlugins(coreList)}
     },
     rules: {
       ${jsRulesJon}
     },
   },
   {
-    files: ["**/*.md"],
+    files: ["${getTypeFiles("markdown")}"],
     plugins: {
-      markdown,
+      ${getListPlugins(markdownList)}
     },
     rules: {
       ${markdownRulesJson}
     },
   },
   {
-    files: ["**/*.{json,jsonc,json5}"],
-    plugins: { json },
+    files: ["${getTypeFiles("json")}"],
+    plugins: { ${getListPlugins(jsonList)} },
     rules: {
       ${jsonRulesJson}
     },

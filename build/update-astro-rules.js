@@ -1,6 +1,11 @@
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { getListImportStrings, getList, getListJson } from "./list-utils.mjs";
+import {
+  getListImportStrings,
+  getList,
+  getListJson,
+  getTypeFiles,
+} from "./list-utils.mjs";
 
 export const updateAstroRules = () => {
   let configFile = "";
@@ -21,7 +26,7 @@ export const updateAstroRules = () => {
   });
 
   configFile += `\nexport default tseslint.config({
-  files: ["**/*.{astro}"],
+  files: ["${getTypeFiles("astro")}"],
   ignores,
   languageOptions,
   plugins: { astro },

@@ -300,7 +300,10 @@ export default tseslint.config(
       "@typescript-eslint/consistent-type-assertions": "error",
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
       "@typescript-eslint/consistent-type-exports": "error",
-      "@typescript-eslint/consistent-type-imports": "error",
+      "@typescript-eslint/consistent-type-imports": [
+        "error",
+        { fixStyle: "inline-type-imports" },
+      ],
       "@typescript-eslint/default-param-last": "error",
       "@typescript-eslint/dot-notation": "error",
       "@typescript-eslint/explicit-function-return-type": "off",

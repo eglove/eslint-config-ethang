@@ -6,18 +6,24 @@ import { updateReactRules } from "./build/update-react-rules.js";
 import { updateSolidRules } from "./build/update-solid-rules.js";
 import { updateAstroRules } from "./build/update-astro-rules.js";
 
-await projectBuilder("eslint-config-ethang", "master", {
-  isLibrary: true,
-  scripts: ["UPDATE", "DEDUPE", "LINT"],
-  postInstall: async () => {
-    console.log("Updating Rules...");
-    await updateRules();
-    await updateReactRules();
-    updateSolidRules();
-    updateAstroRules();
-    updateReadme();
-  },
-  tsupOptions: {
-    bundle: true,
-  },
-});
+await updateRules();
+await updateReactRules();
+updateSolidRules();
+updateAstroRules();
+updateReadme();
+
+// await projectBuilder("eslint-config-ethang", "master", {
+//   isLibrary: true,
+//   scripts: ["UPDATE", "DEDUPE", "LINT"],
+//   postInstall: async () => {
+//     console.log("Updating Rules...");
+//     await updateRules();
+//     await updateReactRules();
+//     updateSolidRules();
+//     updateAstroRules();
+//     updateReadme();
+//   },
+//   tsupOptions: {
+//     bundle: true,
+//   },
+// });

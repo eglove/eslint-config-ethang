@@ -16,8 +16,6 @@ export default tseslint.config({
     react: { version: "18.3.1" },
   },
   rules: {
-    "react-hooks/rules-of-hooks": "off",
-    "react-hooks/exhaustive-deps": "off",
     "react/avoid-shorthand-boolean": "off",
     "react/avoid-shorthand-fragment": "off",
     "react/ensure-forward-ref-using-ref": "error",
@@ -92,5 +90,7 @@ export default tseslint.config({
     "react/debug/function-component": "off",
     "react/debug/is-from-react": "off",
     "react/debug/react-hooks": "off",
+    "react-hooks/rules-of-hooks": "off",
+    "react-hooks/exhaustive-deps": "off",
   },
 });

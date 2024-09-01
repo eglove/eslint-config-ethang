@@ -1,7 +1,7 @@
-import { reactRules } from "../setup/react.js";
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { getLatestReact } from "./get-react-version.mjs";
+import { getList, getListImportStrings, getListJson } from "./list-utils.mjs";
 
 export const updateReactRules = async () => {
   let configFile = "";
@@ -10,14 +10,14 @@ export const updateReactRules = async () => {
     react: { version: react.version },
   }).slice(1, -1);
 
-  const rulesJson = JSON.stringify(reactRules).slice(1, -1);
+  const reactList = getList("react");
+  const json = getListJson(reactList);
 
   const importList = [
-    'import react from "@eslint-react/eslint-plugin";',
-    'import reactHooks from "eslint-plugin-react-hooks";',
     'import tseslint from "typescript-eslint";',
     'import { languageOptions } from "./eslint.config.js";',
     'import { ignores } from "./constants.js";',
+    ...getListImportStrings(reactList),
   ].sort((a, b) => {
     return a.localeCompare(b);
   });
@@ -38,7 +38,7 @@ export const updateReactRules = async () => {
     ${settings}
   },
   rules: {
-    ${rulesJson}
+    ${json},
   },
 });
 `;

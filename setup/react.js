@@ -25,6 +25,9 @@ const customHookRules = [
 const hookGen = genRules(reactHookRuleNames, customHookRules, "react-hooks");
 
 export const reactRules = {
-  ...hookGen,
   ...reactGen,
+};
+
+export const reactHookRules = {
+  ...hookGen,
 };

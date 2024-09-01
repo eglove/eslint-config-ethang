@@ -1,24 +1,7 @@
-import { dependRules } from "../setup/depend.js";
-import { barrelRules } from "../setup/barrel.js";
-import { compatRules } from "../setup/compat.js";
-import { eslintRules } from "../setup/eslint.js";
-import { nRules } from "../setup/n.js";
-import { typescriptRules } from "../setup/typescript-eslint.js";
-import { unicornRules } from "../setup/unicorn.js";
-import { lodashRules } from "../setup/lodash.js";
-import { sonarRules } from "../setup/sonar.js";
-import { tanstackQueryRules } from "../setup/tanstack-query.js";
-import { tailwindRules } from "../setup/tailwind.js";
-import { stylisticRules } from "../setup/stylistic.js";
-import { perfectionistRules } from "../setup/perfectionist.js";
-import { a11yRules } from "../setup/a11y.js";
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { deprecatedRules } from "../setup/deprecated.js";
-import { markdownRules } from "../setup/markdown.js";
-import { jsonRules } from "../setup/json.js";
 import { getLatestReact } from "./get-react-version.mjs";
-import { ethangRules } from "../setup/ethang.js";
+import { getListImportStrings, getList, getListJson } from "./list-utils.mjs";
 
 export const updateRules = async () => {
   let configFile = "";
@@ -27,48 +10,21 @@ export const updateRules = async () => {
     react: { version: react.version },
   }).slice(1, -1);
 
-  const jsRules = {
-    ...dependRules,
-    ...barrelRules,
-    ...compatRules,
-    ...eslintRules,
-    ...nRules,
-    ...typescriptRules,
-    ...unicornRules,
-    ...lodashRules,
-    ...sonarRules,
-    ...ethangRules,
-    ...tanstackQueryRules,
-    ...tailwindRules,
-    ...stylisticRules,
-    ...perfectionistRules,
-    ...a11yRules,
-    ...deprecatedRules,
-  };
+  const coreList = getList("core");
+  const jsRulesJon = getListJson(coreList);
 
-  const jsRulesJon = JSON.stringify(jsRules).slice(1, -1);
-  const markdownRulesJson = JSON.stringify(markdownRules).slice(1, -1);
-  const jsonRulesJson = JSON.stringify(jsonRules).slice(1, -1);
+  const markdownList = getList("markdown");
+  const markdownRulesJson = getListJson(markdownList);
+
+  const jsonList = getList("json");
+  const jsonRulesJson = getListJson(jsonList);
 
   const importList = [
     'import parser from "@typescript-eslint/parser";',
-    'import a11y from "eslint-plugin-jsx-a11y/lib/index.js";',
-    'import n from "eslint-plugin-n";',
-    'import unicorn from "eslint-plugin-unicorn";',
-    'import tseslint from "typescript-eslint";',
-    'import sonar from "eslint-plugin-sonarjs";',
-    'import tanstack from "@tanstack/eslint-plugin-query";',
-    'import perfectionist from "eslint-plugin-perfectionist";',
-    'import depend from "eslint-plugin-depend";',
-    'import barrel from "eslint-plugin-barrel-files";',
-    'import compat from "eslint-plugin-compat";',
-    'import lodashConfig from "eslint-plugin-lodash";',
-    'import tailwind from "eslint-plugin-tailwindcss";',
-    'import stylistic from "@stylistic/eslint-plugin";',
-    'import markdown from "@eslint/markdown";',
-    'import json from "@eslint/json";',
     'import { ignores } from "./constants.js";',
-    'import ethang from "@ethang/eslint-plugin";',
+    ...getListImportStrings(markdownList),
+    ...getListImportStrings(jsonList),
+    ...getListImportStrings(coreList),
   ].sort((a, b) => {
     return a.localeCompare(b);
   });

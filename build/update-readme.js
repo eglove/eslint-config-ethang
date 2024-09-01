@@ -1,26 +1,7 @@
-import { dependRules } from "../setup/depend.js";
-import { barrelRules } from "../setup/barrel.js";
-import { compatRules } from "../setup/compat.js";
-import { eslintRules } from "../setup/eslint.js";
-import { nRules } from "../setup/n.js";
-import { typescriptRules } from "../setup/typescript-eslint.js";
-import { unicornRules } from "../setup/unicorn.js";
-import { lodashRules } from "../setup/lodash.js";
-import { sonarRules } from "../setup/sonar.js";
-import { tanstackQueryRules } from "../setup/tanstack-query.js";
-import { tailwindRules } from "../setup/tailwind.js";
-import { stylisticRules } from "../setup/stylistic.js";
-import { perfectionistRules } from "../setup/perfectionist.js";
-import { a11yRules } from "../setup/a11y.js";
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { MarkdownGenerator } from "@ethang/markdown-generator/markdown-generator.js";
-import { markdownRules } from "../setup/markdown.js";
-import { jsonRules } from "../setup/json.js";
-import { astroRules } from "../setup/astro.js";
-import { reactRules } from "../setup/react.js";
-import { solidRules } from "../setup/solid.js";
-import { ethangRules } from "../setup/ethang.js";
+import { getList } from "./list-utils.mjs";
 
 export const updateReadme = () => {
   const md = new MarkdownGenerator();
@@ -43,114 +24,51 @@ export const updateReadme = () => {
     return count;
   };
 
-  const ruleList = [
-    {
-      list: dependRules,
-      name: "eslint-plugin-depend",
-      url: "https://github.com/es-tooling/eslint-plugin-depend/tree/main",
-    },
-    {
-      list: barrelRules,
-      name: "eslint-plugin-barrel-files",
-      url: "https://github.com/thepassle/eslint-plugin-barrel-files",
-    },
-    {
-      list: compatRules,
-      name: "eslint-plugin-compat",
-      url: "https://github.com/amilajack/eslint-plugin-compat",
-    },
-    {
-      list: eslintRules,
-      name: "@eslint/js",
-      url: "https://github.com/eslint/eslint/tree/main/packages/js",
-    },
-    {
-      list: nRules,
-      name: "eslint-plugin-n",
-      url: "https://github.com/eslint-community/eslint-plugin-n",
-    },
-    {
-      list: typescriptRules,
-      name: "@typescript/eslint",
-      url: "https://github.com/typescript-eslint/typescript-eslint",
-    },
-    {
-      list: unicornRules,
-      name: "sindresorhus/eslint-plugin-unicorn",
-      url: "https://github.com/sindresorhus/eslint-plugin-unicorn",
-    },
-    {
-      list: lodashRules,
-      name: "eslint-plugin-lodash",
-      url: "https://github.com/wix-incubator/eslint-plugin-lodash",
-    },
-    {
-      list: sonarRules,
-      name: "eslint-plugin-sonarjs",
-      url: "https://github.com/SonarSource/SonarJS/blob/master/packages/jsts/src/rules/README.md",
-    },
-    {
-      list: tanstackQueryRules,
-      name: "@tanstack/eslint-plugin-query",
-      url: "https://tanstack.com/query/latest/docs/eslint/eslint-plugin-query",
-    },
-    {
-      list: tailwindRules,
-      name: "eslint-plugin-tailwindcss",
-      url: "https://github.com/francoismassart/eslint-plugin-tailwindcss",
-    },
-    {
-      list: stylisticRules,
-      name: "@stylistic/eslint-plugin",
-      url: "https://eslint.style/",
-    },
-    {
-      list: perfectionistRules,
-      name: "eslint-plugin-perfectionist",
-      url: "https://github.com/azat-io/eslint-plugin-perfectionist",
-    },
-    {
-      list: a11yRules,
-      name: "jsx-a11y",
-      url: "https://github.com/jsx-eslint/eslint-plugin-jsx-a11y",
-    },
-    {
-      list: markdownRules,
-      name: "@eslint/markdown",
-      url: "https://github.com/eslint/markdown",
-    },
-    {
-      list: jsonRules,
-      name: "@eslint/json",
-      url: "https://github.com/eslint/json",
-    },
-    {
-      list: ethangRules,
-      name: "@ethang/eslint-plugin",
-      url: "https://github.com/eglove/eslint-plugin",
-    },
+  const coreRules = [
+    ...getList("core"),
+    ...getList("json"),
+    ...getList("markdown"),
   ];
 
   let total = 0;
-  for (const list of ruleList) {
+  for (const list of coreRules) {
     const count = getRuleCount(list.list);
     total += count;
     list["count"] = count;
   }
-  ruleList.sort((a, b) => {
+  coreRules.sort((a, b) => {
     return b.count - a.count;
   });
 
   const ruleDocs = [`${total} errored rules.`];
-  for (const list of ruleList) {
+  for (const list of coreRules) {
+    if (list.count < 1) {
+      continue;
+    }
+
     ruleDocs.push(
       `${list.count} ${list.count <= 1 ? "rule" : "rules"} from [${list.name}](${list.url})`,
     );
   }
 
-  const astroCount = getRuleCount(astroRules);
-  const reactCount = getRuleCount(reactRules);
-  const solidCount = getRuleCount(solidRules);
+  const astroRules = getList("astro");
+  const reactRules = getList("react");
+  const solidRules = getList("solid");
+
+  let astroCount = 0;
+  for (const astroRule of astroRules) {
+    astroCount += getRuleCount(astroRule.list);
+  }
+
+  let reactCount = 0;
+  for (const reactRule of reactRules) {
+    reactCount += getRuleCount(reactRule.list);
+  }
+
+  let solidCount = 0;
+  for (const solidRule of solidRules) {
+    solidCount += getRuleCount(solidRule.list);
+  }
 
   md.unorderedList(ruleDocs);
   md.newLine();
@@ -159,17 +77,29 @@ export const updateReadme = () => {
     `${astroCount} rules for **Astro**`,
     [
       '`import astroConfig from "@ethang/eslint-config/config.astro.js";`',
-      `${astroCount} rules from [eslint-plugin-astro](https://github.com/ota-meshi/eslint-plugin-astro)`,
+      ...astroRules
+        .filter((rule) => getRuleCount(rule.list) > 0)
+        .map((rule) => {
+          return `${getRuleCount(rule.list)} rules from [${rule.name}](${rule.url})`;
+        }),
     ],
     `${reactCount} rules for **React**`,
     [
       '`import reactConfig from "@ethang/eslint-config/config.react.js";`',
-      `${reactCount} rules from [@eslint-react/eslint-plugin](https://eslint-react.xyz/)`,
+      ...reactRules
+        .filter((rule) => getRuleCount(rule.list) > 0)
+        .map((rule) => {
+          return `${getRuleCount(rule.list)} rules from [${rule.name}](${rule.url})`;
+        }),
     ],
     `${solidCount} rules for **Solid**`,
     [
       '`import solidConfig from "@ethang/eslint-config/config.solid.js";`',
-      `${solidCount} rules from [eslint-plugin-solid](https://github.com/solidjs-community/eslint-plugin-solid)`,
+      ...solidRules
+        .filter((rule) => getRuleCount(rule.list) > 0)
+        .map((rule) => {
+          return `${getRuleCount(rule.list)} rules from [${rule.name}](${rule.url})`;
+        }),
     ],
   ]);
   md.newLine();

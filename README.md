@@ -29,9 +29,9 @@
 - 51 rules for **Astro**
   - `import astroConfig from "@ethang/eslint-config/config.astro.js";`
   - 51 rules from [eslint-plugin-astro](https://github.com/ota-meshi/eslint-plugin-astro)
-- 68 rules for **React**
+- 72 rules for **React**
   - `import reactConfig from "@ethang/eslint-config/config.react.js";`
-  - 68 rules from [@eslint-react/eslint-plugin](https://eslint-react.xyz/)
+  - 72 rules from [@eslint-react/eslint-plugin](https://eslint-react.xyz/)
 - 18 rules for **Solid**
   - `import solidConfig from "@ethang/eslint-config/config.solid.js";`
   - 18 rules from [eslint-plugin-solid](https://github.com/solidjs-community/eslint-plugin-solid)

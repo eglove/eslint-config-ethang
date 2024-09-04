@@ -1,6 +1,6 @@
 {
   "name": "@ethang/eslint-config",
-  "version": "19.2.10",
+  "version": "19.2.11",
   "repository": {
     "url": "git+https://github.com/eglove/eslint-config-ethang.git"
   },
@@ -13,20 +13,20 @@
     "lint": "prettier . -w"
   },
   "dependencies": {
-    "@eslint-react/eslint-plugin": "^1.12.4",
+    "@eslint-react/eslint-plugin": "^1.13.0",
     "@eslint/js": "^9.9.1",
     "@eslint/json": "^0.4.0",
     "@eslint/markdown": "^6.0.0",
-    "@ethang/eslint-plugin": "^0.0.6",
+    "@ethang/eslint-plugin": "^0.0.7",
     "@stylistic/eslint-plugin": "^2.7.2",
     "@tanstack/eslint-plugin-query": "^5.53.0",
-    "@typescript-eslint/parser": "^8.3.0",
+    "@typescript-eslint/parser": "^8.4.0",
     "eslint": "^9.9.1",
     "eslint-plugin-astro": "^1.2.3",
     "eslint-plugin-barrel-files": "^2.1.0",
     "eslint-plugin-compat": "^6.0.0",
     "eslint-plugin-depend": "^0.11.0",
-    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
     "eslint-plugin-lodash": "^8.0.0",
     "eslint-plugin-n": "^17.10.2",
     "eslint-plugin-perfectionist": "^3.3.0",
@@ -36,7 +36,7 @@
     "eslint-plugin-tailwindcss": "^3.17.4",
     "eslint-plugin-unicorn": "^55.0.0",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^8.3.0"
+    "typescript-eslint": "^8.4.0"
   },
   "devDependencies": {
     "@ethang/markdown-generator": "^1.1.1",
@@ -46,20 +46,20 @@
     "prettier": "^3.3.3"
   },
   "peerDependencies": {
-    "@eslint-react/eslint-plugin": "^1.12.4",
+    "@eslint-react/eslint-plugin": "^1.13.0",
     "@eslint/js": "^9.9.1",
     "@eslint/json": "^0.4.0",
     "@eslint/markdown": "^6.0.0",
-    "@ethang/eslint-plugin": "^0.0.6",
+    "@ethang/eslint-plugin": "^0.0.7",
     "@stylistic/eslint-plugin": "^2.7.2",
     "@tanstack/eslint-plugin-query": "^5.53.0",
-    "@typescript-eslint/parser": "^8.3.0",
+    "@typescript-eslint/parser": "^8.4.0",
     "eslint": "^9.9.1",
     "eslint-plugin-astro": "^1.2.3",
     "eslint-plugin-barrel-files": "^2.1.0",
     "eslint-plugin-compat": "^6.0.0",
     "eslint-plugin-depend": "^0.11.0",
-    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
     "eslint-plugin-lodash": "^8.0.0",
     "eslint-plugin-n": "^17.10.2",
     "eslint-plugin-perfectionist": "^3.3.0",
@@ -69,7 +69,7 @@
     "eslint-plugin-tailwindcss": "^3.17.4",
     "eslint-plugin-unicorn": "^55.0.0",
     "typescript": "^5.5.4",
-    "typescript-eslint": "^8.3.0"
+    "typescript-eslint": "^8.4.0"
   },
   "engines": {
     "node": ">=20"

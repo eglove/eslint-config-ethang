@@ -81,3 +81,5 @@ export const updateRules = async () => {
     createConfigFile(solidFile, "config.solid.js"),
   ]);
 };
+
+await updateRules();

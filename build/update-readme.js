@@ -152,3 +152,5 @@ export default tseslint.config(...config, ...astroConfig, ...reactConfig, {
 
   writeFileSync(join(import.meta.dirname, "../README.md"), md.render(), "utf8");
 };
+
+updateReadme();

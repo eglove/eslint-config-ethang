@@ -8,6 +8,7 @@ const customReactRules = [
   { name: "avoid-shorthand-fragment", rule: "off" },
   { name: "debug/class-component", rule: "off" },
   { name: "debug/function-component", rule: "off" },
+  { name: "debug/hook", rule: "off" },
   { name: "debug/is-from-react", rule: "off" },
   { name: "debug/react-hooks", rule: "off" },
   {

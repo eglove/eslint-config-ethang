@@ -7,8 +7,8 @@ await projectBuilder("eslint-config-ethang", "master", {
   scripts: ["UPDATE", "DEDUPE", "LINT"],
   postInstall: async () => {
     console.log("Updating Rules...");
-    execSync(`pnpx tsx ./build/update-rules.js`);
-    execSync(`pnpx tsx ./build/update-readme.js`);
+    execSync(`pnpx tsx ./build/update-rules.js`, { stdio: "inherit" });
+    execSync(`pnpx tsx ./build/update-readme.js`, { stdio: "inherit" });
   },
   tsupOptions: {
     bundle: true,

@@ -90,7 +90,7 @@ export default tseslint.config({
     "react/naming-convention/use-state": "error",
     "react/debug/class-component": "off",
     "react/debug/function-component": "off",
-    "react/debug/hook": "error",
+    "react/debug/hook": "off",
     "react/debug/is-from-react": "off",
     "react/debug/react-hooks": "off",
     "react-hooks/rules-of-hooks": "off",

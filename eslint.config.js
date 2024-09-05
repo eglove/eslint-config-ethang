@@ -1116,6 +1116,7 @@ export default tseslint.config(
       "perfectionist/sort-exports": "error",
       "perfectionist/sort-objects": "error",
       "perfectionist/sort-enums": "error",
+      "perfectionist/sort-sets": "error",
       "perfectionist/sort-maps": "error",
       "a11y/accessible-emoji": "off",
       "a11y/alt-text": "error",

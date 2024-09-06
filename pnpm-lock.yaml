@@ -2545,10 +2545,10 @@ packages:
       }
     engines: { node: ">= 6" }
 
-  caniuse-lite@1.0.30001657:
+  caniuse-lite@1.0.30001658:
     resolution:
       {
-        integrity: sha512-DPbJAlP8/BAXy3IgiWmZKItubb3TYGP0WscQQlVGIfT4s/YlFYVuJgyOsQNP7rJRChx/qdMeLJQJP0Sgg2yjNA==,
+        integrity: sha512-N2YVqWbJELVdrnsW5p+apoQyYt51aBMSsBZki1XZEfeBCexcM/sf4xiAHcXQBkuOwJBXtWF7aW1sYX6tKebPHw==,
       }
 
   ccount@2.0.1:
@@ -2735,10 +2735,10 @@ packages:
       supports-color:
         optional: true
 
-  debug@4.3.6:
+  debug@4.3.7:
     resolution:
       {
-        integrity: sha512-O/09Bd4Z1fBrU4VzkhFqVgpPzaGbw6Sm9FEkBT1A/YBXQFGuuSxa1dN2nxgxS34JmKXqYx8CZAwEVoJFImUXIg==,
+        integrity: sha512-Er2nc/H7RrMXZBFCEim6TCmMk02Z8vLC2Rbi1KEBggpo0fS6l0S1nnapwmIi3yW/+GOJap1Krg4w0Hg80oCqgQ==,
       }
     engines: { node: ">=6.0" }
     peerDependencies:
@@ -4675,12 +4675,6 @@ packages:
         integrity: sha512-m00JBwLSr7sur96PeAfAwNcyQk5MEm/GzZtZSRM+UjdzjNcgzPrWsWpsCpaRP+Fq+ROykt1TCr4GSR/ajcB83w==,
       }
 
-  ms@2.1.2:
-    resolution:
-      {
-        integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==,
-      }
-
   ms@2.1.3:
     resolution:
       {
@@ -6072,7 +6066,7 @@ snapshots:
       "@babel/traverse": 7.25.6
       "@babel/types": 7.25.6
       convert-source-map: 2.0.0
-      debug: 4.3.6
+      debug: 4.3.7
       gensync: 1.0.0-beta.2
       json5: 2.2.3
       semver: 6.3.1
@@ -6138,7 +6132,7 @@ snapshots:
       "@babel/core": 7.24.3
       "@babel/helper-compilation-targets": 7.25.2
       "@babel/helper-plugin-utils": 7.24.8
-      debug: 4.3.6
+      debug: 4.3.7
       lodash.debounce: 4.0.8
       resolve: 1.22.8
     transitivePeerDependencies:
@@ -6866,7 +6860,7 @@ snapshots:
       "@babel/parser": 7.25.6
       "@babel/template": 7.25.0
       "@babel/types": 7.25.6
-      debug: 4.3.6
+      debug: 4.3.7
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -7084,7 +7078,7 @@ snapshots:
   "@eslint/config-array@0.18.0":
     dependencies:
       "@eslint/object-schema": 2.1.4
-      debug: 4.3.6
+      debug: 4.3.7
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -7092,7 +7086,7 @@ snapshots:
   "@eslint/eslintrc@3.1.0":
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.6
+      debug: 4.3.7
       espree: 10.1.0
       globals: 14.0.0
       ignore: 5.3.2
@@ -7271,7 +7265,7 @@ snapshots:
 
   "@kwsites/file-exists@1.1.1":
     dependencies:
-      debug: 4.3.6
+      debug: 4.3.7
     transitivePeerDependencies:
       - supports-color
 
@@ -7497,7 +7491,7 @@ snapshots:
       "@typescript-eslint/types": 8.4.0
       "@typescript-eslint/typescript-estree": 8.4.0(typescript@5.5.4)
       "@typescript-eslint/visitor-keys": 8.4.0
-      debug: 4.3.6
+      debug: 4.3.7
       eslint: 9.9.1(jiti@1.21.6)
     optionalDependencies:
       typescript: 5.5.4
@@ -7523,7 +7517,7 @@ snapshots:
     dependencies:
       "@typescript-eslint/typescript-estree": 7.16.1(typescript@5.5.4)
       "@typescript-eslint/utils": 7.16.1(eslint@9.9.1(jiti@1.21.6))(typescript@5.5.4)
-      debug: 4.3.6
+      debug: 4.3.7
       eslint: 9.9.1(jiti@1.21.6)
       ts-api-utils: 1.3.0(typescript@5.5.4)
     optionalDependencies:
@@ -7535,7 +7529,7 @@ snapshots:
     dependencies:
       "@typescript-eslint/typescript-estree": 8.4.0(typescript@5.5.4)
       "@typescript-eslint/utils": 8.4.0(eslint@9.9.1(jiti@1.21.6))(typescript@5.5.4)
-      debug: 4.3.6
+      debug: 4.3.7
       ts-api-utils: 1.3.0(typescript@5.5.4)
     optionalDependencies:
       typescript: 5.5.4
@@ -7553,7 +7547,7 @@ snapshots:
     dependencies:
       "@typescript-eslint/types": 7.16.1
       "@typescript-eslint/visitor-keys": 7.16.1
-      debug: 4.3.6
+      debug: 4.3.7
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -7568,7 +7562,7 @@ snapshots:
     dependencies:
       "@typescript-eslint/types": 7.18.0
       "@typescript-eslint/visitor-keys": 7.18.0
-      debug: 4.3.6
+      debug: 4.3.7
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -7583,7 +7577,7 @@ snapshots:
     dependencies:
       "@typescript-eslint/types": 8.4.0
       "@typescript-eslint/visitor-keys": 8.4.0
-      debug: 4.3.6
+      debug: 4.3.7
       fast-glob: 3.3.2
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -7768,7 +7762,7 @@ snapshots:
       "@typescript-eslint/types": 7.18.0
       "@typescript-eslint/typescript-estree": 7.18.0(typescript@5.5.4)
       astrojs-compiler-sync: 1.0.0(@astrojs/compiler@2.10.1)
-      debug: 4.3.6
+      debug: 4.3.7
       entities: 4.5.0
       eslint-scope: 8.0.2
       eslint-visitor-keys: 4.0.0
@@ -7838,7 +7832,7 @@ snapshots:
 
   browserslist@4.23.3:
     dependencies:
-      caniuse-lite: 1.0.30001657
+      caniuse-lite: 1.0.30001658
       electron-to-chromium: 1.5.4
       node-releases: 2.0.18
       update-browserslist-db: 1.1.0(browserslist@4.23.3)
@@ -7866,7 +7860,7 @@ snapshots:
 
   camelcase-css@2.0.1: {}
 
-  caniuse-lite@1.0.30001657: {}
+  caniuse-lite@1.0.30001658: {}
 
   ccount@2.0.1: {}
 
@@ -7965,9 +7959,9 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
-  debug@4.3.6:
+  debug@4.3.7:
     dependencies:
-      ms: 2.1.2
+      ms: 2.1.3
 
   decode-named-character-reference@1.0.2:
     dependencies:
@@ -8289,7 +8283,7 @@ snapshots:
       "@mdn/browser-compat-data": 5.5.44
       ast-metadata-inferer: 0.8.0
       browserslist: 4.23.3
-      caniuse-lite: 1.0.30001657
+      caniuse-lite: 1.0.30001658
       eslint: 9.9.1(jiti@1.21.6)
       find-up: 5.0.0
       globals: 15.9.0
@@ -8647,7 +8641,7 @@ snapshots:
       ajv: 6.12.6
       chalk: 4.1.2
       cross-spawn: 7.0.3
-      debug: 4.3.6
+      debug: 4.3.7
       escape-string-regexp: 4.0.0
       eslint-scope: 8.0.2
       eslint-visitor-keys: 4.0.0
@@ -9451,7 +9445,7 @@ snapshots:
   micromark@4.0.0:
     dependencies:
       "@types/debug": 4.1.12
-      debug: 4.3.6
+      debug: 4.3.7
       decode-named-character-reference: 1.0.2
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.1
@@ -9496,8 +9490,6 @@ snapshots:
   minipass@7.1.2: {}
 
   module-replacements@2.5.0: {}
-
-  ms@2.1.2: {}
 
   ms@2.1.3: {}
 
@@ -9926,7 +9918,7 @@ snapshots:
     dependencies:
       "@kwsites/file-exists": 1.1.1
       "@kwsites/promise-deferred": 1.1.1
-      debug: 4.3.6
+      debug: 4.3.7
     transitivePeerDependencies:
       - supports-color
 
@@ -10144,7 +10136,7 @@ snapshots:
       cac: 6.7.14
       chokidar: 3.6.0
       consola: 3.2.3
-      debug: 4.3.6
+      debug: 4.3.7
       esbuild: 0.23.1
       execa: 5.1.1
       globby: 11.1.0
@@ -10288,7 +10280,7 @@ snapshots:
 
   vue-eslint-parser@9.4.3(eslint@9.9.1(jiti@1.21.6)):
     dependencies:
-      debug: 4.3.6
+      debug: 4.3.7
       eslint: 9.9.1(jiti@1.21.6)
       eslint-scope: 7.2.2
       eslint-visitor-keys: 3.4.3

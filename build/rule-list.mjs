@@ -226,7 +226,7 @@ export const ruleList = [
     type: "react",
     importString: 'import reactHooks from "eslint-plugin-react-hooks";',
     pluginName: "react-hooks",
-    pluginValue: "reactHooks",
+    pluginValue: "fixupPluginRules(reactHooks)",
   },
   {
     list: solidRules,

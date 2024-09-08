@@ -1,6 +1,7 @@
 import react from "@eslint-react/eslint-plugin";
 import reactHooks from "eslint-plugin-react-hooks";
 import { genRules } from "./gen-rules.js";
+import { fixupPluginRules } from "@eslint/compat";
 
 const reactRuleNames = Object.keys(react.rules);
 const customReactRules = [
@@ -20,8 +21,8 @@ const reactGen = genRules(reactRuleNames, customReactRules, "react");
 
 const reactHookRuleNames = Object.keys(reactHooks.rules);
 const customHookRules = [
-  { name: "exhaustive-deps", rule: "off" }, // TODO fix w/ v9 compatibility
-  { name: "rules-of-hooks", rule: "off" }, // TODO fix w/ v9 compatibility
+  { name: "exhaustive-deps", rule: "error" },
+  { name: "rules-of-hooks", rule: "error" },
 ];
 const hookGen = genRules(reactHookRuleNames, customHookRules, "react-hooks");
 

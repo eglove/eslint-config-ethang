@@ -10,6 +10,9 @@ importers:
       "@eslint-react/eslint-plugin":
         specifier: ^1.13.0
         version: 1.13.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.5.4)
+      "@eslint/compat":
+        specifier: ^1.1.1
+        version: 1.1.1
       "@eslint/js":
         specifier: ^9.10.0
         version: 9.10.0
@@ -1400,6 +1403,13 @@ packages:
       {
         integrity: sha512-clZ7/uU5m5r1htjDECAv7RDDtj2UmP1/roUabtq/eqwT5vqvNNfQzH2AmttD4R476QrnKVJ51cQGK0a87mKyTA==,
       }
+
+  "@eslint/compat@1.1.1":
+    resolution:
+      {
+        integrity: sha512-lpHyRyplhGPL5mGEh6M9O5nnKk0Gz4bFI+Zu6tKlPpDUN7XshWvH9C/px4UVm87IAANE0W81CEsNGbS1KlzXpA==,
+      }
+    engines: { node: ^18.18.0 || ^20.9.0 || >=21.1.0 }
 
   "@eslint/config-array@0.18.0":
     resolution:
@@ -3146,6 +3156,7 @@ packages:
       }
     peerDependencies:
       eslint: ">= 5"
+    bundledDependencies: []
 
   eslint-plugin-compat@6.0.0:
     resolution:
@@ -7081,6 +7092,8 @@ snapshots:
       - eslint
       - supports-color
       - typescript
+
+  "@eslint/compat@1.1.1": {}
 
   "@eslint/config-array@0.18.0":
     dependencies:

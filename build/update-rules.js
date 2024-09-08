@@ -43,7 +43,10 @@ const reactFile = [
       includeReactVersion: true,
       includeIgnores: true,
       includeLanguageOptions: true,
-      extraImports: ['import tseslint from "typescript-eslint";'],
+      extraImports: [
+        'import tseslint from "typescript-eslint";',
+        'import { fixupPluginRules } from "@eslint/compat";',
+      ],
     },
   },
 ];

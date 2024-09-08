@@ -1,3 +1,4 @@
+import { fixupPluginRules } from "@eslint/compat";
 import { ignores, languageOptions } from "./constants.js";
 import react from "@eslint-react/eslint-plugin";
 import reactHooks from "eslint-plugin-react-hooks";
@@ -12,7 +13,7 @@ export default tseslint.config({
   },
   plugins: {
     react: react,
-    "react-hooks": reactHooks,
+    "react-hooks": fixupPluginRules(reactHooks),
   },
   rules: {
     "react/avoid-shorthand-boolean": "off",
@@ -93,7 +94,7 @@ export default tseslint.config({
     "react/debug/hook": "off",
     "react/debug/is-from-react": "off",
     "react/debug/react-hooks": "off",
-    "react-hooks/rules-of-hooks": "off",
-    "react-hooks/exhaustive-deps": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
   },
 });

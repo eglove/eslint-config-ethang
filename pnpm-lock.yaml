@@ -56,8 +56,8 @@ importers:
         specifier: ^17.10.2
         version: 17.10.2(eslint@9.10.0(jiti@1.21.6))
       eslint-plugin-perfectionist:
-        specifier: ^3.4.0
-        version: 3.4.0(astro-eslint-parser@1.0.2(typescript@5.5.4))(eslint@9.10.0(jiti@1.21.6))(typescript@5.5.4)(vue-eslint-parser@9.4.3(eslint@9.10.0(jiti@1.21.6)))
+        specifier: ^3.5.0
+        version: 3.5.0(astro-eslint-parser@1.0.2(typescript@5.5.4))(eslint@9.10.0(jiti@1.21.6))(typescript@5.5.4)(vue-eslint-parser@9.4.3(eslint@9.10.0(jiti@1.21.6)))
       eslint-plugin-react-hooks:
         specifier: ^4.6.2
         version: 4.6.2(eslint@9.10.0(jiti@1.21.6))
@@ -85,7 +85,7 @@ importers:
         version: 1.1.1(lodash@4.17.21)
       "@ethang/project-builder":
         specifier: ^2.5.9
-        version: 2.5.9(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.2.1)(lodash@4.17.21)(simple-git@3.26.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.45)(tsx@4.19.0)(typescript@5.5.4)(yaml@2.5.1))(typescript@5.5.4)
+        version: 2.5.9(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.2.2)(lodash@4.17.21)(simple-git@3.26.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.45)(tsx@4.19.0)(typescript@5.5.4)(yaml@2.5.1))(typescript@5.5.4)
       "@tsconfig/node-lts":
         specifier: ^20.1.3
         version: 20.1.3
@@ -3211,10 +3211,10 @@ packages:
     peerDependencies:
       eslint: ">=8.23.0"
 
-  eslint-plugin-perfectionist@3.4.0:
+  eslint-plugin-perfectionist@3.5.0:
     resolution:
       {
-        integrity: sha512-vXyd1sFg3H/7aKgBUie62bA6E0EN3Dh0LCD5r4vR/IYtTljxOnyckI1AV0Arw4eYjC/W9T1X04Pl2mdLsdWtMA==,
+        integrity: sha512-vwDNuxlAlbZJ3DjHo6GnfZrmMlJBLFrkOLBV/rYvVnLFD+x54u9VyJcGOfJ2DK9d1cd3a/C/vtBrbBNgAC6Mrg==,
       }
     engines: { node: ^18.0.0 || >=20.0.0 }
     peerDependencies:
@@ -3852,10 +3852,10 @@ packages:
         integrity: sha512-qlD8YNDqyTKTyuITrDOffsl6Tdhv+UC4hcdAVuQsK4IMQ99nSgd1MIA/Q+jQYoh9r3hVUXhYh7urSRmXPkW04g==,
       }
 
-  inquirer@10.2.1:
+  inquirer@10.2.2:
     resolution:
       {
-        integrity: sha512-PRbdiiTMlHlnrXyVBlYi6wv21emJszaiuZJ8wjC4/7JpqzgbMC96pjIgi/6zZkzRCjGgUMwUTdVayn2zaRRkVA==,
+        integrity: sha512-tyao/4Vo36XnUItZ7DnUXX4f1jVao2mSrleV/5IPtW/XAEA26hRVsbc68nuTEKWcr5vMP/1mVoT2O7u8H4v1Vg==,
       }
     engines: { node: ">=18" }
 
@@ -7135,11 +7135,11 @@ snapshots:
     dependencies:
       lodash: 4.17.21
 
-  "@ethang/project-builder@2.5.9(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.2.1)(lodash@4.17.21)(simple-git@3.26.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.45)(tsx@4.19.0)(typescript@5.5.4)(yaml@2.5.1))(typescript@5.5.4)":
+  "@ethang/project-builder@2.5.9(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.2.2)(lodash@4.17.21)(simple-git@3.26.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.45)(tsx@4.19.0)(typescript@5.5.4)(yaml@2.5.1))(typescript@5.5.4)":
     dependencies:
       chalk: 5.3.0
       fs-extra: 11.2.0
-      inquirer: 10.2.1
+      inquirer: 10.2.2
       lodash: 4.17.21
       simple-git: 3.26.0
       tsup: 8.2.4(jiti@1.21.6)(postcss@8.4.45)(tsx@4.19.0)(typescript@5.5.4)(yaml@2.5.1)
@@ -8378,7 +8378,7 @@ snapshots:
       minimatch: 9.0.5
       semver: 7.6.3
 
-  eslint-plugin-perfectionist@3.4.0(astro-eslint-parser@1.0.2(typescript@5.5.4))(eslint@9.10.0(jiti@1.21.6))(typescript@5.5.4)(vue-eslint-parser@9.4.3(eslint@9.10.0(jiti@1.21.6))):
+  eslint-plugin-perfectionist@3.5.0(astro-eslint-parser@1.0.2(typescript@5.5.4))(eslint@9.10.0(jiti@1.21.6))(typescript@5.5.4)(vue-eslint-parser@9.4.3(eslint@9.10.0(jiti@1.21.6))):
     dependencies:
       "@typescript-eslint/types": 8.4.0
       "@typescript-eslint/utils": 8.4.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.5.4)
@@ -8914,8 +8914,9 @@ snapshots:
 
   inline-style-parser@0.2.3: {}
 
-  inquirer@10.2.1:
+  inquirer@10.2.2:
     dependencies:
+      "@inquirer/core": 9.1.0
       "@inquirer/prompts": 5.5.0
       "@inquirer/type": 1.5.3
       "@types/mute-stream": 0.0.4

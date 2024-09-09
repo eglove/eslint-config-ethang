@@ -1,6 +1,6 @@
 import { ruleList } from "./rule-list.ts";
 
-export const getList = (type: string): typeof ruleList => {
+export const getList = (type: string) => {
   return ruleList
     .filter((list) => {
       return list.type === type;
@@ -21,20 +21,10 @@ export const getTypeImportStrings = (type: string) => {
     .filter(Boolean);
 };
 
-export const getListJson = (list: ReturnType<typeof getList>) => {
+export const getListJson = (list: typeof ruleList) => {
   return list
     .map((list) => {
-      const sortedKeys = Object.keys(list.list).sort((a, b) => {
-        return a.localeCompare(b);
-      });
-      const sortedObject = {};
-
-      for (const key of sortedKeys) {
-        // @ts-expect-error it's fine
-        sortedObject[key] = list.list[key];
-      }
-
-      return JSON.stringify(sortedObject).slice(1, -1);
+      return JSON.stringify(list.list).slice(1, -1);
     })
     .join(",");
 };
@@ -71,7 +61,7 @@ export const getTypeFiles = (type: string) => {
   }
 };
 
-export const getListPlugins = (list: ReturnType<typeof getList>) => {
+export const getListPlugins = (list: typeof ruleList) => {
   let pluginString = "";
 
   for (const item of list) {

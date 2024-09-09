@@ -24,7 +24,6 @@ export default tseslint.config({
     "solid/no-react-deps": "error",
     "solid/no-react-specific-props": "error",
     "solid/no-unknown-namespaces": "error",
-    "solid/prefer-classlist": "off",
     "solid/prefer-for": "error",
     "solid/prefer-show": "error",
     "solid/reactivity": "error",

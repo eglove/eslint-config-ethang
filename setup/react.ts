@@ -2,9 +2,9 @@ import react from "@eslint-react/eslint-plugin";
 // @ts-expect-error no types
 import reactHooks from "eslint-plugin-react-hooks";
 
-import { genRules } from "./gen-rules.ts";
+import { genRules, getNonDeprecatedRules } from "./gen-rules.ts";
 
-const reactRuleNames = Object.keys(react.rules);
+const reactRuleNames = Object.keys(getNonDeprecatedRules(react.rules));
 const customReactRules = [
   {
     name: "avoid-shorthand-boolean",

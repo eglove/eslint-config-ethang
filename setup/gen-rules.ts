@@ -1,3 +1,19 @@
+import { Rule } from "eslint";
+
+export type EsLintRules = Record<string, Rule.RuleModule>;
+
+export const getNonDeprecatedRules = (rules: EsLintRules) => {
+  const filtered: EsLintRules = {};
+
+  for (const [key, value] of Object.entries(rules)) {
+    if (value.meta?.deprecated !== true) {
+      filtered[key] = value;
+    }
+  }
+
+  return filtered;
+};
+
 export type CustomRules = {
   name: string;
   rule: unknown;
@@ -29,7 +45,9 @@ export const genRules = (
         }
       } else {
         // eslint-disable-next-line no-console
-        console.error(`${rule.name} does not exist.`);
+        console.error(
+          `${rule.name} in ${prefix ?? "(unknown prefix)"} does not exist.`,
+        );
       }
     }
   }

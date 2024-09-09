@@ -1,8 +1,10 @@
 import perfectionist from "eslint-plugin-perfectionist";
 
-import { genRules } from "./gen-rules.ts";
+import { EsLintRules, genRules, getNonDeprecatedRules } from "./gen-rules.ts";
 
-const ruleNames = Object.keys(perfectionist.rules);
+const ruleNames = Object.keys(
+  getNonDeprecatedRules(perfectionist.rules as unknown as EsLintRules),
+);
 const customRules = [
   {
     name: "sort-astro-attributes",

@@ -1,8 +1,8 @@
 import depend from "eslint-plugin-depend";
 
-import { genRules } from "./gen-rules.ts";
+import { genRules, getNonDeprecatedRules } from "./gen-rules.ts";
 
-const ruleNames = Object.keys(depend.rules);
+const ruleNames = Object.keys(getNonDeprecatedRules(depend.rules));
 const changedRules = [
   {
     name: "ban-dependencies",

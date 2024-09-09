@@ -1,23 +1,11 @@
 import a11y from "eslint-plugin-jsx-a11y";
 
-import { genRules } from "./gen-rules.ts";
+import { genRules, getNonDeprecatedRules } from "./gen-rules.ts";
 
-const ruleNames = Object.keys(a11y.rules ?? {});
+const ruleNames = Object.keys(getNonDeprecatedRules(a11y.rules ?? {}));
 const customRules = [
   {
-    name: "accessible-emoji",
-    rule: "off",
-  },
-  {
-    name: "label-has-for",
-    rule: "off",
-  },
-  {
     name: "media-has-caption",
-    rule: "off",
-  },
-  {
-    name: "no-onchange",
     rule: "off",
   },
 ];

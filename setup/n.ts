@@ -1,8 +1,8 @@
 import n from "eslint-plugin-n";
 
-import { genRules } from "./gen-rules.ts";
+import { genRules, getNonDeprecatedRules } from "./gen-rules.ts";
 
-const ruleNames = Object.keys(n.rules ?? {});
+const ruleNames = Object.keys(getNonDeprecatedRules(n.rules ?? {}));
 const changedRules = [
   {
     name: "callback-return",
@@ -78,14 +78,6 @@ const changedRules = [
   },
   {
     name: "hashbang",
-    rule: "off",
-  },
-  {
-    name: "no-hide-core-modules",
-    rule: "off",
-  },
-  {
-    name: "shebang",
     rule: "off",
   },
 ];

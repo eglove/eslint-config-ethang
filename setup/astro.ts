@@ -1,8 +1,8 @@
 import astro from "eslint-plugin-astro";
 
-import { genRules } from "./gen-rules.ts";
+import { genRules, getNonDeprecatedRules } from "./gen-rules.ts";
 
-const ruleNames = Object.keys(astro.rules);
+const ruleNames = Object.keys(getNonDeprecatedRules(astro.rules));
 const customRules = [
   {
     name: "no-set-html-directive",

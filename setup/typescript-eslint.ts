@@ -1,8 +1,12 @@
 import tseslint from "typescript-eslint";
 
-import { genRules } from "./gen-rules.ts";
+import { EsLintRules, genRules, getNonDeprecatedRules } from "./gen-rules.ts";
 
-const ruleNames = Object.keys(tseslint.plugin.rules ?? {});
+const ruleNames = Object.keys(
+  getNonDeprecatedRules(
+    (tseslint.plugin.rules ?? {}) as unknown as EsLintRules,
+  ),
+);
 const customRules = [
   {
     name: "adjacent-overload-signatures",
@@ -49,15 +53,7 @@ const customRules = [
     rule: "off",
   },
   {
-    name: "no-empty-interface",
-    rule: "off",
-  },
-  {
     name: "no-invalid-this",
-    rule: "off",
-  },
-  {
-    name: "no-loss-of-precision",
     rule: "off",
   },
   {
@@ -69,15 +65,7 @@ const customRules = [
     rule: "off",
   },
   {
-    name: "no-type-alias",
-    rule: "off",
-  },
-  {
     name: "no-use-before-define",
-    rule: "off",
-  },
-  {
-    name: "no-var-requires",
     rule: "off",
   },
   {
@@ -86,14 +74,6 @@ const customRules = [
   },
   {
     name: "prefer-readonly-parameter-types",
-    rule: "off",
-  },
-  {
-    name: "prefer-ts-expect-error",
-    rule: "off",
-  },
-  {
-    name: "sort-type-constituents",
     rule: "off",
   },
   {

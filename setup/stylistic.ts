@@ -1,9 +1,9 @@
 /* eslint-disable */
 import stylistic from "@stylistic/eslint-plugin";
-import { genRules } from "./gen-rules.ts";
+import { genRules, getNonDeprecatedRules } from "./gen-rules.ts";
 
 // @ts-expect-error this exists
-const ruleNames = Object.keys(stylistic.rules);
+const ruleNames = Object.keys(getNonDeprecatedRules(stylistic.rules));
 const customRules = [
   { name: "array-bracket-newline", rule: ["error", "consistent"] },
   { name: "array-element-newline", rule: ["error", "consistent"] },
@@ -50,7 +50,6 @@ const customRules = [
       },
     ],
   },
-  { name: "jsx-indent", rule: "off" },
   { name: "jsx-indent-props", rule: ["error", 2] },
   { name: "jsx-newline", rule: ["error", { prevent: true }] },
   { name: "jsx-sort-props", rule: "off" },

@@ -1,9 +1,9 @@
 // @ts-expect-error no types
 import lodash from "eslint-plugin-lodash";
 
-import { genRules } from "./gen-rules.ts";
+import { genRules, getNonDeprecatedRules } from "./gen-rules.ts";
 
-const ruleNames = Object.keys(lodash.rules);
+const ruleNames = Object.keys(getNonDeprecatedRules(lodash.rules));
 const customRules = [
   {
     name: "chain-style",

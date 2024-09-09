@@ -27,17 +27,16 @@ export const updateReadme = () => {
     return count;
   };
 
-  type RuleList = {
-    count: number;
-    list: ReturnType<typeof genRules>;
-  };
-
-  // @ts-expect-error TODO fix, this will eventually be inferred correctly
-  const coreRules: RuleList[] = [
+  const coreRules = [
     ...getList("core"),
     ...getList("json"),
     ...getList("markdown"),
-  ];
+  ].map((rules) => {
+    return {
+      ...rules,
+      count: 0,
+    };
+  });
 
   let total = 0;
   for (const list of coreRules) {
@@ -56,7 +55,6 @@ export const updateReadme = () => {
     }
 
     ruleDocs.push(
-      // @ts-expect-error TODO will eventually infer correctly
       `${list.count} ${
         1 >= list.count ? "rule" : "rules"
       } from [${list.name}](${list.url})`,

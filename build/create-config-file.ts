@@ -25,9 +25,8 @@ export const createConfigFile = async (
   const importList = [
     'import { ignores, languageOptions } from "./constants.js";',
     ...imports,
-    // @ts-expect-error TODO will eventually infer correctly
   ].toSorted((a, b) => {
-    return a.localeCompare(b);
+    return (a ?? "").localeCompare(b ?? "");
   });
 
   for (const item of importList) {

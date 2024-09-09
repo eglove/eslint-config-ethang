@@ -1,6 +1,6 @@
 import { ruleList } from "./rule-list.ts";
 
-export const getList = (type: string) => {
+export const getList = (type: string): typeof ruleList => {
   return ruleList
     .filter((list) => {
       return list.type === type;

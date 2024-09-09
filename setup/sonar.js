@@ -31,6 +31,7 @@ const customRules = [
   { name: "no-implicit-dependencies", rule: "off" },
   { name: "no-inconsistent-returns", rule: "off" },
   { name: "no-redundant-parentheses", rule: "off" },
+  { name: "no-reference-error", rule: "off" }, // TODO bug: reports globals
   { name: "no-tab", rule: "off" },
   { name: "no-undefined-assignment", rule: "off" },
   { name: "process-argv", rule: "off" },
@@ -38,6 +39,7 @@ const customRules = [
   { name: "semi", rule: "off" },
   { name: "shorthand-property-grouping", rule: "off" }, // Conflicts with perfectionist sorting
   { name: "sockets", rule: "off" },
+  { name: "sonar-no-fallthrough", rule: "off" }, // TODO readd with v9 compat?
   { name: "sonar-no-magic-numbers", rule: "off" },
   { name: "standard-input", rule: "off" },
   { name: "switch-without-default", rule: "off" }, // @typescript-eslint/switch-exhaustiveness-check works better

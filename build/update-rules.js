@@ -9,6 +9,7 @@ export const coreFile = [
       includeReactVersion: true,
       includeLanguageOptions: true,
       includeIgnores: true,
+      extraImports: ['import { fixupPluginRules } from "@eslint/compat";'], // TODO remove with v9 compat
     },
   },
   {
@@ -45,7 +46,7 @@ const reactFile = [
       includeLanguageOptions: true,
       extraImports: [
         'import tseslint from "typescript-eslint";',
-        'import { fixupPluginRules } from "@eslint/compat";',
+        'import { fixupPluginRules } from "@eslint/compat";', // TODO remove with v9 compat
       ],
     },
   },

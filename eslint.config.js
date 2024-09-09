@@ -1,3 +1,4 @@
+import { fixupPluginRules } from "@eslint/compat";
 import { ignores, languageOptions } from "./constants.js";
 import a11y from "eslint-plugin-jsx-a11y/lib/index.js";
 import barrel from "eslint-plugin-barrel-files";
@@ -32,7 +33,7 @@ export default tseslint.config(
       "@typescript-eslint": tseslint.plugin,
       unicorn: unicorn,
       lodash: lodashConfig,
-      sonar: sonar,
+      sonar: fixupPluginRules(sonar),
       ethang: ethang,
       "@tanstack/query": tanstack,
       tailwind: tailwind,
@@ -803,7 +804,7 @@ export default tseslint.config(
       "sonar/no-redundant-optional": "error",
       "sonar/no-redundant-parentheses": "off",
       "sonar/no-redundant-type-constituents": "error",
-      "sonar/no-reference-error": "off",
+      "sonar/no-reference-error": "error",
       "sonar/no-referrer-policy": "error",
       "sonar/no-require-or-define": "error",
       "sonar/no-return-type-any": "error",
@@ -892,7 +893,7 @@ export default tseslint.config(
       "sonar/sonar-no-control-regex": "error",
       "sonar/sonar-no-dupe-keys": "error",
       "sonar/sonar-no-empty-character-class": "error",
-      "sonar/sonar-no-fallthrough": "off",
+      "sonar/sonar-no-fallthrough": "error",
       "sonar/sonar-no-invalid-regexp": "error",
       "sonar/sonar-no-magic-numbers": "off",
       "sonar/sonar-no-misleading-character-class": "error",

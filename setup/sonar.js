@@ -30,16 +30,14 @@ const customRules = [
   { name: "no-extra-semi", rule: "off" },
   { name: "no-implicit-dependencies", rule: "off" },
   { name: "no-inconsistent-returns", rule: "off" },
-  { name: "no-redundant-parentheses", rule: "off" }, // Not working correctly, TS can handle this
-  { name: "no-reference-error", rule: "off" }, // Not working correctly, TS can handle this
-  { name: "no-tab", rule: "off" }, // Not working correctly, TS can handle this
+  { name: "no-redundant-parentheses", rule: "off" },
+  { name: "no-tab", rule: "off" },
   { name: "no-undefined-assignment", rule: "off" },
   { name: "process-argv", rule: "off" },
   { name: "regular-expr", rule: "off" },
   { name: "semi", rule: "off" },
   { name: "shorthand-property-grouping", rule: "off" }, // Conflicts with perfectionist sorting
   { name: "sockets", rule: "off" },
-  { name: "sonar-no-fallthrough", rule: "off" }, // TODO v9 compatibility?
   { name: "sonar-no-magic-numbers", rule: "off" },
   { name: "standard-input", rule: "off" },
   { name: "switch-without-default", rule: "off" }, // @typescript-eslint/switch-exhaustiveness-check works better

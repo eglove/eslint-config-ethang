@@ -109,7 +109,7 @@ export const ruleList = [
     importString: 'import sonar from "eslint-plugin-sonarjs";',
     order: 8,
     pluginName: "sonar",
-    pluginValue: "sonar",
+    pluginValue: "fixupPluginRules(sonar)", // TODO remove with v9 compat
   },
   {
     list: ethangRules,
@@ -226,7 +226,7 @@ export const ruleList = [
     type: "react",
     importString: 'import reactHooks from "eslint-plugin-react-hooks";',
     pluginName: "react-hooks",
-    pluginValue: "fixupPluginRules(reactHooks)",
+    pluginValue: "fixupPluginRules(reactHooks)", // TODO remove with v9 compat
   },
   {
     list: solidRules,

@@ -5,8 +5,8 @@
 > [!CAUTION]
 > Do not use this with Prettier! Styling rules are included.
 
-- 886 errored rules.
-- 289 rules from [eslint-plugin-sonarjs](https://github.com/SonarSource/SonarJS/blob/master/packages/jsts/src/rules/README.md)
+- 888 errored rules.
+- 291 rules from [eslint-plugin-sonarjs](https://github.com/SonarSource/SonarJS/blob/master/packages/jsts/src/rules/README.md)
 - 145 rules from [@eslint/js](https://github.com/eslint/eslint/tree/main/packages/js)
 - 113 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
 - 104 rules from [@typescript/eslint](https://github.com/typescript-eslint/typescript-eslint)

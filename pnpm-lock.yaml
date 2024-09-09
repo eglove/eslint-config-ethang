@@ -23,8 +23,8 @@ importers:
         specifier: ^6.1.0
         version: 6.1.0(eslint@9.10.0(jiti@1.21.6))
       "@ethang/eslint-plugin":
-        specifier: ^0.0.8
-        version: 0.0.8(@typescript-eslint/utils@8.5.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2))(lodash@4.17.21)
+        specifier: ^0.0.9
+        version: 0.0.9(@typescript-eslint/utils@8.5.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2))(lodash@4.17.21)
       "@stylistic/eslint-plugin":
         specifier: ^2.8.0
         version: 2.8.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)
@@ -1464,13 +1464,13 @@ packages:
       }
     engines: { node: ^18.18.0 || ^20.9.0 || >=21.1.0 }
 
-  "@ethang/eslint-plugin@0.0.8":
+  "@ethang/eslint-plugin@0.0.9":
     resolution:
       {
-        integrity: sha512-cr8Y16nPjD+6qPWKWPE2LKMFFvokEILtjwmsQ0UM+hB6W1rC/EnIR1iGadGnEAWKITWJdGH5NlQXPfhYmqoAMw==,
+        integrity: sha512-kBwZqAeABygfL9R+7HStK3otqN2Wn76Rhxgr9QjqI1VvmId71souCiBvZaVPtiRC2JeqWVuWZBsdgJzk+4T4fQ==,
       }
     peerDependencies:
-      "@typescript-eslint/utils": ^8.4.0
+      "@typescript-eslint/utils": ^8.5.0
       lodash: ^4.17.21
 
   "@ethang/markdown-generator@1.1.1":
@@ -7126,7 +7126,7 @@ snapshots:
     dependencies:
       levn: 0.4.1
 
-  "@ethang/eslint-plugin@0.0.8(@typescript-eslint/utils@8.5.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2))(lodash@4.17.21)":
+  "@ethang/eslint-plugin@0.0.9(@typescript-eslint/utils@8.5.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2))(lodash@4.17.21)":
     dependencies:
       "@typescript-eslint/utils": 8.5.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)
       lodash: 4.17.21

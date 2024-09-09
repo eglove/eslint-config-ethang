@@ -19,6 +19,7 @@ import { tailwindRules } from "../setup/tailwind.ts";
 import { tanstackQueryRules } from "../setup/tanstack-query.ts";
 import { typescriptRules } from "../setup/typescript-eslint.ts";
 import { unicornRules } from "../setup/unicorn.ts";
+import { cspellRules } from "../setup/cspell.js";
 
 export const ruleList = [
   {
@@ -236,5 +237,14 @@ export const ruleList = [
     pluginValue: "solid",
     type: "solid",
     url: "https://github.com/solidjs-community/eslint-plugin-solid",
+  },
+  {
+    importString: 'import cspell from "@cspell/eslint-plugin";',
+    list: cspellRules,
+    name: "@cspell/eslint-plugin",
+    pluginName: "cspell",
+    pluginValue: "cspell",
+    type: "core",
+    url: "https://github.com/streetsidesoftware/cspell/tree/main/packages/cspell-eslint-plugin",
   },
 ];

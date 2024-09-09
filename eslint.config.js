@@ -3,6 +3,7 @@ import { ignores, languageOptions } from "./constants.js";
 import a11y from "eslint-plugin-jsx-a11y/lib/index.js";
 import barrel from "eslint-plugin-barrel-files";
 import compat from "eslint-plugin-compat";
+import cspell from "@cspell/eslint-plugin";
 import depend from "eslint-plugin-depend";
 import ethang from "@ethang/eslint-plugin";
 import json from "@eslint/json";
@@ -27,6 +28,7 @@ export default tseslint.config(
     },
     plugins: {
       depend: depend,
+      cspell: cspell,
       barrel: barrel,
       compat: compat,
       n: n,
@@ -43,6 +45,7 @@ export default tseslint.config(
     },
     rules: {
       "depend/ban-dependencies": ["error", { allowed: ["lodash"] }],
+      "cspell/spellchecker": "error",
       "barrel/avoid-barrel-files": "error",
       "barrel/avoid-importing-barrel-files": "error",
       "barrel/avoid-namespace-import": "error",

@@ -14,9 +14,10 @@ export default tseslint.config({
     "solid/event-handlers": "error",
     "solid/imports": "error",
     "solid/jsx-no-duplicate-props": "error",
-    "solid/jsx-no-undef": "error",
     "solid/jsx-no-script-url": "error",
+    "solid/jsx-no-undef": "error",
     "solid/jsx-uses-vars": "error",
+    "solid/no-array-handlers": "error",
     "solid/no-destructure": "error",
     "solid/no-innerhtml": "error",
     "solid/no-proxy-apis": "off",
@@ -29,6 +30,5 @@ export default tseslint.config({
     "solid/reactivity": "error",
     "solid/self-closing-comp": "error",
     "solid/style-prop": "error",
-    "solid/no-array-handlers": "error",
   },
 });

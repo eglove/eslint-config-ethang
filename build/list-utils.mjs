@@ -24,7 +24,16 @@ export const getTypeImportStrings = (type) => {
 export const getListJson = (list) => {
   return list
     .map((list) => {
-      return JSON.stringify(list.list).slice(1, -1);
+      const sortedKeys = Object.keys(list.list).sort((a, b) =>
+        a.localeCompare(b),
+      );
+      const sortedObject = {};
+
+      for (const key of sortedKeys) {
+        sortedObject[key] = list.list[key];
+      }
+
+      return JSON.stringify(sortedObject).slice(1, -1);
     })
     .join(",");
 };

@@ -1,8 +1,8 @@
 import a11y from "eslint-plugin-jsx-a11y";
 
-import { genRules } from "./gen-rules.js";
+import { genRules } from "./gen-rules.ts";
 
-const ruleNames = Object.keys(a11y.rules);
+const ruleNames = Object.keys(a11y.rules ?? {});
 const customRules = [
   {
     name: "accessible-emoji",

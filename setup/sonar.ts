@@ -1,6 +1,6 @@
 /* eslint-disable */
 import sonar from "eslint-plugin-sonarjs";
-import { genRules } from "./gen-rules.js";
+import { genRules } from "./gen-rules.ts";
 
 const ruleNames = Object.keys(sonar.rules);
 const customRules = [

@@ -1,8 +1,8 @@
 import tseslint from "typescript-eslint";
 
-import { genRules } from "./gen-rules.js";
+import { genRules } from "./gen-rules.ts";
 
-const ruleNames = Object.keys(tseslint.plugin.rules);
+const ruleNames = Object.keys(tseslint.plugin.rules ?? {});
 const customRules = [
   {
     name: "adjacent-overload-signatures",

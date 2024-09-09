@@ -1,7 +1,10 @@
+import { MarkdownGenerator } from "@ethang/markdown-generator/markdown-generator.js";
 import { writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { MarkdownGenerator } from "@ethang/markdown-generator/markdown-generator.js";
-import { getList } from "./list-utils.mjs";
+
+import type { genRules } from "../setup/gen-rules.ts";
+
+import { getList } from "./list-utils.ts";
 
 export const updateReadme = () => {
   const md = new MarkdownGenerator();
@@ -13,18 +16,24 @@ export const updateReadme = () => {
     2,
   );
 
-  const getRuleCount = (rules) => {
+  const getRuleCount = (rules: ReturnType<typeof genRules>) => {
     let count = 0;
-    Object.values(rules).forEach((value) => {
-      if (value === "error" || (Array.isArray(value) && value[0] === "error")) {
+    for (const value of Object.values(rules)) {
+      if ("error" === value || (Array.isArray(value) && "error" === value[0])) {
         count += 1;
       }
-    });
+    }
 
     return count;
   };
 
-  const coreRules = [
+  type RuleList = {
+    count: number;
+    list: ReturnType<typeof genRules>;
+  };
+
+  // @ts-expect-error TODO fix, this will eventually be inferred correctly
+  const coreRules: RuleList[] = [
     ...getList("core"),
     ...getList("json"),
     ...getList("markdown"),
@@ -34,7 +43,7 @@ export const updateReadme = () => {
   for (const list of coreRules) {
     const count = getRuleCount(list.list);
     total += count;
-    list["count"] = count;
+    list.count = count;
   }
   coreRules.sort((a, b) => {
     return b.count - a.count;
@@ -42,12 +51,15 @@ export const updateReadme = () => {
 
   const ruleDocs = [`${total} errored rules.`];
   for (const list of coreRules) {
-    if (list.count < 1) {
+    if (1 > list.count) {
       continue;
     }
 
     ruleDocs.push(
-      `${list.count} ${list.count <= 1 ? "rule" : "rules"} from [${list.name}](${list.url})`,
+      // @ts-expect-error TODO will eventually infer correctly
+      `${list.count} ${
+        1 >= list.count ? "rule" : "rules"
+      } from [${list.name}](${list.url})`,
     );
   }
 
@@ -78,7 +90,9 @@ export const updateReadme = () => {
     [
       '`import astroConfig from "@ethang/eslint-config/config.astro.js";`',
       ...astroRules
-        .filter((rule) => getRuleCount(rule.list) > 0)
+        .filter((rule) => {
+          return 0 < getRuleCount(rule.list);
+        })
         .map((rule) => {
           return `${getRuleCount(rule.list)} rules from [${rule.name}](${rule.url})`;
         }),
@@ -87,7 +101,9 @@ export const updateReadme = () => {
     [
       '`import reactConfig from "@ethang/eslint-config/config.react.js";`',
       ...reactRules
-        .filter((rule) => getRuleCount(rule.list) > 0)
+        .filter((rule) => {
+          return 0 < getRuleCount(rule.list);
+        })
         .map((rule) => {
           return `${getRuleCount(rule.list)} rules from [${rule.name}](${rule.url})`;
         }),
@@ -96,7 +112,9 @@ export const updateReadme = () => {
     [
       '`import solidConfig from "@ethang/eslint-config/config.solid.js";`',
       ...solidRules
-        .filter((rule) => getRuleCount(rule.list) > 0)
+        .filter((rule) => {
+          return 0 < getRuleCount(rule.list);
+        })
         .map((rule) => {
           return `${getRuleCount(rule.list)} rules from [${rule.name}](${rule.url})`;
         }),

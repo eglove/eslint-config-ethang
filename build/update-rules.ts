@@ -1,15 +1,24 @@
-import { createConfigFile } from "./create-config-file.js";
+import type { ConfigOptions } from "./create-config.ts";
+
+import { createConfigFile } from "./create-config-file.ts";
+
+export type ConfigFile = {
+  importString?: string;
+  label?: string;
+  name: string;
+  options?: ConfigOptions;
+};
 
 export const coreFile = [
   {
-    name: "core",
-    label: "Core",
     importString: 'import config from "@ethang/eslint-config/eslint.config.js',
+    label: "Core",
+    name: "core",
     options: {
-      includeReactVersion: true,
-      includeLanguageOptions: true,
-      includeIgnores: true,
       extraImports: ['import { fixupPluginRules } from "@eslint/compat";'], // TODO remove with v9 compat
+      includeIgnores: true,
+      includeLanguageOptions: true,
+      includeReactVersion: true,
     },
   },
   {
@@ -22,46 +31,46 @@ export const coreFile = [
 
 const astroFile = [
   {
-    name: "astro",
-    label: "Astro",
     importString:
-      'import astroConfig from "@ethang/eslint-config/config.astro.js',
+      'import astroConfig from "@ethang/eslint-config/config.astro.ts',
+    label: "Astro",
+    name: "astro",
     options: {
+      extraImports: ['import tseslint from "typescript-eslint";'],
       includeIgnores: true,
       includeLanguageOptions: true,
-      extraImports: ['import tseslint from "typescript-eslint";'],
     },
   },
 ];
 
 const reactFile = [
   {
-    name: "react",
-    label: "React",
     importString:
-      'import reactConfig from "@ethang/eslint-config/config.react.js',
+      'import reactConfig from "@ethang/eslint-config/config.react.ts',
+    label: "React",
+    name: "react",
     options: {
-      includeReactVersion: true,
-      includeIgnores: true,
-      includeLanguageOptions: true,
       extraImports: [
         'import tseslint from "typescript-eslint";',
         'import { fixupPluginRules } from "@eslint/compat";', // TODO remove with v9 compat
       ],
+      includeIgnores: true,
+      includeLanguageOptions: true,
+      includeReactVersion: true,
     },
   },
 ];
 
 const solidFile = [
   {
-    name: "solid",
-    label: "Solid",
     importString:
-      'import reactConfig from "@ethang/eslint-config/config.solid.js',
+      'import reactConfig from "@ethang/eslint-config/config.solid.ts',
+    label: "Solid",
+    name: "solid",
     options: {
+      extraImports: ['import tseslint from "typescript-eslint";'],
       includeIgnores: true,
       includeLanguageOptions: true,
-      extraImports: ['import tseslint from "typescript-eslint";'],
     },
   },
 ];

@@ -1,6 +1,6 @@
 import perfectionist from "eslint-plugin-perfectionist";
 
-import { genRules } from "./gen-rules.js";
+import { genRules } from "./gen-rules.ts";
 
 const ruleNames = Object.keys(perfectionist.rules);
 const customRules = [

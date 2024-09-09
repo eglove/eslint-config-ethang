@@ -1,35 +1,36 @@
-import { ruleList } from "./rule-list.mjs";
+import { ruleList } from "./rule-list.ts";
 
-export const getList = (type) => {
+export const getList = (type: string) => {
   return ruleList
-    .filter((list) => list.type === type)
-    .sort((a, b) => a.order - b.order);
+    .filter((list) => {
+      return list.type === type;
+    })
+    .sort((a, b) => {
+      return (a.order ?? 0) - (b.order ?? 0);
+    });
 };
 
-export const getListImportStrings = (list) => {
-  return list
+export const getTypeImportStrings = (type: string) => {
+  return ruleList
+    .filter((list) => {
+      return list.type === type;
+    })
     .map((item) => {
       return item.importString;
     })
     .filter(Boolean);
 };
 
-export const getTypeImportStrings = (type) => {
-  return ruleList
-    .filter((list) => list.type === type)
-    .map((item) => item.importString)
-    .filter(Boolean);
-};
-
-export const getListJson = (list) => {
+export const getListJson = (list: ReturnType<typeof getList>) => {
   return list
     .map((list) => {
-      const sortedKeys = Object.keys(list.list).sort((a, b) =>
-        a.localeCompare(b),
-      );
+      const sortedKeys = Object.keys(list.list).sort((a, b) => {
+        return a.localeCompare(b);
+      });
       const sortedObject = {};
 
       for (const key of sortedKeys) {
+        // @ts-expect-error it's fine
         sortedObject[key] = list.list[key];
       }
 
@@ -38,7 +39,7 @@ export const getListJson = (list) => {
     .join(",");
 };
 
-export const getTypeFiles = (type) => {
+export const getTypeFiles = (type: string) => {
   switch (type) {
     case "core": {
       return ["**/*.{js,ts,jsx,tsx,cjs,cts,mjs,mts}"];
@@ -63,10 +64,14 @@ export const getTypeFiles = (type) => {
     case "solid": {
       return ["**/*.{jsx,tsx}"];
     }
+
+    default: {
+      return [];
+    }
   }
 };
 
-export const getListPlugins = (list) => {
+export const getListPlugins = (list: ReturnType<typeof getList>) => {
   let pluginString = "";
 
   for (const item of list) {

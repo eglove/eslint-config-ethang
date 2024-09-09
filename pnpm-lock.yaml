@@ -95,6 +95,18 @@ importers:
       "@tsconfig/strictest":
         specifier: ^2.0.5
         version: 2.0.5
+      "@types/eslint-plugin-jsx-a11y":
+        specifier: ^6.9.0
+        version: 6.9.0
+      "@types/eslint-plugin-tailwindcss":
+        specifier: ^3.17.0
+        version: 3.17.0
+      "@types/eslint__js":
+        specifier: ^8.42.3
+        version: 8.42.3
+      "@types/node":
+        specifier: ^22.5.4
+        version: 22.5.4
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -1976,10 +1988,40 @@ packages:
         integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==,
       }
 
+  "@types/eslint-plugin-jsx-a11y@6.9.0":
+    resolution:
+      {
+        integrity: sha512-5nw0sPyYGCsFibwjOXftxends8Nrh/JLgDtBWj6aJVcN14kHwy1yIy0o1MGLKfCcR27pvUFGgYG+hX2HSX16uA==,
+      }
+
+  "@types/eslint-plugin-tailwindcss@3.17.0":
+    resolution:
+      {
+        integrity: sha512-ucQGf2YIdTcndYcxRU3UdZgmhUHsOlbIF4BaRtl0op+7k2JmqM2i3aXZ6XIcfZgVq1ZKov7VM5c/BR81ukmkyg==,
+      }
+
+  "@types/eslint@9.6.1":
+    resolution:
+      {
+        integrity: sha512-FXx2pKgId/WyYo2jXw63kk7/+TY7u7AziEJxJAnSFzHlqTAS3Ync6SvgYAN/k4/PQpnnVuzoMuVnByKK2qp0ag==,
+      }
+
+  "@types/eslint__js@8.42.3":
+    resolution:
+      {
+        integrity: sha512-alfG737uhmPdnvkrLdZLcEKJ/B8s9Y4hrZ+YAdzUeoArBlSUERA2E87ROfOaS4jd/C45fzOoZzidLc1IPwLqOw==,
+      }
+
   "@types/estree@1.0.5":
     resolution:
       {
         integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==,
+      }
+
+  "@types/json-schema@7.0.15":
+    resolution:
+      {
+        integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==,
       }
 
   "@types/json5@0.0.29":
@@ -3144,6 +3186,7 @@ packages:
       }
     peerDependencies:
       eslint: ">= 5"
+    bundledDependencies: []
 
   eslint-plugin-compat@6.0.0:
     resolution:
@@ -7428,7 +7471,26 @@ snapshots:
     dependencies:
       "@types/ms": 0.7.34
 
+  "@types/eslint-plugin-jsx-a11y@6.9.0":
+    dependencies:
+      "@types/eslint": 9.6.1
+
+  "@types/eslint-plugin-tailwindcss@3.17.0":
+    dependencies:
+      "@types/eslint": 9.6.1
+
+  "@types/eslint@9.6.1":
+    dependencies:
+      "@types/estree": 1.0.5
+      "@types/json-schema": 7.0.15
+
+  "@types/eslint__js@8.42.3":
+    dependencies:
+      "@types/eslint": 9.6.1
+
   "@types/estree@1.0.5": {}
+
+  "@types/json-schema@7.0.15": {}
 
   "@types/json5@0.0.29": {}
 

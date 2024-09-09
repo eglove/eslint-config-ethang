@@ -1,9 +1,9 @@
-/* eslint-disable unicorn/no-abusive-eslint-disable */
-/* eslint-disable */
+// @ts-expect-error no types
 import barrel from "eslint-plugin-barrel-files";
-import { genRules } from "./gen-rules.js";
+
+import { type CustomRules, genRules } from "./gen-rules.ts";
 
 const ruleNames = Object.keys(barrel.rules);
-const customRules = [];
+const customRules: CustomRules = [];
 
 export const barrelRules = genRules(ruleNames, customRules, "barrel");

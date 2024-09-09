@@ -1,10 +1,8 @@
-/* eslint-disable unicorn/no-abusive-eslint-disable */
-/* eslint-disable */
 import compat from "eslint-plugin-compat";
 
-import { genRules } from "./gen-rules.js";
+import { type CustomRules, genRules } from "./gen-rules.ts";
 
 const ruleNames = Object.keys(compat.rules);
-const changedRules = [];
+const changedRules: CustomRules = [];
 
 export const compatRules = genRules(ruleNames, changedRules, "compat");

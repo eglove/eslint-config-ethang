@@ -1,4 +1,4 @@
 export async function getLatestReact() {
   const response = await fetch("https://registry.npmjs.org/react/latest");
-  return response.json();
+  return response.json() as Promise<{ version: string }>;
 }

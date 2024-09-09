@@ -1,7 +1,8 @@
 /* eslint-disable */
 import stylistic from "@stylistic/eslint-plugin";
-import { genRules } from "./gen-rules.js";
+import { genRules } from "./gen-rules.ts";
 
+// @ts-expect-error this exists
 const ruleNames = Object.keys(stylistic.rules);
 const customRules = [
   { name: "array-bracket-newline", rule: ["error", "consistent"] },

@@ -1,12 +1,22 @@
+import { getLatestReact } from "./get-react-version.ts";
 import {
   getList,
   getListJson,
   getListPlugins,
   getTypeFiles,
-} from "./list-utils.mjs";
-import { getLatestReact } from "./get-react-version.js";
+} from "./list-utils.ts";
 
-export const createConfig = async (type, options = {}) => {
+export type ConfigOptions = {
+  extraImports?: string[];
+  includeIgnores?: boolean;
+  includeLanguageOptions?: boolean;
+  includeReactVersion?: boolean;
+};
+
+export const createConfig = async (
+  type: string,
+  options: ConfigOptions = {},
+) => {
   let config = "";
   let settings;
 

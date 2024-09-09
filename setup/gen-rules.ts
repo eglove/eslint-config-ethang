@@ -1,12 +1,15 @@
-/**
- * @param {Array<String>} ruleNames
- * @param {Array<{name: string, rule: unknown}>} customRules
- * @param {string?} prefix
- * @param {string?} defaultOverride
- * @return {Object}
- */
-export const genRules = (ruleNames, customRules, prefix, defaultOverride) => {
-  const rules = {};
+export type CustomRules = {
+  name: string;
+  rule: unknown;
+}[];
+
+export const genRules = (
+  ruleNames: string[],
+  customRules: CustomRules,
+  prefix?: string,
+  defaultOverride = "error",
+) => {
+  const rules: Record<string, unknown> = {};
 
   for (const rule of ruleNames) {
     if (prefix === undefined) {
@@ -33,7 +36,7 @@ export const genRules = (ruleNames, customRules, prefix, defaultOverride) => {
 
   return Object.fromEntries(
     Object.entries(rules).sort(([a], [b]) => {
-      a.localeCompare(b);
+      return a.localeCompare(b);
     }),
   );
 };

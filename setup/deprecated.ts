@@ -1,4 +1,4 @@
-import { genRules } from "./gen-rules.js";
+import { type CustomRules, genRules } from "./gen-rules.ts";
 
 const ruleNames = [
   "array-bracket-newline",
@@ -95,7 +95,7 @@ const ruleNames = [
   "wrap-regex",
   "yield-star-spacing",
 ];
-const customRules = [];
+const customRules: CustomRules = [];
 
 export const deprecatedRules = genRules(
   ruleNames,

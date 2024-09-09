@@ -21,7 +21,7 @@
 - 4 rules from [@tanstack/eslint-plugin-query](https://tanstack.com/query/latest/docs/eslint/eslint-plugin-query)
 - 2 rules from [@eslint/json](https://github.com/eslint/json)
 - 1 rule from [eslint-plugin-depend](https://github.com/es-tooling/eslint-plugin-depend/tree/main)
-- 1 rule from [@cspell/eslint-plugin](https://github.com/streetsidesoftware/cspell)
+- 1 rule from [@cspell/eslint-plugin](https://github.com/streetsidesoftware/cspell/tree/main/packages/cspell-eslint-plugin)
 - 1 rule from [eslint-plugin-compat](https://github.com/amilajack/eslint-plugin-compat)
 - 1 rule from [@ethang/eslint-plugin](https://github.com/eglove/eslint-plugin)
 

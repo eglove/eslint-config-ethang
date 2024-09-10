@@ -6,7 +6,7 @@ const ruleNames = Object.keys(getNonDeprecatedRules(cspell.rules));
 const customRules: CustomRules = [
   {
     name: "spellchecker",
-    rule: ["error", { words: ["ethang"] }],
+    rule: ["error", { cspell: { words: ["ethang"] } }],
   },
 ];
 

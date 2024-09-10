@@ -6,7 +6,39 @@ const ruleNames = Object.keys(getNonDeprecatedRules(cspell.rules));
 const customRules: CustomRules = [
   {
     name: "spellchecker",
-    rule: ["error", { cspell: { words: ["ethang"] } }],
+    rule: [
+      "error",
+      {
+        cspell: {
+          words: [
+            "ethang",
+            "TSESTree",
+            "Boop",
+            "cldr",
+            "astro",
+            "laravel",
+            "qwik",
+            "sitecore",
+            "uswds",
+            "mediat",
+            "Packt",
+            "Academind",
+            "Udemy",
+            "Colte",
+            "Bootcamp",
+            "HTMX",
+            "MERN",
+            "Nuxt",
+            "Credly",
+            "Sterett",
+            "Beyonder",
+            "hotspot",
+            "lqip",
+            "Hawn",
+          ],
+        },
+      },
+    ],
   },
 ];
 

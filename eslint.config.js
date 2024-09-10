@@ -45,7 +45,7 @@ export default tseslint.config(
     },
     rules: {
       "depend/ban-dependencies": ["error", { allowed: ["lodash"] }],
-      "cspell/spellchecker": ["error", { words: ["ethang"] }],
+      "cspell/spellchecker": ["error", { cspell: { words: ["ethang"] } }],
       "barrel/avoid-barrel-files": "error",
       "barrel/avoid-importing-barrel-files": "error",
       "barrel/avoid-namespace-import": "error",

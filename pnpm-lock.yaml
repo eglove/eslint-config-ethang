@@ -32,8 +32,8 @@ importers:
         specifier: ^2.8.0
         version: 2.8.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)
       "@tanstack/eslint-plugin-query":
-        specifier: ^5.53.0
-        version: 5.53.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)
+        specifier: ^5.56.1
+        version: 5.56.1(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)
       "@typescript-eslint/parser":
         specifier: ^8.5.0
         version: 8.5.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)
@@ -41,14 +41,14 @@ importers:
         specifier: ^9.10.0
         version: 9.10.0(jiti@1.21.6)
       eslint-plugin-astro:
-        specifier: ^1.2.3
-        version: 1.2.3(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)
+        specifier: ^1.2.4
+        version: 1.2.4(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)
       eslint-plugin-barrel-files:
         specifier: ^2.1.0
         version: 2.1.0(eslint@9.10.0(jiti@1.21.6))
       eslint-plugin-compat:
-        specifier: ^6.0.0
-        version: 6.0.0(eslint@9.10.0(jiti@1.21.6))
+        specifier: ^6.0.1
+        version: 6.0.1(eslint@9.10.0(jiti@1.21.6))
       eslint-plugin-depend:
         specifier: ^0.11.0
         version: 0.11.0
@@ -63,7 +63,7 @@ importers:
         version: 17.10.2(eslint@9.10.0(jiti@1.21.6))
       eslint-plugin-perfectionist:
         specifier: ^3.5.0
-        version: 3.5.0(astro-eslint-parser@1.0.2(typescript@5.6.2))(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)(vue-eslint-parser@9.4.3(eslint@9.10.0(jiti@1.21.6)))
+        version: 3.5.0(astro-eslint-parser@1.0.3(typescript@5.6.2))(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)(vue-eslint-parser@9.4.3(eslint@9.10.0(jiti@1.21.6)))
       eslint-plugin-react-hooks:
         specifier: ^4.6.2
         version: 4.6.2(eslint@9.10.0(jiti@1.21.6))
@@ -91,7 +91,7 @@ importers:
         version: 1.1.1(lodash@4.17.21)
       "@ethang/project-builder":
         specifier: ^2.5.10
-        version: 2.5.10(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.2.2)(lodash@4.17.21)(simple-git@3.26.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.45)(tsx@4.19.0)(typescript@5.6.2)(yaml@2.5.1))(typescript@5.6.2)
+        version: 2.5.10(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.2.2)(lodash@4.17.21)(simple-git@3.26.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.45)(tsx@4.19.1)(typescript@5.6.2)(yaml@2.5.1))(typescript@5.6.2)
       "@tsconfig/node-lts":
         specifier: ^20.1.3
         version: 20.1.3
@@ -129,10 +129,10 @@ packages:
       }
     engines: { node: ">=6.0.0" }
 
-  "@astrojs/compiler@2.10.1":
+  "@astrojs/compiler@2.10.3":
     resolution:
       {
-        integrity: sha512-XmM4j6BjvOVMag2xELq0JuG2yKOW8wgIu6dvb9BsjbGYmnvoStJn/pqEzVqc1EBszf2xYT7onIkftIOUz9AwrQ==,
+        integrity: sha512-bL/O7YBxsFt55YHU021oL+xz+B/9HvGNId3F9xURN16aeqDK9juHGktdkCSXz+U4nqFACq6ZFvWomOzhV+zfPw==,
       }
 
   "@babel/code-frame@7.24.7":
@@ -2071,10 +2071,10 @@ packages:
         integrity: sha512-GaHYm+c0O9MjZRu0ongGBRbinu8gVAMd2UZjji6jVmqKtZluZnptXGWhz1E8j8D2HJ3f/yMxKAUC0b+57wncIw==,
       }
 
-  "@mdn/browser-compat-data@5.5.44":
+  "@mdn/browser-compat-data@5.5.51":
     resolution:
       {
-        integrity: sha512-bG2ePe+cjEyZQ9hBB+EzsItnl0hPNs1RLjmRuWX7lS0vJ8ddxTeyoQ8yXkp+DAcprbJ0X65wUCgfjBODCRsB5w==,
+        integrity: sha512-17L3+/oqX+sgSyucNKSipri1LkI/d8pwPQI4Vv2ejRVZLZr1WGxcEGBnglqFhdlislQBceJiHAdQnWEE+YJE3A==,
       }
 
   "@napi-rs/wasm-runtime@0.2.4":
@@ -2349,10 +2349,10 @@ packages:
     peerDependencies:
       eslint: ">=8.40.0"
 
-  "@tanstack/eslint-plugin-query@5.53.0":
+  "@tanstack/eslint-plugin-query@5.56.1":
     resolution:
       {
-        integrity: sha512-Q3WgvK2YTGc3h5EaktDouRkKBPGl3QQFLPZBagpBa6zD70PiNoDY72wWrX9T4yKClMmSulAa0wg5Nj3LVXGkEw==,
+        integrity: sha512-IUm2Zy5BXOqMbaa7QwNg3cPa5NP5Rm3pIFCFpe7Y3pLC7Ftp8Q0Y8GU2uNpCbMFW79jHJXdQ4Oxnu1eTQr8GXQ==,
       }
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
@@ -2833,10 +2833,10 @@ packages:
         integrity: sha512-OH/2E5Fg20h2aPrbe+QL8JZQFko0YZaF+j4mnQ7BGhfavO7OpSLa8a0y9sBwomHdSbkhTS8TQNayBfnW5DwbvQ==,
       }
 
-  astro-eslint-parser@1.0.2:
+  astro-eslint-parser@1.0.3:
     resolution:
       {
-        integrity: sha512-8hJaCuqxObShWl2wEsnASqh/DbQ2O+S66m0Q3ctJlzBPEQ4pfGwwama3FCjZO3GDLQsjvn1T0v93Vxyu/+5fGw==,
+        integrity: sha512-AGsGgcg7Jg9UpyCDgvl/EkdYpe1oMkFdmC2Zl+KWneoieLCtQIFjmcY8yt41gcNx4mby0w8BBJQcBmPuf8UAoQ==,
       }
     engines: { node: ^18.18.0 || ^20.9.0 || >=21.1.0 }
 
@@ -3646,10 +3646,10 @@ packages:
       eslint-import-resolver-webpack:
         optional: true
 
-  eslint-plugin-astro@1.2.3:
+  eslint-plugin-astro@1.2.4:
     resolution:
       {
-        integrity: sha512-asHT0VUs68oppVnTHfp/WgLqs0yCx9kG9AC/PKLmp+87imeh3nGHMdFm0qP46vHxTM0NLDEhvmjFdAVAqw+QPQ==,
+        integrity: sha512-45uXKW6lxmYEa8Gkh5lCfwAnOyQD90AaMS2Bu9ans88f+pFkliqjGeexiKv73oiTcY3I0vlzTUk5GlqvYlkjyA==,
       }
     engines: { node: ^18.18.0 || ^20.9.0 || >=21.1.0 }
     peerDependencies:
@@ -3663,10 +3663,10 @@ packages:
     peerDependencies:
       eslint: ">= 5"
 
-  eslint-plugin-compat@6.0.0:
+  eslint-plugin-compat@6.0.1:
     resolution:
       {
-        integrity: sha512-oIynkQYqGnW9ibHl1cGLER8XkUlKaOI8bS80Qz7CjKROvbQm4oN8fWb5l2cG9GJJ4h5eFIHPqkB9ZJuMzwpPFQ==,
+        integrity: sha512-0MeIEuoy8kWkOhW38kK8hU4vkb6l/VvyjpuYDymYOXmUY9NvTgyErF16lYuX+HPS5hkmym7lfA+XpYZiWYWmYA==,
       }
     engines: { node: ">=18.x" }
     peerDependencies:
@@ -6310,10 +6310,10 @@ packages:
       typescript:
         optional: true
 
-  tsx@4.19.0:
+  tsx@4.19.1:
     resolution:
       {
-        integrity: sha512-bV30kM7bsLZKZIOCHeMNVMJ32/LuJzLVajkQI/qf92J2Qr08ueLQvW00PUZGiuLPP760UINwupgUj8qrSCPUKg==,
+        integrity: sha512-0flMz1lh74BR4wOvBjuh9olbnwqCPc35OOlfyzHba0Dc+QNUeWX/Gq2YTbnwcWPO3BMd8fkzRVrHcsR+a7z7rA==,
       }
     engines: { node: ">=18.0.0" }
     hasBin: true
@@ -6649,7 +6649,7 @@ snapshots:
       "@jridgewell/gen-mapping": 0.3.5
       "@jridgewell/trace-mapping": 0.3.25
 
-  "@astrojs/compiler@2.10.1": {}
+  "@astrojs/compiler@2.10.3": {}
 
   "@babel/code-frame@7.24.7":
     dependencies:
@@ -7926,14 +7926,14 @@ snapshots:
     dependencies:
       lodash: 4.17.21
 
-  "@ethang/project-builder@2.5.10(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.2.2)(lodash@4.17.21)(simple-git@3.26.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.45)(tsx@4.19.0)(typescript@5.6.2)(yaml@2.5.1))(typescript@5.6.2)":
+  "@ethang/project-builder@2.5.10(chalk@5.3.0)(fs-extra@11.2.0)(inquirer@10.2.2)(lodash@4.17.21)(simple-git@3.26.0)(tsup@8.2.4(jiti@1.21.6)(postcss@8.4.45)(tsx@4.19.1)(typescript@5.6.2)(yaml@2.5.1))(typescript@5.6.2)":
     dependencies:
       chalk: 5.3.0
       fs-extra: 11.2.0
       inquirer: 10.2.2
       lodash: 4.17.21
       simple-git: 3.26.0
-      tsup: 8.2.4(jiti@1.21.6)(postcss@8.4.45)(tsx@4.19.0)(typescript@5.6.2)(yaml@2.5.1)
+      tsup: 8.2.4(jiti@1.21.6)(postcss@8.4.45)(tsx@4.19.1)(typescript@5.6.2)(yaml@2.5.1)
       typescript: 5.6.2
 
   "@humanwhocodes/module-importer@1.0.1": {}
@@ -8073,7 +8073,7 @@ snapshots:
 
   "@kwsites/promise-deferred@1.1.1": {}
 
-  "@mdn/browser-compat-data@5.5.44": {}
+  "@mdn/browser-compat-data@5.5.51": {}
 
   "@napi-rs/wasm-runtime@0.2.4":
     dependencies:
@@ -8198,7 +8198,7 @@ snapshots:
       - supports-color
       - typescript
 
-  "@tanstack/eslint-plugin-query@5.53.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)":
+  "@tanstack/eslint-plugin-query@5.56.1(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)":
     dependencies:
       "@typescript-eslint/utils": 8.5.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)
       eslint: 9.10.0(jiti@1.21.6)
@@ -8566,17 +8566,17 @@ snapshots:
 
   ast-metadata-inferer@0.8.0:
     dependencies:
-      "@mdn/browser-compat-data": 5.5.44
+      "@mdn/browser-compat-data": 5.5.51
 
   ast-types-flow@0.0.8: {}
 
-  astro-eslint-parser@1.0.2(typescript@5.6.2):
+  astro-eslint-parser@1.0.3(typescript@5.6.2):
     dependencies:
-      "@astrojs/compiler": 2.10.1
-      "@typescript-eslint/scope-manager": 7.18.0
-      "@typescript-eslint/types": 7.18.0
-      "@typescript-eslint/typescript-estree": 7.18.0(typescript@5.6.2)
-      astrojs-compiler-sync: 1.0.0(@astrojs/compiler@2.10.1)
+      "@astrojs/compiler": 2.10.3
+      "@typescript-eslint/scope-manager": 8.5.0
+      "@typescript-eslint/types": 8.5.0
+      "@typescript-eslint/typescript-estree": 8.5.0(typescript@5.6.2)
+      astrojs-compiler-sync: 1.0.0(@astrojs/compiler@2.10.3)
       debug: 4.3.7
       entities: 4.5.0
       eslint-scope: 8.0.2
@@ -8589,9 +8589,9 @@ snapshots:
       - supports-color
       - typescript
 
-  astrojs-compiler-sync@1.0.0(@astrojs/compiler@2.10.1):
+  astrojs-compiler-sync@1.0.0(@astrojs/compiler@2.10.3):
     dependencies:
-      "@astrojs/compiler": 2.10.1
+      "@astrojs/compiler": 2.10.3
       synckit: 0.9.1
 
   available-typed-arrays@1.0.7:
@@ -9149,12 +9149,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-astro@1.2.3(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2):
+  eslint-plugin-astro@1.2.4(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2):
     dependencies:
       "@eslint-community/eslint-utils": 4.4.0(eslint@9.10.0(jiti@1.21.6))
       "@jridgewell/sourcemap-codec": 1.5.0
-      "@typescript-eslint/types": 7.18.0
-      astro-eslint-parser: 1.0.2(typescript@5.6.2)
+      "@typescript-eslint/types": 8.5.0
+      astro-eslint-parser: 1.0.3(typescript@5.6.2)
       eslint: 9.10.0(jiti@1.21.6)
       eslint-compat-utils: 0.5.1(eslint@9.10.0(jiti@1.21.6))
       globals: 15.9.0
@@ -9171,9 +9171,9 @@ snapshots:
       oxc-resolver: 1.10.2
       requireindex: 1.2.0
 
-  eslint-plugin-compat@6.0.0(eslint@9.10.0(jiti@1.21.6)):
+  eslint-plugin-compat@6.0.1(eslint@9.10.0(jiti@1.21.6)):
     dependencies:
-      "@mdn/browser-compat-data": 5.5.44
+      "@mdn/browser-compat-data": 5.5.51
       ast-metadata-inferer: 0.8.0
       browserslist: 4.23.3
       caniuse-lite: 1.0.30001660
@@ -9260,7 +9260,7 @@ snapshots:
       minimatch: 9.0.5
       semver: 7.6.3
 
-  eslint-plugin-perfectionist@3.5.0(astro-eslint-parser@1.0.2(typescript@5.6.2))(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)(vue-eslint-parser@9.4.3(eslint@9.10.0(jiti@1.21.6))):
+  eslint-plugin-perfectionist@3.5.0(astro-eslint-parser@1.0.3(typescript@5.6.2))(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)(vue-eslint-parser@9.4.3(eslint@9.10.0(jiti@1.21.6))):
     dependencies:
       "@typescript-eslint/types": 8.5.0
       "@typescript-eslint/utils": 8.5.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)
@@ -9268,7 +9268,7 @@ snapshots:
       minimatch: 9.0.5
       natural-compare-lite: 1.4.0
     optionalDependencies:
-      astro-eslint-parser: 1.0.2(typescript@5.6.2)
+      astro-eslint-parser: 1.0.3(typescript@5.6.2)
       vue-eslint-parser: 9.4.3(eslint@9.10.0(jiti@1.21.6))
     transitivePeerDependencies:
       - supports-color
@@ -10587,13 +10587,13 @@ snapshots:
     optionalDependencies:
       postcss: 8.4.45
 
-  postcss-load-config@6.0.1(jiti@1.21.6)(postcss@8.4.45)(tsx@4.19.0)(yaml@2.5.1):
+  postcss-load-config@6.0.1(jiti@1.21.6)(postcss@8.4.45)(tsx@4.19.1)(yaml@2.5.1):
     dependencies:
       lilconfig: 3.1.2
     optionalDependencies:
       jiti: 1.21.6
       postcss: 8.4.45
-      tsx: 4.19.0
+      tsx: 4.19.1
       yaml: 2.5.1
 
   postcss-nested@6.2.0(postcss@8.4.45):
@@ -11046,7 +11046,7 @@ snapshots:
 
   tslib@2.7.0: {}
 
-  tsup@8.2.4(jiti@1.21.6)(postcss@8.4.45)(tsx@4.19.0)(typescript@5.6.2)(yaml@2.5.1):
+  tsup@8.2.4(jiti@1.21.6)(postcss@8.4.45)(tsx@4.19.1)(typescript@5.6.2)(yaml@2.5.1):
     dependencies:
       bundle-require: 5.0.0(esbuild@0.23.1)
       cac: 6.7.14
@@ -11058,7 +11058,7 @@ snapshots:
       globby: 11.1.0
       joycon: 3.1.1
       picocolors: 1.1.0
-      postcss-load-config: 6.0.1(jiti@1.21.6)(postcss@8.4.45)(tsx@4.19.0)(yaml@2.5.1)
+      postcss-load-config: 6.0.1(jiti@1.21.6)(postcss@8.4.45)(tsx@4.19.1)(yaml@2.5.1)
       resolve-from: 5.0.0
       rollup: 4.21.3
       source-map: 0.8.0-beta.0
@@ -11073,7 +11073,7 @@ snapshots:
       - tsx
       - yaml
 
-  tsx@4.19.0:
+  tsx@4.19.1:
     dependencies:
       esbuild: 0.23.1
       get-tsconfig: 4.8.1

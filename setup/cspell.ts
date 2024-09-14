@@ -35,6 +35,8 @@ const customRules: CustomRules = [
             "hotspot",
             "lqip",
             "Hawn",
+            "nextui",
+            "speculationrules",
           ],
         },
       },

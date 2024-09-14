@@ -62,8 +62,8 @@ importers:
         specifier: ^17.10.2
         version: 17.10.2(eslint@9.10.0(jiti@1.21.6))
       eslint-plugin-perfectionist:
-        specifier: ^3.5.0
-        version: 3.5.0(astro-eslint-parser@1.0.3(typescript@5.6.2))(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)(vue-eslint-parser@9.4.3(eslint@9.10.0(jiti@1.21.6)))
+        specifier: ^3.6.0
+        version: 3.6.0(astro-eslint-parser@1.0.3(typescript@5.6.2))(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)(vue-eslint-parser@9.4.3(eslint@9.10.0(jiti@1.21.6)))
       eslint-plugin-react-hooks:
         specifier: ^4.6.2
         version: 4.6.2(eslint@9.10.0(jiti@1.21.6))
@@ -108,8 +108,8 @@ importers:
         specifier: ^8.42.3
         version: 8.42.3
       "@types/node":
-        specifier: ^22.5.4
-        version: 22.5.4
+        specifier: ^22.5.5
+        version: 22.5.5
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -2441,10 +2441,10 @@ packages:
         integrity: sha512-CPM9nzrCPPJHQNA9keH9CVkVI+WR5kMa+7XEs5jcGQ0VoAGnLv242w8lIVgwAEfmE4oufJRaTc9PNLQl0ioAow==,
       }
 
-  "@types/node@22.5.4":
+  "@types/node@22.5.5":
     resolution:
       {
-        integrity: sha512-FDuKUJQm/ju9fT/SeX/6+gBzoPzlVCzfzmGkwKvRHQVxi4BntVbyIwf6a4Xn62mrvndLiml6z/UBXIdEVjQLXg==,
+        integrity: sha512-Xjs4y5UPO/CLdzpgR6GirZJx36yScjh73+2NlLlkFRSoQN8B0DpfXPdZGnvVmLRLOsqDpOfTNv7D9trgGhmOIA==,
       }
 
   "@types/normalize-package-data@2.4.4":
@@ -3727,17 +3727,17 @@ packages:
     peerDependencies:
       eslint: ">=8.23.0"
 
-  eslint-plugin-perfectionist@3.5.0:
+  eslint-plugin-perfectionist@3.6.0:
     resolution:
       {
-        integrity: sha512-vwDNuxlAlbZJ3DjHo6GnfZrmMlJBLFrkOLBV/rYvVnLFD+x54u9VyJcGOfJ2DK9d1cd3a/C/vtBrbBNgAC6Mrg==,
+        integrity: sha512-sA6ljy6dL/9cM5ruZ/pMqRVt0FQ4Z7mbQWlBYpyX9941LVfm65d2jl2k1ZbWD3ud9Wm+/NKgOvRnAatsKhMJbA==,
       }
     engines: { node: ^18.0.0 || >=20.0.0 }
     peerDependencies:
       astro-eslint-parser: ^1.0.2
       eslint: ">=8.0.0"
       svelte: ">=3.0.0"
-      svelte-eslint-parser: ^0.41.0
+      svelte-eslint-parser: ^0.41.1
       vue-eslint-parser: ">=9.0.0"
     peerDependenciesMeta:
       astro-eslint-parser:
@@ -7960,7 +7960,7 @@ snapshots:
       "@inquirer/figures": 1.0.5
       "@inquirer/type": 1.5.3
       "@types/mute-stream": 0.0.4
-      "@types/node": 22.5.4
+      "@types/node": 22.5.5
       "@types/wrap-ansi": 3.0.0
       ansi-escapes: 4.3.2
       cli-spinners: 2.9.2
@@ -8250,9 +8250,9 @@ snapshots:
 
   "@types/mute-stream@0.0.4":
     dependencies:
-      "@types/node": 22.5.4
+      "@types/node": 22.5.5
 
-  "@types/node@22.5.4":
+  "@types/node@22.5.5":
     dependencies:
       undici-types: 6.19.8
 
@@ -9260,7 +9260,7 @@ snapshots:
       minimatch: 9.0.5
       semver: 7.6.3
 
-  eslint-plugin-perfectionist@3.5.0(astro-eslint-parser@1.0.3(typescript@5.6.2))(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)(vue-eslint-parser@9.4.3(eslint@9.10.0(jiti@1.21.6))):
+  eslint-plugin-perfectionist@3.6.0(astro-eslint-parser@1.0.3(typescript@5.6.2))(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)(vue-eslint-parser@9.4.3(eslint@9.10.0(jiti@1.21.6))):
     dependencies:
       "@typescript-eslint/types": 8.5.0
       "@typescript-eslint/utils": 8.5.0(eslint@9.10.0(jiti@1.21.6))(typescript@5.6.2)

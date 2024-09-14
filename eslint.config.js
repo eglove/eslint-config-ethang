@@ -74,6 +74,8 @@ export default tseslint.config(
               "hotspot",
               "lqip",
               "Hawn",
+              "nextui",
+              "speculationrules",
             ],
           },
         },

@@ -20,6 +20,7 @@ import { tanstackQueryRules } from "../setup/tanstack-query.ts";
 import { typescriptRules } from "../setup/typescript-eslint.ts";
 import { unicornRules } from "../setup/unicorn.ts";
 import { cspellRules } from "../setup/cspell.js";
+import { tanstackRouterRules } from "../setup/tanstack-router.js";
 
 export const ruleList = [
   {
@@ -123,12 +124,12 @@ export const ruleList = [
     url: "https://github.com/eglove/eslint-plugin",
   },
   {
-    importString: 'import tanstack from "@tanstack/eslint-plugin-query";',
+    importString: 'import tanstackQuery from "@tanstack/eslint-plugin-query";',
     list: tanstackQueryRules,
     name: "@tanstack/eslint-plugin-query",
     order: 10,
     pluginName: "@tanstack/query",
-    pluginValue: "tanstack",
+    pluginValue: "tanstackQuery",
     type: "core",
     url: "https://tanstack.com/query/latest/docs/eslint/eslint-plugin-query",
   },
@@ -163,10 +164,21 @@ export const ruleList = [
     url: "https://github.com/azat-io/eslint-plugin-perfectionist",
   },
   {
+    importString:
+      'import tanstackRouter from "@tanstack/eslint-plugin-router";',
+    list: tanstackRouterRules,
+    name: "@tanstack/eslint-plugin-router",
+    order: 14,
+    pluginName: "@tanstack/router",
+    pluginValue: "tanstackRouter",
+    type: "core",
+    url: "https://tanstack.com/router/latest/docs/eslint/eslint-plugin-router",
+  },
+  {
     importString: 'import a11y from "eslint-plugin-jsx-a11y/lib/index.js";',
     list: a11yRules,
     name: "jsx-a11y",
-    order: 14,
+    order: 15,
     pluginName: "a11y",
     pluginValue: "a11y",
     type: "core",
@@ -176,7 +188,7 @@ export const ruleList = [
     importString: undefined,
     list: deprecatedRules,
     name: "@eslint/js",
-    order: 15,
+    order: 16,
     pluginName: undefined,
     pluginValue: undefined,
     type: "core",

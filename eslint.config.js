@@ -14,9 +14,10 @@ import perfectionist from "eslint-plugin-perfectionist";
 import sonar from "eslint-plugin-sonarjs";
 import stylistic from "@stylistic/eslint-plugin";
 import tailwind from "eslint-plugin-tailwindcss";
-import tanstack from "@tanstack/eslint-plugin-query";
+import tanstackQuery from "@tanstack/eslint-plugin-query";
 import tseslint from "typescript-eslint";
 import unicorn from "eslint-plugin-unicorn";
+import tanstackRouter from "@tanstack/eslint-plugin-router";
 
 export default tseslint.config(
   {
@@ -37,7 +38,8 @@ export default tseslint.config(
       lodash: lodashConfig,
       sonar: fixupPluginRules(sonar),
       ethang: ethang,
-      "@tanstack/query": tanstack,
+      "@tanstack/query": tanstackQuery,
+      "@tanstack/router": tanstackRouter,
       tailwind: tailwind,
       stylistic: stylistic,
       perfectionist: perfectionist,
@@ -1112,6 +1114,7 @@ export default tseslint.config(
         "error",
         { groups: ["shorthand", "multiline"] },
       ],
+      "@tanstack/router/create-route-property-order": "error",
       "a11y/alt-text": "error",
       "a11y/anchor-ambiguous-text": "error",
       "a11y/anchor-has-content": "error",

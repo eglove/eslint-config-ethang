@@ -15,9 +15,9 @@ import sonar from "eslint-plugin-sonarjs";
 import stylistic from "@stylistic/eslint-plugin";
 import tailwind from "eslint-plugin-tailwindcss";
 import tanstackQuery from "@tanstack/eslint-plugin-query";
+import tanstackRouter from "@tanstack/eslint-plugin-router";
 import tseslint from "typescript-eslint";
 import unicorn from "eslint-plugin-unicorn";
-import tanstackRouter from "@tanstack/eslint-plugin-router";
 
 export default tseslint.config(
   {
@@ -39,10 +39,10 @@ export default tseslint.config(
       sonar: fixupPluginRules(sonar),
       ethang: ethang,
       "@tanstack/query": tanstackQuery,
-      "@tanstack/router": tanstackRouter,
       tailwind: tailwind,
       stylistic: stylistic,
       perfectionist: perfectionist,
+      "@tanstack/router": tanstackRouter,
       a11y: a11y,
     },
     rules: {

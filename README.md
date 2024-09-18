@@ -54,17 +54,25 @@ import tseslint from "typescript-eslint";
 import astroConfig from "@ethang/eslint-config/config.astro.js"; // OPTIONAL
 import reactConfig from "@ethang/eslint-config/config.react.js"; // OPTIONAL
 
-export default tseslint.config(...config, ...astroConfig, ...reactConfig, {
-  languageOptions: {
-    parserOptions: {
-      project: true,
-      tsconfigRootDir: import.meta.dirname,
+export default tseslint.config(
+  {
+    ignores: [], // Ignored files apply to all following configs
+  },
+  ...config,
+  ...astroConfig,
+  ...reactConfig,
+  {
+    languageOptions: {
+      parserOptions: {
+        project: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
+    rules: {
+      // Override rules from above configs
     },
   },
-  rules: {
-    // your custom rules here
-  },
-});
+);
 ```
 
 **Scripts**

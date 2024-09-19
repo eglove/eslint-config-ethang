@@ -78,7 +78,6 @@ export default tseslint.config(
               "Hawn",
               "nextui",
               "speculationrules",
-              "Zustand",
             ],
           },
         },

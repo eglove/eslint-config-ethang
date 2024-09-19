@@ -37,6 +37,7 @@ const customRules: CustomRules = [
             "Hawn",
             "nextui",
             "speculationrules",
+            "zustand",
           ],
         },
       },

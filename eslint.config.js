@@ -934,6 +934,7 @@ export default tseslint.config(
       "sonar/xml-parser-xxe": "error",
       "ethang/handle-native-error": "error",
       "@tanstack/query/exhaustive-deps": "error",
+      "@tanstack/query/infinite-query-property-order": "error",
       "@tanstack/query/no-rest-destructuring": "error",
       "@tanstack/query/no-unstable-deps": "error",
       "@tanstack/query/stable-query-client": "error",

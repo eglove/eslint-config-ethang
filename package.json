@@ -1,6 +1,6 @@
 {
   "name": "@ethang/eslint-config",
-  "version": "19.6.4",
+  "version": "19.6.5",
   "repository": {
     "url": "git+https://github.com/eglove/eslint-config-ethang.git"
   },
@@ -19,7 +19,7 @@
     "@eslint/js": "^9.11.0",
     "@eslint/json": "^0.4.0",
     "@eslint/markdown": "^6.1.0",
-    "@ethang/eslint-plugin": "^0.0.10",
+    "@ethang/eslint-plugin": "^0.0.11",
     "@stylistic/eslint-plugin": "^2.8.0",
     "@tanstack/eslint-plugin-query": "^5.57.0",
     "@tanstack/eslint-plugin-router": "^1.58.0",
@@ -59,7 +59,7 @@
     "@eslint/js": "^9.11.0",
     "@eslint/json": "^0.4.0",
     "@eslint/markdown": "^6.1.0",
-    "@ethang/eslint-plugin": "^0.0.10",
+    "@ethang/eslint-plugin": "^0.0.11",
     "@stylistic/eslint-plugin": "^2.8.0",
     "@tanstack/eslint-plugin-query": "^5.57.0",
     "@tanstack/eslint-plugin-router": "^1.58.0",

@@ -27,6 +27,12 @@ export const coreFile = [
   {
     name: "json",
   },
+  {
+    name: "jsonc",
+  },
+  {
+    name: "json5",
+  },
 ];
 
 const astroFile = [

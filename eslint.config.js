@@ -1266,7 +1266,30 @@ export default tseslint.config(
     },
   },
   {
-    files: ["**/*.{json,jsonc,json5}"],
+    files: ["**/*.json"],
+    language: "json/json",
+    plugins: {
+      json: json,
+    },
+    rules: {
+      "json/no-duplicate-keys": "error",
+      "json/no-empty-keys": "error",
+    },
+  },
+  {
+    files: ["**/*.jsonc"],
+    language: "json/jsonc",
+    plugins: {
+      json: json,
+    },
+    rules: {
+      "json/no-duplicate-keys": "error",
+      "json/no-empty-keys": "error",
+    },
+  },
+  {
+    files: ["**/*.json5"],
+    language: "json/json5",
     plugins: {
       json: json,
     },

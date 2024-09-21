@@ -29,6 +29,26 @@ export const getListJson = (list: typeof ruleList) => {
     .join(",");
 };
 
+export const getTypeLanguage = (type: string) => {
+  switch (type) {
+    case "json": {
+      return "json/json";
+    }
+
+    case "jsonc": {
+      return "json/jsonc";
+    }
+
+    case "json5": {
+      return "json/json5";
+    }
+
+    default: {
+      return;
+    }
+  }
+};
+
 export const getTypeFiles = (type: string) => {
   switch (type) {
     case "core": {
@@ -40,7 +60,15 @@ export const getTypeFiles = (type: string) => {
     }
 
     case "json": {
-      return ["**/*.{json,jsonc,json5}"];
+      return ["**/*.json"];
+    }
+
+    case "jsonc": {
+      return ["**/*.jsonc"];
+    }
+
+    case "json5": {
+      return ["**/*.json5"];
     }
 
     case "react": {

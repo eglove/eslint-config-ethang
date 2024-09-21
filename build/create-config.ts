@@ -4,6 +4,7 @@ import {
   getListJson,
   getListPlugins,
   getTypeFiles,
+  getTypeLanguage,
 } from "./list-utils.ts";
 
 export type ConfigOptions = {
@@ -46,8 +47,10 @@ export const createConfig = async (
 },`;
   }
 
+  const language = getTypeLanguage(type);
+
   config += `{
-    files: ["${getTypeFiles(type)}"],${optionals}
+    files: ["${getTypeFiles(type)}"],${optionals}${language ? `language: "${language}",` : ""}
     plugins: {
       ${getListPlugins(list)}
     },

@@ -5,7 +5,6 @@ import { compatRules } from "../setup/compat.ts";
 import { dependRules } from "../setup/depend.ts";
 import { deprecatedRules } from "../setup/deprecated.ts";
 import { eslintRules } from "../setup/eslint.ts";
-import { ethangRules } from "../setup/ethang.ts";
 import { jsonRules } from "../setup/json.ts";
 import { lodashRules } from "../setup/lodash.ts";
 import { markdownRules } from "../setup/markdown.ts";
@@ -114,20 +113,10 @@ export const ruleList = [
     url: "https://github.com/SonarSource/SonarJS/blob/master/packages/jsts/src/rules/README.md",
   },
   {
-    importString: 'import ethang from "@ethang/eslint-plugin";',
-    list: ethangRules,
-    name: "@ethang/eslint-plugin",
-    order: 9,
-    pluginName: "ethang",
-    pluginValue: "ethang",
-    type: "core",
-    url: "https://github.com/eglove/eslint-plugin",
-  },
-  {
     importString: 'import tailwind from "eslint-plugin-tailwindcss";',
     list: tailwindRules,
     name: "eslint-plugin-tailwindcss",
-    order: 10,
+    order: 9,
     pluginName: "tailwind",
     pluginValue: "tailwind",
     type: "core",
@@ -137,7 +126,7 @@ export const ruleList = [
     importString: 'import stylistic from "@stylistic/eslint-plugin";',
     list: stylisticRules,
     name: "@stylistic/eslint-plugin",
-    order: 11,
+    order: 10,
     pluginName: "stylistic",
     pluginValue: "stylistic",
     type: "core",
@@ -147,7 +136,7 @@ export const ruleList = [
     importString: 'import perfectionist from "eslint-plugin-perfectionist";',
     list: perfectionistRules,
     name: "eslint-plugin-perfectionist",
-    order: 12,
+    order: 11,
     pluginName: "perfectionist",
     pluginValue: "perfectionist",
     type: "core",
@@ -157,7 +146,7 @@ export const ruleList = [
     importString: 'import tanstackQuery from "@tanstack/eslint-plugin-query";',
     list: tanstackQueryRules,
     name: "@tanstack/eslint-plugin-query",
-    order: 13,
+    order: 12,
     pluginName: "@tanstack/query",
     pluginValue: "tanstackQuery",
     type: "core",
@@ -168,7 +157,7 @@ export const ruleList = [
       'import tanstackRouter from "@tanstack/eslint-plugin-router";',
     list: tanstackRouterRules,
     name: "@tanstack/eslint-plugin-router",
-    order: 14,
+    order: 13,
     pluginName: "@tanstack/router",
     pluginValue: "tanstackRouter",
     type: "core",
@@ -178,7 +167,7 @@ export const ruleList = [
     importString: 'import a11y from "eslint-plugin-jsx-a11y/lib/index.js";',
     list: a11yRules,
     name: "jsx-a11y",
-    order: 15,
+    order: 14,
     pluginName: "a11y",
     pluginValue: "a11y",
     type: "core",
@@ -188,7 +177,7 @@ export const ruleList = [
     importString: undefined,
     list: deprecatedRules,
     name: "@eslint/js",
-    order: 16,
+    order: 15,
     pluginName: undefined,
     pluginValue: undefined,
     type: "core",

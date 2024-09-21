@@ -1094,7 +1094,7 @@ export default tseslint.config(
       "perfectionist/sort-named-exports": "error",
       "perfectionist/sort-named-imports": "error",
       "perfectionist/sort-object-types": "error",
-      "perfectionist/sort-objects": "error",
+      "perfectionist/sort-objects": ["error", { partitionByComment: true }],
       "perfectionist/sort-sets": "error",
       "perfectionist/sort-svelte-attributes": [
         "error",

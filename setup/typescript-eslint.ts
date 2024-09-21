@@ -65,6 +65,10 @@ const customRules = [
     rule: "off",
   },
   {
+    name: "no-unnecessary-type-parameters",
+    rule: "off",
+  },
+  {
     name: "no-use-before-define",
     rule: "off",
   },

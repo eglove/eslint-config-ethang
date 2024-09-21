@@ -115,7 +115,7 @@ export const ruleList = [
   },
   {
     importString:
-      'import { plugin as exceptionHandling } from "eslint-plugin-exception-handling',
+      'import { plugin as exceptionHandling } from "eslint-plugin-exception-handling"',
     list: exceptionHandlingRules,
     name: "exception-handling",
     order: 9,

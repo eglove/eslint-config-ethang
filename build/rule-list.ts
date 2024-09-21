@@ -176,7 +176,7 @@ export const ruleList = [
     url: "https://tanstack.com/router/latest/docs/eslint/eslint-plugin-router",
   },
   {
-    importString: 'import a11y from "eslint-plugin-jsx-a11y/lib/index.js";',
+    importString: 'import a11y from "eslint-plugin-jsx-a11y";',
     list: a11yRules,
     name: "jsx-a11y",
     order: 15,

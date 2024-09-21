@@ -1,6 +1,7 @@
 import { fixupPluginRules } from "@eslint/compat";
 import { ignores, languageOptions } from "./constants.js";
-import a11y from "eslint-plugin-jsx-a11y/lib/index.js";
+import { plugin as exceptionHandling } from "eslint-plugin-exception-handling";
+import a11y from "eslint-plugin-jsx-a11y";
 import barrel from "eslint-plugin-barrel-files";
 import compat from "eslint-plugin-compat";
 import cspell from "@cspell/eslint-plugin";
@@ -36,6 +37,7 @@ export default tseslint.config(
       unicorn: unicorn,
       lodash: lodashConfig,
       sonar: fixupPluginRules(sonar),
+      "exception-handling": exceptionHandling,
       tailwind: tailwind,
       stylistic: stylistic,
       perfectionist: perfectionist,
@@ -930,6 +932,9 @@ export default tseslint.config(
       "sonar/weak-ssl": "error",
       "sonar/x-powered-by": "error",
       "sonar/xml-parser-xxe": "error",
+      "exception-handling/might-throw": "error",
+      "exception-handling/no-unhandled": "error",
+      "exception-handling/use-error-cause": "error",
       "tailwind/classnames-order": "error",
       "tailwind/enforces-negative-arbitrary-values": "error",
       "tailwind/enforces-shorthand": "error",

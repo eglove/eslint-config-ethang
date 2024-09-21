@@ -20,6 +20,7 @@ import { typescriptRules } from "../setup/typescript-eslint.ts";
 import { unicornRules } from "../setup/unicorn.ts";
 import { cspellRules } from "../setup/cspell.js";
 import { tanstackRouterRules } from "../setup/tanstack-router.js";
+import { exceptionHandlingRules } from "../setup/exception-handling.js";
 
 export const ruleList = [
   {
@@ -113,10 +114,21 @@ export const ruleList = [
     url: "https://github.com/SonarSource/SonarJS/blob/master/packages/jsts/src/rules/README.md",
   },
   {
+    importString:
+      'import { plugin as exceptionHandling } from "eslint-plugin-exception-handling',
+    list: exceptionHandlingRules,
+    name: "exception-handling",
+    order: 9,
+    pluginName: "exception-handling",
+    pluginValue: "exceptionHandling",
+    type: "core",
+    url: "https://github.com/Akronae/eslint-plugin-exception-handling",
+  },
+  {
     importString: 'import tailwind from "eslint-plugin-tailwindcss";',
     list: tailwindRules,
     name: "eslint-plugin-tailwindcss",
-    order: 9,
+    order: 10,
     pluginName: "tailwind",
     pluginValue: "tailwind",
     type: "core",
@@ -126,7 +138,7 @@ export const ruleList = [
     importString: 'import stylistic from "@stylistic/eslint-plugin";',
     list: stylisticRules,
     name: "@stylistic/eslint-plugin",
-    order: 10,
+    order: 11,
     pluginName: "stylistic",
     pluginValue: "stylistic",
     type: "core",
@@ -136,7 +148,7 @@ export const ruleList = [
     importString: 'import perfectionist from "eslint-plugin-perfectionist";',
     list: perfectionistRules,
     name: "eslint-plugin-perfectionist",
-    order: 11,
+    order: 12,
     pluginName: "perfectionist",
     pluginValue: "perfectionist",
     type: "core",
@@ -146,7 +158,7 @@ export const ruleList = [
     importString: 'import tanstackQuery from "@tanstack/eslint-plugin-query";',
     list: tanstackQueryRules,
     name: "@tanstack/eslint-plugin-query",
-    order: 12,
+    order: 13,
     pluginName: "@tanstack/query",
     pluginValue: "tanstackQuery",
     type: "core",
@@ -157,7 +169,7 @@ export const ruleList = [
       'import tanstackRouter from "@tanstack/eslint-plugin-router";',
     list: tanstackRouterRules,
     name: "@tanstack/eslint-plugin-router",
-    order: 13,
+    order: 14,
     pluginName: "@tanstack/router",
     pluginValue: "tanstackRouter",
     type: "core",
@@ -167,7 +179,7 @@ export const ruleList = [
     importString: 'import a11y from "eslint-plugin-jsx-a11y/lib/index.js";',
     list: a11yRules,
     name: "jsx-a11y",
-    order: 14,
+    order: 15,
     pluginName: "a11y",
     pluginValue: "a11y",
     type: "core",
@@ -177,7 +189,7 @@ export const ruleList = [
     importString: undefined,
     list: deprecatedRules,
     name: "@eslint/js",
-    order: 15,
+    order: 16,
     pluginName: undefined,
     pluginValue: undefined,
     type: "core",

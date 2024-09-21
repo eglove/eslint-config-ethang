@@ -39,6 +39,10 @@ const customRules = [
     rule: ["error", { groups: ["shorthand", "multiline"] }],
   },
   {
+    name: "sort-objects",
+    rule: ["error", { partitionByComment: true }],
+  },
+  {
     name: "sort-svelte-attributes",
     rule: [
       "error",

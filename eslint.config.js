@@ -5,7 +5,6 @@ import barrel from "eslint-plugin-barrel-files";
 import compat from "eslint-plugin-compat";
 import cspell from "@cspell/eslint-plugin";
 import depend from "eslint-plugin-depend";
-import ethang from "@ethang/eslint-plugin";
 import json from "@eslint/json";
 import lodashConfig from "eslint-plugin-lodash";
 import markdown from "@eslint/markdown";
@@ -37,7 +36,6 @@ export default tseslint.config(
       unicorn: unicorn,
       lodash: lodashConfig,
       sonar: fixupPluginRules(sonar),
-      ethang: ethang,
       tailwind: tailwind,
       stylistic: stylistic,
       perfectionist: perfectionist,
@@ -932,7 +930,6 @@ export default tseslint.config(
       "sonar/weak-ssl": "error",
       "sonar/x-powered-by": "error",
       "sonar/xml-parser-xxe": "error",
-      "ethang/handle-native-error": "error",
       "tailwind/classnames-order": "error",
       "tailwind/enforces-negative-arbitrary-values": "error",
       "tailwind/enforces-shorthand": "error",

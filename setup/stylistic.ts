@@ -5,28 +5,36 @@ import { genRules, getNonDeprecatedRules } from "./gen-rules.ts";
 // @ts-expect-error this exists
 const ruleNames = Object.keys(getNonDeprecatedRules(stylistic.rules));
 const customRules = [
+  { name: "block-spacing", rule: "off" }, // TS
+  { name: "brace-style", rule: "off" }, // TS
+  { name: "comma-dangle", rule: "off" }, // TS
+  { name: "comma-spacing", rule: "off" }, // TS
+  { name: "func-call-spacing", rule: "off" }, // TS
+  { name: "function-call-spacing", rule: "off" }, // TS
+  { name: "indent", rule: "off" }, // TS
+  { name: "keyword-spacing", rule: "off" }, // TS
+  { name: "lines-around-comment", rule: "off" }, // TS
+  { name: "lines-between-class-members", rule: "off" }, // TS
+  { name: "member-delimiter-style", rule: "off" }, // TS
+  { name: "no-extra-parens", rule: "off" }, // TS
+  { name: "no-extra-semi", rule: "off" }, // TS
+  { name: "object-curly-newline", rule: "off" }, // TS
+  { name: "object-curly-spacing", rule: "off" }, // TS
+  { name: "object-property-newline", rule: "off" }, // TS
+  { name: "padding-line-between-statements", rule: "off" }, // TS
+  { name: "quote-props", rule: "off" }, // TS
+  { name: "quotes", rule: "off" }, // TS
+  { name: "semi", rule: "off" }, // TS
+  { name: "space-before-blocks", rule: "off" }, // TS
+  { name: "space-before-function-paren", rule: "off" }, // TS
+  { name: "space-infix-ops", rule: "off" }, // TS
+  { name: "type-annotation-spacing", rule: "off" }, // TS
+
   { name: "array-bracket-newline", rule: ["error", "consistent"] },
   { name: "array-element-newline", rule: ["error", "consistent"] },
-  {
-    name: "comma-dangle",
-    rule: [
-      "error",
-      {
-        arrays: "always-multiline",
-        objects: "always-multiline",
-        imports: "always-multiline",
-        exports: "always-multiline",
-        functions: "always-multiline",
-        enums: "never",
-        generics: "never",
-        tuples: "never",
-      },
-    ],
-  },
   { name: "dot-location", rule: ["error", "property"] },
   { name: "function-call-argument-newline", rule: ["error", "consistent"] },
   { name: "function-paren-newline", rule: ["error", "consistent"] },
-  { name: "indent", rule: ["error", 2] },
   { name: "line-comment-position", rule: "off" },
   {
     name: "max-len",
@@ -43,28 +51,7 @@ const customRules = [
     ],
   },
   { name: "multiline-comment-style", rule: "off" },
-  {
-    name: "no-extra-parens",
-    rule: ["error", "all", { ignoreJSX: "multi-line" }],
-  },
-  {
-    name: "object-curly-newline",
-    rule: ["error", { multiline: true, consistent: true }],
-  },
-  { name: "object-curly-spacing", rule: ["error", "always"] },
   { name: "padded-blocks", rule: ["error", "never"] },
-  { name: "quote-props", rule: ["error", "as-needed"] },
-  {
-    name: "space-before-function-paren",
-    rule: [
-      "error",
-      {
-        anonymous: "always",
-        named: "never",
-        asyncArrow: "always",
-      },
-    ],
-  },
   { name: "jsx-indent-props", rule: ["error", 2] },
   { name: "jsx-newline", rule: ["error", { prevent: true }] },
   { name: "jsx-sort-props", rule: "off" },

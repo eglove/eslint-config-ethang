@@ -21,6 +21,7 @@ import { unicornRules } from "../setup/unicorn.ts";
 import { cspellRules } from "../setup/cspell.js";
 import { tanstackRouterRules } from "../setup/tanstack-router.js";
 import { exceptionHandlingRules } from "../setup/exception-handling.js";
+import { stylisticTsRules } from "../setup/stylistic-ts.js";
 
 export const ruleList = [
   {
@@ -145,10 +146,20 @@ export const ruleList = [
     url: "https://eslint.style/",
   },
   {
+    importString: 'import stylisticTs from "@stylistic/eslint-plugin-ts";',
+    list: stylisticTsRules,
+    name: "@stylistic/eslint-plugin-ts",
+    order: 12,
+    pluginName: "stylisticTS",
+    pluginValue: "stylisticTS",
+    type: "core",
+    url: "https://eslint.style/",
+  },
+  {
     importString: 'import perfectionist from "eslint-plugin-perfectionist";',
     list: perfectionistRules,
     name: "eslint-plugin-perfectionist",
-    order: 12,
+    order: 13,
     pluginName: "perfectionist",
     pluginValue: "perfectionist",
     type: "core",
@@ -158,7 +169,7 @@ export const ruleList = [
     importString: 'import tanstackQuery from "@tanstack/eslint-plugin-query";',
     list: tanstackQueryRules,
     name: "@tanstack/eslint-plugin-query",
-    order: 13,
+    order: 14,
     pluginName: "@tanstack/query",
     pluginValue: "tanstackQuery",
     type: "core",
@@ -169,7 +180,7 @@ export const ruleList = [
       'import tanstackRouter from "@tanstack/eslint-plugin-router";',
     list: tanstackRouterRules,
     name: "@tanstack/eslint-plugin-router",
-    order: 14,
+    order: 15,
     pluginName: "@tanstack/router",
     pluginValue: "tanstackRouter",
     type: "core",
@@ -179,7 +190,7 @@ export const ruleList = [
     importString: 'import a11y from "eslint-plugin-jsx-a11y";',
     list: a11yRules,
     name: "jsx-a11y",
-    order: 15,
+    order: 16,
     pluginName: "a11y",
     pluginValue: "a11y",
     type: "core",
@@ -189,7 +200,7 @@ export const ruleList = [
     importString: undefined,
     list: deprecatedRules,
     name: "@eslint/js",
-    order: 16,
+    order: 17,
     pluginName: undefined,
     pluginValue: undefined,
     type: "core",

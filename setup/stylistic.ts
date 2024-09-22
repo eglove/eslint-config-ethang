@@ -7,7 +7,22 @@ const ruleNames = Object.keys(getNonDeprecatedRules(stylistic.rules));
 const customRules = [
   { name: "array-bracket-newline", rule: ["error", "consistent"] },
   { name: "array-element-newline", rule: ["error", "consistent"] },
-  { name: "comma-dangle", rule: ["error", "always-multiline"] },
+  {
+    name: "comma-dangle",
+    rule: [
+      "error",
+      {
+        arrays: "always-multiline",
+        objects: "always-multiline",
+        imports: "always-multiline",
+        exports: "always-multiline",
+        functions: "always-multiline",
+        enums: "never",
+        generics: "never",
+        tuples: "never",
+      },
+    ],
+  },
   { name: "dot-location", rule: ["error", "property"] },
   { name: "function-call-argument-newline", rule: ["error", "consistent"] },
   { name: "function-paren-newline", rule: ["error", "consistent"] },

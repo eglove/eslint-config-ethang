@@ -97,6 +97,10 @@ const changedRules = [
     rule: "off",
   },
   {
+    name: "no-dupe-class-members",
+    rule: "off",
+  },
+  {
     name: "no-empty-function",
     rule: "off",
   },

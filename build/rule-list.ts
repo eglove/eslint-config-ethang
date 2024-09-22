@@ -146,11 +146,11 @@ export const ruleList = [
     url: "https://eslint.style/",
   },
   {
-    importString: 'import stylisticTs from "@stylistic/eslint-plugin-ts";',
+    importString: 'import stylistic-ts from "@stylistic/eslint-plugin-ts";',
     list: stylisticTsRules,
     name: "@stylistic/eslint-plugin-ts",
     order: 12,
-    pluginName: "stylisticTs",
+    pluginName: "stylistic-ts",
     pluginValue: "stylisticTs",
     type: "core",
     url: "https://eslint.style/",

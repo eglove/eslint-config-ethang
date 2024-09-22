@@ -47,5 +47,5 @@ const customRules = [
 export const stylisticTsRules = genRules(
   ruleNames,
   customRules,
-  "stylistic/ts",
+  "stylistic-ts",
 );

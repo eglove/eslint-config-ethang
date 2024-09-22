@@ -53,8 +53,8 @@ importers:
         specifier: ^0.11.0
         version: 0.11.0
       eslint-plugin-exception-handling:
-        specifier: ^1.4.2
-        version: 1.4.2(jiti@1.21.6)(typescript@5.6.2)
+        specifier: ^1.4.3
+        version: 1.4.3(jiti@1.21.6)
       eslint-plugin-jsx-a11y:
         specifier: ^6.10.0
         version: 6.10.0(eslint@9.11.0(jiti@1.21.6))
@@ -2402,12 +2402,6 @@ packages:
         integrity: sha512-ucQGf2YIdTcndYcxRU3UdZgmhUHsOlbIF4BaRtl0op+7k2JmqM2i3aXZ6XIcfZgVq1ZKov7VM5c/BR81ukmkyg==,
       }
 
-  "@types/eslint@8.56.12":
-    resolution:
-      {
-        integrity: sha512-03ruubjWyOHlmljCVoxSuNDdmfZDzsrrz0P2LeJsOXr+ZwFQ+0yQIwNCwt/GYhV7Z31fgtXJTAEs+FYlEL851g==,
-      }
-
   "@types/eslint@9.6.1":
     resolution:
       {
@@ -3709,10 +3703,10 @@ packages:
     peerDependencies:
       eslint: ">=8"
 
-  eslint-plugin-exception-handling@1.4.2:
+  eslint-plugin-exception-handling@1.4.3:
     resolution:
       {
-        integrity: sha512-TiRGB84Haid1XDj+Ydpf+Wf7TfU9HBPRihd8UJTrpyT4pFtqaHO3AWInJgvjVddUBu8TUE+5xj+0970X8vQiSg==,
+        integrity: sha512-UmZtLcp1MNs6O968W28TrkFQQtTrYUmtICgv4YVOUxHUmiVWXP5AzwgARikCoAk03Eh7RVaLSu7iNslj+Tm0jw==,
       }
     engines: { node: ">=20" }
 
@@ -8327,11 +8321,6 @@ snapshots:
     dependencies:
       "@types/eslint": 9.6.1
 
-  "@types/eslint@8.56.12":
-    dependencies:
-      "@types/estree": 1.0.5
-      "@types/json-schema": 7.0.15
-
   "@types/eslint@9.6.1":
     dependencies:
       "@types/estree": 1.0.5
@@ -9303,16 +9292,12 @@ snapshots:
       eslint: 9.11.0(jiti@1.21.6)
       eslint-compat-utils: 0.5.1(eslint@9.11.0(jiti@1.21.6))
 
-  eslint-plugin-exception-handling@1.4.2(jiti@1.21.6)(typescript@5.6.2):
+  eslint-plugin-exception-handling@1.4.3(jiti@1.21.6):
     dependencies:
-      "@types/eslint": 8.56.12
-      "@typescript-eslint/types": 7.18.0
-      "@typescript-eslint/utils": 7.18.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2)
       eslint: 9.11.0(jiti@1.21.6)
     transitivePeerDependencies:
       - jiti
       - supports-color
-      - typescript
 
   eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.6.0(eslint@9.11.0(jiti@1.21.6))(typescript@5.6.2))(eslint@9.11.0(jiti@1.21.6)):
     dependencies:

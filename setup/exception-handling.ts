@@ -9,5 +9,4 @@ export const exceptionHandlingRules = genRules(
   ruleNames,
   [],
   "exception-handling",
-  "off", // TODO fix with https://github.com/Akronae/eslint-plugin-exception-handling/issues/5
 );

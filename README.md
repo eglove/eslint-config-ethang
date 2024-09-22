@@ -5,7 +5,7 @@
 > [!CAUTION]
 > Do not use this with Prettier! Styling rules are included.
 
-- 890 errored rules.
+- 887 errored rules.
 - 289 rules from [eslint-plugin-sonarjs](https://github.com/SonarSource/SonarJS/blob/master/packages/jsts/src/rules/README.md)
 - 144 rules from [@eslint/js](https://github.com/eslint/eslint/tree/main/packages/js)
 - 113 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
@@ -20,7 +20,6 @@
 - 7 rules from [@eslint/markdown](https://github.com/eslint/markdown)
 - 5 rules from [@tanstack/eslint-plugin-query](https://tanstack.com/query/latest/docs/eslint/eslint-plugin-query)
 - 4 rules from [eslint-plugin-barrel-files](https://github.com/thepassle/eslint-plugin-barrel-files)
-- 3 rules from [exception-handling](https://github.com/Akronae/eslint-plugin-exception-handling)
 - 2 rules from [@eslint/json](https://github.com/eslint/json)
 - 1 rule from [eslint-plugin-depend](https://github.com/es-tooling/eslint-plugin-depend/tree/main)
 - 1 rule from [@cspell/eslint-plugin](https://github.com/streetsidesoftware/cspell/tree/main/packages/cspell-eslint-plugin)

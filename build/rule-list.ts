@@ -146,7 +146,7 @@ export const ruleList = [
     url: "https://eslint.style/",
   },
   {
-    importString: 'import stylistic-ts from "@stylistic/eslint-plugin-ts";',
+    importString: 'import stylisticTs from "@stylistic/eslint-plugin-ts";',
     list: stylisticTsRules,
     name: "@stylistic/eslint-plugin-ts",
     order: 12,

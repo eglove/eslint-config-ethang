@@ -1063,7 +1063,7 @@ export default tseslint.config(
           exports: "always-multiline",
           functions: "always-multiline",
           enums: "never",
-          generics: "never",
+          generics: "always",
           tuples: "never",
         },
       ],

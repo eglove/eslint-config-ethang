@@ -146,7 +146,7 @@ export default tseslint.config(
       "no-delete-var": "error",
       "no-div-regex": "error",
       "no-dupe-args": "error",
-      "no-dupe-class-members": "error",
+      "no-dupe-class-members": "off",
       "no-dupe-else-if": "error",
       "no-dupe-keys": "error",
       "no-duplicate-case": "error",

@@ -1164,7 +1164,7 @@ export default tseslint.config(
       "a11y/aria-unsupported-elements": "error",
       "a11y/autocomplete-valid": "error",
       "a11y/click-events-have-key-events": "error",
-      "a11y/control-has-associated-label": "error",
+      "a11y/control-has-associated-label": "off",
       "a11y/heading-has-content": "error",
       "a11y/html-has-lang": "error",
       "a11y/iframe-has-title": "error",

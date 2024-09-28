@@ -43,12 +43,12 @@
   },
   "devDependencies": {
     "@ethang/markdown-generator": "^1.1.1",
-    "@ethang/project-builder": "^2.6.1",
+    "@ethang/project-builder": "^3.0.0",
     "@tsconfig/node-lts": "^20.1.3",
     "@tsconfig/strictest": "^2.0.5",
+    "@types/eslint__js": "^8.42.3",
     "@types/eslint-plugin-jsx-a11y": "^6.9.0",
     "@types/eslint-plugin-tailwindcss": "^3.17.0",
-    "@types/eslint__js": "^8.42.3",
     "@types/node": "^22.7.4",
     "prettier": "^3.3.3"
   },

@@ -1,6 +1,5 @@
 // @ts-check
 import { projectBuilder } from "@ethang/project-builder/project-builder.js";
-import { execSync } from "node:child_process";
 
 await projectBuilder("eslint-config-ethang", "master", {
   isLibrary: true,

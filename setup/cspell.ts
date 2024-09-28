@@ -11,6 +11,7 @@ const customRules: CustomRules = [
       {
         cspell: {
           words: [
+            "taze",
             "ethang",
             "TSESTree",
             "Boop",

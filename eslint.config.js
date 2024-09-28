@@ -52,6 +52,7 @@ export default tseslint.config(
         {
           cspell: {
             words: [
+              "taze",
               "ethang",
               "TSESTree",
               "Boop",

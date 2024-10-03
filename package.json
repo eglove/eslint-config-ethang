@@ -1,6 +1,6 @@
 {
   "name": "@ethang/eslint-config",
-  "version": "19.9.1",
+  "version": "19.10.0",
   "repository": {
     "url": "git+https://github.com/eglove/eslint-config-ethang.git"
   },
@@ -37,7 +37,7 @@
     "eslint-plugin-solid": "^0.14.3",
     "eslint-plugin-sonarjs": "2.0.3",
     "eslint-plugin-tailwindcss": "^3.17.4",
-    "eslint-plugin-unicorn": "^55.0.0",
+    "eslint-plugin-unicorn": "^56.0.0",
     "typescript": "^5.6.2",
     "typescript-eslint": "^8.8.0"
   },
@@ -77,7 +77,7 @@
     "eslint-plugin-solid": "^0.14.3",
     "eslint-plugin-sonarjs": "2.0.3",
     "eslint-plugin-tailwindcss": "^3.17.4",
-    "eslint-plugin-unicorn": "^55.0.0",
+    "eslint-plugin-unicorn": "^56.0.0",
     "typescript": "^5.6.2",
     "typescript-eslint": "^8.8.0"
   },

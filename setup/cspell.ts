@@ -40,6 +40,7 @@ const customRules: CustomRules = [
             "nextui",
             "speculationrules",
             "zustand",
+            "vinxi",
           ],
         },
       },

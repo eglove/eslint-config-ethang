@@ -963,6 +963,7 @@ export default tseslint.config(
       "stylistic/comma-spacing": "off",
       "stylistic/comma-style": "error",
       "stylistic/computed-property-spacing": "error",
+      "stylistic/curly-newline": "error",
       "stylistic/dot-location": ["error", "property"],
       "stylistic/eol-last": "error",
       "stylistic/func-call-spacing": "off",

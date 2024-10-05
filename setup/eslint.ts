@@ -121,10 +121,6 @@ const changedRules = [
     rule: "off",
   },
   {
-    name: "no-multiple-empty-lines",
-    rule: { max: 1, maxEOF: 1, maxBOF: 0 },
-  },
-  {
     name: "no-redeclare",
     rule: "off",
   },

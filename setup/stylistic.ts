@@ -51,6 +51,10 @@ const customRules = [
     ],
   },
   { name: "multiline-comment-style", rule: "off" },
+  {
+    name: "no-multiple-empty-lines",
+    rule: { max: 1, maxEOF: 1, maxBOF: 0 },
+  },
   { name: "padded-blocks", rule: ["error", "never"] },
   { name: "jsx-indent-props", rule: ["error", 2] },
   { name: "jsx-newline", rule: ["error", { prevent: true }] },

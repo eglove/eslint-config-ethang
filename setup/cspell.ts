@@ -41,6 +41,7 @@ const customRules: CustomRules = [
             "speculationrules",
             "zustand",
             "vinxi",
+            "datasource",
           ],
         },
       },

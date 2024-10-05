@@ -82,6 +82,7 @@ export default tseslint.config(
               "speculationrules",
               "zustand",
               "vinxi",
+              "datasource",
             ],
           },
         },

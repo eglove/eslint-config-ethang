@@ -255,7 +255,7 @@ export const ruleList = [
     list: reactHookRules,
     name: "eslint-plugin-react-hooks",
     pluginName: "react-hooks",
-    pluginValue: "fixupPluginRules(reactHooks)", // TODO remove with v9 compat
+    pluginValue: "reactHooks",
     type: "react",
     url: "https://github.com/facebook/react/tree/main/packages/eslint-plugin-react-hooks",
   },

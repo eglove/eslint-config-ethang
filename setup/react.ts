@@ -4,6 +4,7 @@ import reactHooks from "eslint-plugin-react-hooks";
 
 import { genRules, getNonDeprecatedRules } from "./gen-rules.ts";
 
+// @ts-expect-error ignore types
 const reactRuleNames = Object.keys(getNonDeprecatedRules(react.rules));
 const customReactRules = [
   {

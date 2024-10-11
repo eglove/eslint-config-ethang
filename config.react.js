@@ -13,7 +13,7 @@ export default tseslint.config({
   },
   plugins: {
     react: react,
-    "react-hooks": fixupPluginRules(reactHooks),
+    "react-hooks": reactHooks,
   },
   rules: {
     "react/avoid-shorthand-boolean": "off",

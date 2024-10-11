@@ -7,43 +7,43 @@ const ruleNames = Object.keys(getNonDeprecatedRules(lodash.rules));
 const customRules = [
   {
     name: "chain-style",
-    rule: ["error", "as-needed"],
+    rule: [2, "as-needed"],
   },
   {
     name: "consistent-compose",
-    rule: ["error", "flow"],
+    rule: [2, "flow"],
   },
   {
     name: "identity-shorthand",
-    rule: ["error", "always"],
+    rule: [2, "always"],
   },
   {
     name: "import-scope",
-    rule: ["error", "method"],
+    rule: [2, "method"],
   },
   {
     name: "matches-prop-shorthand",
-    rule: ["error", "always"],
+    rule: [2, "always"],
   },
   {
     name: "matches-shorthand",
-    rule: ["error", "always", 3],
+    rule: [2, "always", 3],
   },
   {
     name: "path-style",
-    rule: ["error", "array"],
+    rule: [2, "array"],
   },
   {
     name: "prefer-includes",
-    rule: ["error", { includeNative: true }],
+    rule: [2, { includeNative: true }],
   },
   {
     name: "prefer-some",
-    rule: ["error", { includeNative: true }],
+    rule: [2, { includeNative: true }],
   },
   {
     name: "prop-shorthand",
-    rule: ["error", "always"],
+    rule: [2, "always"],
   },
 ];
 

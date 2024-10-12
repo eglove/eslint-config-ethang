@@ -1,6 +1,6 @@
 {
   "name": "@ethang/eslint-config",
-  "version": "19.11.5",
+  "version": "19.12.0",
   "repository": {
     "url": "git+https://github.com/eglove/eslint-config-ethang.git"
   },
@@ -13,8 +13,8 @@
     "lint": "prettier . -w"
   },
   "dependencies": {
-    "@cspell/eslint-plugin": "^8.15.0",
-    "@eslint-react/eslint-plugin": "^1.14.3",
+    "@cspell/eslint-plugin": "^8.15.1",
+    "@eslint-react/eslint-plugin": "^1.15.0",
     "@eslint/compat": "^1.2.0",
     "@eslint/js": "^9.12.0",
     "@eslint/json": "^0.5.0",
@@ -53,8 +53,8 @@
     "prettier": "^3.3.3"
   },
   "peerDependencies": {
-    "@cspell/eslint-plugin": "^8.15.0",
-    "@eslint-react/eslint-plugin": "^1.14.3",
+    "@cspell/eslint-plugin": "^8.15.1",
+    "@eslint-react/eslint-plugin": "^1.15.0",
     "@eslint/compat": "^1.2.0",
     "@eslint/js": "^9.12.0",
     "@eslint/json": "^0.5.0",

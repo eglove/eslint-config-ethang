@@ -86,7 +86,7 @@ export default tseslint.config({
     "react/no-unused-state": "error",
     "react/no-useless-fragment": "error",
     "react/prefer-destructuring-assignment": "error",
-    "react/prefer-react-namespace-import": "error",
+    "react/prefer-react-namespace-import": "off",
     "react/prefer-read-only-props": "error",
     "react/prefer-shorthand-boolean": "error",
     "react/prefer-shorthand-fragment": "error",

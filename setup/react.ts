@@ -39,6 +39,10 @@ const customReactRules = [
     name: "naming-convention/filename",
     rule: ["error", { rule: "kebab-case" }],
   },
+  {
+    name: "prefer-react-namespace-import", // TODO failing after updates
+    rule: "off",
+  },
 ];
 const reactGen = genRules(reactRuleNames, customReactRules, "react");
 

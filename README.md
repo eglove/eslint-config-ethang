@@ -1,4 +1,4 @@
-# Opinionated, Strict, Brutal, Unforgiving
+# Relentless. Unapologetic.
 
 [View Config](https://eslint-config-ethang.pages.dev/rules)
 

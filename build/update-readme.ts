@@ -8,7 +8,7 @@ import { getList } from "./list-utils.ts";
 
 export const updateReadme = () => {
   const md = new MarkdownGenerator();
-  md.header(1, "Opinionated, Strict, Brutal, Unforgiving", 2);
+  md.header(1, "Relentless. Unapologetic.", 2);
   md.link("View Config", "https://eslint-config-ethang.pages.dev/rules", 2);
   md.alert(
     "CAUTION",

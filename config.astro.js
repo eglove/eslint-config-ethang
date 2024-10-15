@@ -61,6 +61,7 @@ export default tseslint.config({
     "astro/prefer-object-class-list": "error",
     "astro/prefer-split-class-list": "error",
     "astro/semi": "error",
+    "astro/sort-attributes": "error",
     "astro/valid-compile": "error",
   },
 });

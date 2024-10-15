@@ -1111,10 +1111,6 @@ export default tseslint.config(
       "stylistic-ts/space-infix-ops": "error",
       "stylistic-ts/type-annotation-spacing": "error",
       "perfectionist/sort-array-includes": "error",
-      "perfectionist/sort-astro-attributes": [
-        "error",
-        { groups: ["astro-shorthand", "shorthand", "multiline"] },
-      ],
       "perfectionist/sort-classes": "error",
       "perfectionist/sort-enums": "error",
       "perfectionist/sort-exports": "error",
@@ -1146,10 +1142,6 @@ export default tseslint.config(
       "perfectionist/sort-object-types": "error",
       "perfectionist/sort-objects": ["error", { partitionByComment: true }],
       "perfectionist/sort-sets": "error",
-      "perfectionist/sort-svelte-attributes": [
-        "error",
-        { groups: ["svelte-shorthand", "shorthand", "multiline"] },
-      ],
       "perfectionist/sort-switch-case": [
         "error",
         { order: "asc", type: "alphabetical" },
@@ -1158,10 +1150,6 @@ export default tseslint.config(
       "perfectionist/sort-variable-declarations": [
         "error",
         { order: "asc", type: "alphabetical" },
-      ],
-      "perfectionist/sort-vue-attributes": [
-        "error",
-        { groups: ["shorthand", "multiline"] },
       ],
       "@tanstack/query/exhaustive-deps": "error",
       "@tanstack/query/infinite-query-property-order": "error",

@@ -5,7 +5,7 @@
 > [!CAUTION]
 > Do not use this with Prettier! Styling rules are included.
 
-- 885 errored rules.
+- 882 errored rules.
 - 294 rules from [eslint-plugin-sonarjs](https://github.com/SonarSource/SonarJS/blob/master/packages/jsts/src/rules/README.md)
 - 144 rules from [@eslint/js](https://github.com/eslint/eslint/tree/main/packages/js)
 - 116 rules from [sindresorhus/eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
@@ -15,7 +15,7 @@
 - 32 rules from [eslint-plugin-lodash](https://github.com/wix-incubator/eslint-plugin-lodash)
 - 25 rules from [@stylistic/eslint-plugin-ts](https://eslint.style/)
 - 20 rules from [eslint-plugin-n](https://github.com/eslint-community/eslint-plugin-n)
-- 20 rules from [eslint-plugin-perfectionist](https://github.com/azat-io/eslint-plugin-perfectionist)
+- 17 rules from [eslint-plugin-perfectionist](https://github.com/azat-io/eslint-plugin-perfectionist)
 - 7 rules from [eslint-plugin-tailwindcss](https://github.com/francoismassart/eslint-plugin-tailwindcss)
 - 7 rules from [@eslint/markdown](https://github.com/eslint/markdown)
 - 5 rules from [@tanstack/eslint-plugin-query](https://tanstack.com/query/latest/docs/eslint/eslint-plugin-query)
@@ -28,9 +28,9 @@
 
 # Add Even More!
 
-- 51 rules for **Astro**
+- 52 rules for **Astro**
   - `import astroConfig from "@ethang/eslint-config/config.astro.js";`
-  - 51 rules from [eslint-plugin-astro](https://github.com/ota-meshi/eslint-plugin-astro)
+  - 52 rules from [eslint-plugin-astro](https://github.com/ota-meshi/eslint-plugin-astro)
 - 73 rules for **React**
   - `import reactConfig from "@ethang/eslint-config/config.react.js";`
   - 71 rules from [@eslint-react/eslint-plugin](https://eslint-react.xyz/)

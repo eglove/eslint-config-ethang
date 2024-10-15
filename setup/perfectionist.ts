@@ -7,15 +7,6 @@ const ruleNames = Object.keys(
 );
 const customRules = [
   {
-    name: "sort-astro-attributes",
-    rule: [
-      "error",
-      {
-        groups: ["astro-shorthand", "shorthand", "multiline"],
-      },
-    ],
-  },
-  {
     name: "sort-imports",
     rule: [
       "error",
@@ -43,15 +34,6 @@ const customRules = [
     rule: ["error", { partitionByComment: true }],
   },
   {
-    name: "sort-svelte-attributes",
-    rule: [
-      "error",
-      {
-        groups: ["svelte-shorthand", "shorthand", "multiline"],
-      },
-    ],
-  },
-  {
     name: "sort-switch-case",
     rule: [
       "error",
@@ -70,10 +52,6 @@ const customRules = [
         type: "alphabetical",
       },
     ],
-  },
-  {
-    name: "sort-vue-attributes",
-    rule: ["error", { groups: ["shorthand", "multiline"] }],
   },
 ];
 

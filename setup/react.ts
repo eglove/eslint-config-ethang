@@ -1,6 +1,8 @@
 import react from "@eslint-react/eslint-plugin";
 // @ts-expect-error no types
 import reactHooks from "eslint-plugin-react-hooks";
+// @ts-expect-error no types
+import compiler from "eslint-plugin-react-compiler";
 
 import { genRules, getNonDeprecatedRules } from "./gen-rules.ts";
 
@@ -59,10 +61,17 @@ const customHookRules = [
 ];
 const hookGen = genRules(reactHookRuleNames, customHookRules, "react-hooks");
 
+const reactCompilerRuleNames = Object.keys(compiler.rules);
+const compilerGen = genRules(reactCompilerRuleNames, [], "react-compiler");
+
 export const reactRules = {
   ...reactGen,
 };
 
 export const reactHookRules = {
   ...hookGen,
+};
+
+export const reactCompilerRules = {
+  ...compilerGen,
 };

@@ -33,6 +33,7 @@
     "eslint-plugin-lodash": "^8.0.0",
     "eslint-plugin-n": "^17.11.1",
     "eslint-plugin-perfectionist": "^3.9.1",
+    "eslint-plugin-react-compiler": "19.0.0-beta-8a03594-20241020",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-solid": "^0.14.3",
     "eslint-plugin-sonarjs": "2.0.4",

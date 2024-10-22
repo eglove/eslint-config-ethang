@@ -67,6 +67,9 @@ importers:
       eslint-plugin-perfectionist:
         specifier: ^3.9.1
         version: 3.9.1(astro-eslint-parser@1.0.3(typescript@5.6.3))(eslint@9.13.0(jiti@2.3.1))(typescript@5.6.3)(vue-eslint-parser@9.4.3(eslint@9.13.0(jiti@2.3.1)))
+      eslint-plugin-react-compiler:
+        specifier: 19.0.0-beta-8a03594-20241020
+        version: 19.0.0-beta-8a03594-20241020(eslint@9.13.0(jiti@2.3.1))
       eslint-plugin-react-hooks:
         specifier: ^5.0.0
         version: 5.0.0(eslint@9.13.0(jiti@2.3.1))
@@ -393,6 +396,16 @@ packages:
         integrity: sha512-RL9GR0pUG5Kc8BUWLNDm2T5OpYwSX15r98I0IkgmRQTXuELq/OynH8xtMTMvTJFjXbMWFVTKtYkTaYQsuAwQlQ==,
       }
     engines: { node: ">=6.9.0" }
+    peerDependencies:
+      "@babel/core": ^7.0.0-0
+
+  "@babel/plugin-proposal-private-methods@7.18.6":
+    resolution:
+      {
+        integrity: sha512-nutsvktDItsNn4rpGItSNV2sz1XwS+nfU0Rg8aCx3W3NOKVzdMjJRu0O5OkgDp3ZGICSTbgRpxZoWsxoKRvbeA==,
+      }
+    engines: { node: ">=6.9.0" }
+    deprecated: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-private-methods instead.
     peerDependencies:
       "@babel/core": ^7.0.0-0
 
@@ -3694,6 +3707,7 @@ packages:
       }
     peerDependencies:
       eslint: ">= 5"
+    bundledDependencies: []
 
   eslint-plugin-compat@6.0.1:
     resolution:
@@ -3789,6 +3803,15 @@ packages:
         optional: true
       vue-eslint-parser:
         optional: true
+
+  eslint-plugin-react-compiler@19.0.0-beta-8a03594-20241020:
+    resolution:
+      {
+        integrity: sha512-bYg1COih1s3r14IV/AKdQs/SN7CQmNI0ZaMtPdgZ6gp1S1Q/KGP9P43w7R6dHJ4wYpuMBvekNJHQdVu+x6UM+A==,
+      }
+    engines: { node: ^14.17.0 || ^16.0.0 || >= 18.0.0 }
+    peerDependencies:
+      eslint: ">=7"
 
   eslint-plugin-react-debug@1.15.0:
     resolution:
@@ -4407,6 +4430,18 @@ packages:
         integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==,
       }
     engines: { node: ">= 0.4" }
+
+  hermes-estree@0.20.1:
+    resolution:
+      {
+        integrity: sha512-SQpZK4BzR48kuOg0v4pb3EAGNclzIlqMj3Opu/mu7bbAoFw6oig6cEt/RAi0zTFW/iW6Iz9X9ggGuZTAZ/yZHg==,
+      }
+
+  hermes-parser@0.20.1:
+    resolution:
+      {
+        integrity: sha512-BL5P83cwCogI8D7rrDCgsFY0tdYUtmFP9XaXtl2IQjC+2Xo+4okjfXintlTxcIwl4qeGddEl28Z11kbVIw0aNA==,
+      }
 
   hosted-git-info@2.8.9:
     resolution:
@@ -6713,6 +6748,21 @@ packages:
       }
     engines: { node: ">=18" }
 
+  zod-validation-error@3.4.0:
+    resolution:
+      {
+        integrity: sha512-ZOPR9SVY6Pb2qqO5XHt+MkkTRxGXb4EVtnjc9JpXUOtUB1T9Ru7mZOT361AN3MsetVe7R0a1KZshJDZdgp9miQ==,
+      }
+    engines: { node: ">=18.0.0" }
+    peerDependencies:
+      zod: ^3.18.0
+
+  zod@3.23.8:
+    resolution:
+      {
+        integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==,
+      }
+
   zwitch@2.0.4:
     resolution:
       {
@@ -6954,6 +7004,14 @@ snapshots:
       "@babel/helper-create-class-features-plugin": 7.25.7(@babel/core@7.25.2)
       "@babel/helper-plugin-utils": 7.25.7
       "@babel/plugin-syntax-decorators": 7.25.7(@babel/core@7.25.2)
+    transitivePeerDependencies:
+      - supports-color
+
+  "@babel/plugin-proposal-private-methods@7.18.6(@babel/core@7.25.2)":
+    dependencies:
+      "@babel/core": 7.25.2
+      "@babel/helper-create-class-features-plugin": 7.25.7(@babel/core@7.25.2)
+      "@babel/helper-plugin-utils": 7.25.7
     transitivePeerDependencies:
       - supports-color
 
@@ -9374,6 +9432,18 @@ snapshots:
       - supports-color
       - typescript
 
+  eslint-plugin-react-compiler@19.0.0-beta-8a03594-20241020(eslint@9.13.0(jiti@2.3.1)):
+    dependencies:
+      "@babel/core": 7.25.2
+      "@babel/parser": 7.25.8
+      "@babel/plugin-proposal-private-methods": 7.18.6(@babel/core@7.25.2)
+      eslint: 9.13.0(jiti@2.3.1)
+      hermes-parser: 0.20.1
+      zod: 3.23.8
+      zod-validation-error: 3.4.0(zod@3.23.8)
+    transitivePeerDependencies:
+      - supports-color
+
   eslint-plugin-react-debug@1.15.0(eslint@9.13.0(jiti@2.3.1))(typescript@5.6.3):
     dependencies:
       "@eslint-react/ast": 1.15.0(eslint@9.13.0(jiti@2.3.1))(typescript@5.6.3)
@@ -9896,6 +9966,12 @@ snapshots:
   hasown@2.0.2:
     dependencies:
       function-bind: 1.1.2
+
+  hermes-estree@0.20.1: {}
+
+  hermes-parser@0.20.1:
+    dependencies:
+      hermes-estree: 0.20.1
 
   hosted-git-info@2.8.9: {}
 
@@ -11417,5 +11493,11 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   yoctocolors-cjs@2.1.2: {}
+
+  zod-validation-error@3.4.0(zod@3.23.8):
+    dependencies:
+      zod: 3.23.8
+
+  zod@3.23.8: {}
 
   zwitch@2.0.4: {}

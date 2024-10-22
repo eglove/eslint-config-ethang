@@ -1,5 +1,6 @@
 import { ignores, languageOptions } from "./constants.js";
 import react from "@eslint-react/eslint-plugin";
+import reactCompiler from "eslint-plugin-react-compiler";
 import reactHooks from "eslint-plugin-react-hooks";
 import tseslint from "typescript-eslint";
 
@@ -13,6 +14,7 @@ export default tseslint.config({
   plugins: {
     react: react,
     "react-hooks": reactHooks,
+    "react-compiler": reactCompiler,
   },
   rules: {
     "react/avoid-shorthand-boolean": "off",
@@ -96,5 +98,6 @@ export default tseslint.config({
     "react/web-api/no-leaked-timeout": "error",
     "react-hooks/exhaustive-deps": "error",
     "react-hooks/rules-of-hooks": "error",
+    "react-compiler/react-compiler": "error",
   },
 });

@@ -84,6 +84,7 @@ export default tseslint.config(
               "vinxi",
               "datasource",
               "turso",
+              "supabase",
             ],
           },
         },

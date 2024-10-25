@@ -42,6 +42,7 @@ const customRules: CustomRules = [
             "zustand",
             "vinxi",
             "datasource",
+            "turso",
           ],
         },
       },

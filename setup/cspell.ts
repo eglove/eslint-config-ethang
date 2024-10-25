@@ -43,6 +43,7 @@ const customRules: CustomRules = [
             "vinxi",
             "datasource",
             "turso",
+            "supabase",
           ],
         },
       },

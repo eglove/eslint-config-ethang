@@ -83,7 +83,6 @@ export default tseslint.config(
               "zustand",
               "vinxi",
               "datasource",
-              "turso",
             ],
           },
         },

@@ -6,7 +6,7 @@ const ruleNames = Object.keys(getNonDeprecatedRules(depend.rules));
 const changedRules = [
   {
     name: "ban-dependencies",
-    rule: ["error", { allowed: ["lodash"] }],
+    rule: ["error", { allowed: ["lodash", "fs-extra"] }],
   },
 ];
 

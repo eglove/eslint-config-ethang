@@ -46,7 +46,7 @@ export default tseslint.config(
       a11y: a11y,
     },
     rules: {
-      "depend/ban-dependencies": ["error", { allowed: ["lodash"] }],
+      "depend/ban-dependencies": ["error", { allowed: ["lodash", "fs-extra"] }],
       "cspell/spellchecker": [
         "error",
         {

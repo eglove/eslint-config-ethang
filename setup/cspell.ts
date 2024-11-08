@@ -44,6 +44,7 @@ const customRules: CustomRules = [
             "datasource",
             "turso",
             "supabase",
+            "solidjs",
           ],
         },
       },

@@ -1,6 +1,6 @@
 {
   "name": "@ethang/eslint-config",
-  "version": "19.14.9",
+  "version": "19.14.10",
   "repository": {
     "url": "git+https://github.com/eglove/eslint-config-ethang.git"
   },
@@ -13,7 +13,7 @@
     "lint": "prettier . -w"
   },
   "dependencies": {
-    "@cspell/eslint-plugin": "^8.15.7",
+    "@cspell/eslint-plugin": "^8.16.0",
     "@eslint-react/eslint-plugin": "^1.15.2",
     "@eslint/compat": "^1.2.2",
     "@eslint/js": "^9.14.0",
@@ -21,7 +21,7 @@
     "@eslint/markdown": "^6.2.1",
     "@stylistic/eslint-plugin": "^2.10.1",
     "@stylistic/eslint-plugin-ts": "^2.10.1",
-    "@tanstack/eslint-plugin-query": "^5.59.20",
+    "@tanstack/eslint-plugin-query": "^5.60.1",
     "@tanstack/eslint-plugin-router": "^1.79.0",
     "@typescript-eslint/parser": "^8.13.0",
     "eslint": "^9.14.0",
@@ -31,7 +31,7 @@
     "eslint-plugin-depend": "^0.12.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-lodash": "^8.0.0",
-    "eslint-plugin-n": "^17.13.0",
+    "eslint-plugin-n": "^17.13.1",
     "eslint-plugin-perfectionist": "^3.9.1",
     "eslint-plugin-react-compiler": "19.0.0-beta-8a03594-20241020",
     "eslint-plugin-react-hooks": "^5.0.0",
@@ -54,7 +54,7 @@
     "prettier": "^3.3.3"
   },
   "peerDependencies": {
-    "@cspell/eslint-plugin": "^8.15.7",
+    "@cspell/eslint-plugin": "^8.16.0",
     "@eslint-react/eslint-plugin": "^1.15.2",
     "@eslint/compat": "^1.2.2",
     "@eslint/js": "^9.14.0",
@@ -62,7 +62,7 @@
     "@eslint/markdown": "^6.2.1",
     "@stylistic/eslint-plugin": "^2.10.1",
     "@stylistic/eslint-plugin-ts": "^2.10.1",
-    "@tanstack/eslint-plugin-query": "^5.59.20",
+    "@tanstack/eslint-plugin-query": "^5.60.1",
     "@tanstack/eslint-plugin-router": "^1.79.0",
     "@typescript-eslint/parser": "^8.13.0",
     "eslint": "^9.14.0",
@@ -72,7 +72,7 @@
     "eslint-plugin-depend": "^0.12.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-lodash": "^8.0.0",
-    "eslint-plugin-n": "^17.13.0",
+    "eslint-plugin-n": "^17.13.1",
     "eslint-plugin-perfectionist": "^3.9.1",
     "eslint-plugin-react-compiler": "19.0.0-beta-8a03594-20241020",
     "eslint-plugin-react-hooks": "^5.0.0",
